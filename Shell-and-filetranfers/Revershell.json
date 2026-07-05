@@ -1,0 +1,563 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 140.4857740342773,
+        "y": 260.5771964824411
+      },
+      "data": {
+        "label": "CLIENT",
+        "bgColor": "#fef9c3",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 140,
+      "height": 36,
+      "measured": {
+        "width": 140,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-16",
+      "type": "rectNode",
+      "position": {
+        "x": 511.21855795045656,
+        "y": 260.3634158794615
+      },
+      "data": {
+        "label": "WEB SERVER",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 140,
+      "height": 36,
+      "measured": {
+        "width": 140,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-17",
+      "type": "rectNode",
+      "position": {
+        "x": 141.05756995938313,
+        "y": 124.03051112541817
+      },
+      "data": {
+        "label": "\n",
+        "bgColor": "#fef9c3",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 140,
+      "height": 137,
+      "measured": {
+        "width": 140,
+        "height": 137
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-18",
+      "type": "rectNode",
+      "position": {
+        "x": 511.5997552338605,
+        "y": 124.60230705052396
+      },
+      "data": {
+        "label": "\n",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 140,
+      "height": 137,
+      "measured": {
+        "width": 140,
+        "height": 137
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-19",
+      "type": "rectNode",
+      "position": {
+        "x": 49.83543397813045,
+        "y": 62.00203593856978
+      },
+      "data": {
+        "label": "nc -nlvp 4444",
+        "bgColor": "#fef9c3",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 3
+      },
+      "width": 129,
+      "height": 36,
+      "measured": {
+        "width": 129,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-25",
+      "type": "rectNode",
+      "position": {
+        "x": 239.3817620190709,
+        "y": 175.03050086690743
+      },
+      "data": {
+        "label": "4444",
+        "bgColor": "#fef9c3",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 5
+      },
+      "width": 80,
+      "height": 36,
+      "measured": {
+        "width": 80,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-26",
+      "type": "rectNode",
+      "position": {
+        "x": 610.6352152767586,
+        "y": 63.61812175550297
+      },
+      "data": {
+        "label": "nc SERVER 4444",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 8
+      },
+      "width": 135,
+      "height": 36,
+      "measured": {
+        "width": 135,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-27",
+      "type": "rectNode",
+      "position": {
+        "x": 743.0607623981508,
+        "y": 63.1109775431335
+      },
+      "data": {
+        "label": "-e /bin/bash",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 8
+      },
+      "width": 103,
+      "height": 36,
+      "measured": {
+        "width": 103,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-28",
+      "type": "rectNode",
+      "position": {
+        "x": 475.14193488366436,
+        "y": 175.7341310044856
+      },
+      "data": {
+        "label": "?????",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 10
+      },
+      "width": 80,
+      "height": 36,
+      "measured": {
+        "width": 80,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-29",
+      "type": "rectNode",
+      "position": {
+        "x": 743.1298939225593,
+        "y": 212.32546980992447
+      },
+      "data": {
+        "label": "/bin/bash",
+        "bgColor": "#ede9fe",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 14
+      },
+      "width": 104,
+      "height": 36,
+      "measured": {
+        "width": 104,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-19",
+      "sourceHandle": "left",
+      "target": "node-21",
+      "targetHandle": "right",
+      "data": {
+        "label": "open",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 4,
+        "hideAtStep": 6
+      },
+      "id": "edge-13",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-17",
+      "sourceHandle": "left",
+      "target": "node-22",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-14",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-22",
+      "sourceHandle": "right",
+      "target": "node-23",
+      "targetHandle": "left",
+      "data": {
+        "label": "open",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 9,
+        "hideAtStep": 11
+      },
+      "id": "edge-15",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-23",
+      "sourceHandle": "right",
+      "target": "node-21",
+      "targetHandle": "left",
+      "data": {
+        "label": "conn",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 12
+      },
+      "id": "edge-16",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-20",
+      "sourceHandle": "bottom",
+      "target": "node-24",
+      "targetHandle": "top",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 13
+      },
+      "id": "edge-17",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-21",
+      "sourceHandle": "right",
+      "target": "node-24",
+      "targetHandle": "left",
+      "data": {
+        "label": "in/out/err",
+        "edgeType": "bezier",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "showAtStep": 15
+      },
+      "id": "edge-18",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-17",
+      "sourceHandle": "left",
+      "target": "node-19",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 2
+      },
+      "id": "edge-19",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-19",
+      "sourceHandle": "right",
+      "target": "node-25",
+      "targetHandle": "left",
+      "data": {
+        "label": "open",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 4,
+        "hideAtStep": 6
+      },
+      "id": "edge-20",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-18",
+      "sourceHandle": "right",
+      "target": "node-26",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-21",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-26",
+      "sourceHandle": "left",
+      "target": "node-28",
+      "targetHandle": "right",
+      "data": {
+        "label": "open",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 9,
+        "hideAtStep": 11
+      },
+      "id": "edge-22",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-28",
+      "sourceHandle": "left",
+      "target": "node-25",
+      "targetHandle": "right",
+      "data": {
+        "label": "conn",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 12
+      },
+      "id": "edge-23",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-27",
+      "sourceHandle": "bottom",
+      "target": "node-29",
+      "targetHandle": "top",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 13
+      },
+      "id": "edge-24",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-25",
+      "sourceHandle": "right",
+      "target": "node-28",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 12
+      },
+      "id": "edge-25",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-28",
+      "sourceHandle": "right",
+      "target": "node-29",
+      "targetHandle": "left",
+      "data": {
+        "label": "in/out/err",
+        "edgeType": "bezier",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "showAtStep": 15
+      },
+      "id": "edge-26",
+      "selected": false
+    }
+  ]
+}
