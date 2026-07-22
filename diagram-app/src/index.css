@@ -72,3 +72,23 @@ body {
   background: #d1d5db;
   border-radius: 3px;
 }
+
+/* Disable selection highlight effect */
+.react-flow__node.selectable {
+  pointer-events: all;
+}
+
+.react-flow__node.selectable:not(.selected) {
+  background: transparent !important;
+}
+
+/* Only show selection box outline, not fill */
+.react-flow__selectionpane {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid #3b82f6;
+}
+
+/* Prevent user-select highlighting during drag selection */
+.react-flow__selection {
+  user-select: none;
+}

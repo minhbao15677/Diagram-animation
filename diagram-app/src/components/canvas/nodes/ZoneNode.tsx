@@ -90,8 +90,6 @@ export function ZoneNode({ id, data, selected }: NodeProps) {
           borderRadius: `${nodeData.borderRadius ?? 8}px`,
           boxSizing: 'border-box',
           cursor: 'move',
-          transform: (nodeData as { __hovered?: boolean }).__hovered ? 'scale(1.3)' : undefined,
-          transition: 'transform 0.25s ease',
         }}
       />
 

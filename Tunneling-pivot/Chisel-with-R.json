@@ -407,7 +407,7 @@
         "width": 125,
         "height": 46
       },
-      "selected": true,
+      "selected": false,
       "resizing": false
     },
     {
@@ -584,7 +584,8 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-5"
+      "id": "edge-5",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -602,7 +603,8 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-7"
+      "id": "edge-7",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -620,7 +622,8 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-8"
+      "id": "edge-8",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -714,7 +717,8 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-20"
+      "id": "edge-20",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -732,7 +736,8 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-23"
+      "id": "edge-23",
+      "selected": false
     }
   ]
 }
