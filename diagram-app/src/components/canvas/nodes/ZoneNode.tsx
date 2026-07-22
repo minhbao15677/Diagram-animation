@@ -1,10 +1,10 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { Handle, Position, NodeResizer, useReactFlow, type NodeProps } from '@xyflow/react';
-import type { RectNodeData } from '../../../store/diagramStore';
+import type { ZoneNodeData } from '../../../store/diagramStore';
 import { useDiagramStore } from '../../../store/diagramStore';
 
-export function RectNode({ id, data, selected }: NodeProps) {
-  const nodeData = data as unknown as RectNodeData;
+export function ZoneNode({ id, data, selected }: NodeProps) {
+  const nodeData = data as unknown as ZoneNodeData;
   const { presentationMode } = useDiagramStore();
   const [editing, setEditing] = useState(false);
   const [label, setLabel] = useState(nodeData.label);
@@ -16,6 +16,7 @@ export function RectNode({ id, data, selected }: NodeProps) {
   }, [nodeData.label]);
 
   const startEdit = useCallback(() => {
+    if (presentationMode) return;
     setEditing(true);
     setTimeout(() => {
       textRef.current?.focus();
@@ -27,7 +28,7 @@ export function RectNode({ id, data, selected }: NodeProps) {
         sel.addRange(range);
       }
     }, 10);
-  }, []);
+  }, [presentationMode]);
 
   const finishEdit = useCallback(() => {
     setEditing(false);
@@ -51,29 +52,19 @@ export function RectNode({ id, data, selected }: NodeProps) {
     [finishEdit, label]
   );
 
-  const borderStyle = {
-    backgroundColor: nodeData.bgColor,
-    border: `${nodeData.borderWidth}px ${nodeData.borderStyle} ${nodeData.borderColor}`,
-    color: nodeData.textColor,
-    fontSize: `${nodeData.fontSize}px`,
-    borderRadius: `${nodeData.borderRadius ?? 8}px`,
-    transform: (nodeData as { __hovered?: boolean }).__hovered ? 'scale(1.3)' : undefined,
-    transition: 'transform 0.25s ease',
-  };
-
   const handlePositions = [
-    { position: Position.Top, id: 'top', style: { top: -5, left: '50%', transform: 'translateX(-50%)' } },
-    { position: Position.Bottom, id: 'bottom', style: { bottom: -5, left: '50%', transform: 'translateX(-50%)' } },
-    { position: Position.Left, id: 'left', style: { left: -5, top: '50%', transform: 'translateY(-50%)' } },
-    { position: Position.Right, id: 'right', style: { right: -5, top: '50%', transform: 'translateY(-50%)' } },
+    { position: Position.Top, id: 'top' },
+    { position: Position.Bottom, id: 'bottom' },
+    { position: Position.Left, id: 'left' },
+    { position: Position.Right, id: 'right' },
   ];
 
   return (
     <>
       <NodeResizer
         isVisible={selected}
-        minWidth={12}
-        minHeight={12}
+        minWidth={40}
+        minHeight={30}
         handleStyle={{ width: 8, height: 8, borderRadius: 2 }}
         lineStyle={{ borderColor: '#3b82f6', borderWidth: 1 }}
       />
@@ -88,9 +79,37 @@ export function RectNode({ id, data, selected }: NodeProps) {
         />
       ))}
 
+      {/* Fill + border — whole surface is a drag handle. Inner nodes render above
+          the zone (zone has zIndex -1), so they stay clickable; the zone only
+          catches clicks on empty space inside it. */}
       <div
-        className="w-full h-full flex items-center justify-center overflow-hidden select-none"
-        style={borderStyle}
+        className="zone-drag-handle w-full h-full overflow-hidden"
+        style={{
+          backgroundColor: nodeData.bgColor,
+          border: `${nodeData.borderWidth}px ${nodeData.borderStyle} ${nodeData.borderColor}`,
+          borderRadius: `${nodeData.borderRadius ?? 8}px`,
+          boxSizing: 'border-box',
+          cursor: 'move',
+          transform: (nodeData as { __hovered?: boolean }).__hovered ? 'scale(1.3)' : undefined,
+          transition: 'transform 0.25s ease',
+        }}
+      />
+
+      {/* Label chip */}
+      <div
+        className="zone-drag-handle absolute select-none"
+        style={{
+          top: 6,
+          left: 8,
+          padding: '2px 8px',
+          borderRadius: 4,
+          background: nodeData.labelBgColor,
+          color: nodeData.textColor,
+          fontSize: `${nodeData.fontSize}px`,
+          fontWeight: 600,
+          maxWidth: 'calc(100% - 16px)',
+          cursor: editing ? 'text' : 'move',
+        }}
         onDoubleClick={startEdit}
       >
         <div
@@ -99,9 +118,8 @@ export function RectNode({ id, data, selected }: NodeProps) {
           suppressContentEditableWarning
           onBlur={finishEdit}
           onKeyDown={handleKeyDown}
-          className="w-full h-full flex items-center justify-center text-center px-0.5 outline-none leading-none"
+          className="outline-none leading-tight"
           style={{
-            cursor: editing ? 'text' : 'default',
             whiteSpace: 'pre-wrap',
             wordBreak: 'break-word',
             userSelect: editing ? 'text' : 'none',

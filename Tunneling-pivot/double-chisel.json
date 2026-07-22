@@ -1,0 +1,1665 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-35",
+      "type": "zoneNode",
+      "position": {
+        "x": -216.7960322852078,
+        "y": 198.20646777185456
+      },
+      "data": {
+        "label": "public",
+        "bgColor": "rgba(59,130,246,0.04)",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 9,
+        "borderWidth": 2,
+        "borderStyle": "dashed",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 200,
+      "height": 200,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 200,
+        "height": 200
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-38",
+      "type": "zoneNode",
+      "position": {
+        "x": -17.796032285207787,
+        "y": 198.20646777185456
+      },
+      "data": {
+        "label": "dmz",
+        "bgColor": "rgba(59,130,246,0.04)",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 9,
+        "borderWidth": 2,
+        "borderStyle": "dashed",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 229,
+      "height": 200,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 229,
+        "height": 200
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-39",
+      "type": "zoneNode",
+      "position": {
+        "x": 211.2039677147922,
+        "y": 198.20646777185456
+      },
+      "data": {
+        "label": "local",
+        "bgColor": "rgba(59,130,246,0.04)",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 9,
+        "borderWidth": 2,
+        "borderStyle": "dashed",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 151,
+      "height": 200,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 151,
+        "height": 200
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-41",
+      "type": "rectNode",
+      "position": {
+        "x": -251.2960322852078,
+        "y": 250.70646777185462
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 95,
+      "measured": {
+        "width": 69,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-42",
+      "type": "rectNode",
+      "position": {
+        "x": -251.2960322852078,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "KALI",
+        "bgColor": "#ffffff",
+        "borderColor": "#ef0606",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 20,
+      "measured": {
+        "width": 69,
+        "height": 20
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-43",
+      "type": "rectNode",
+      "position": {
+        "x": -52.29603228520779,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 95,
+      "measured": {
+        "width": 69,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-44",
+      "type": "rectNode",
+      "position": {
+        "x": -52.29603228520779,
+        "y": 247.4688781683177
+      },
+      "data": {
+        "label": "Pivot1",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 20,
+      "measured": {
+        "width": 69,
+        "height": 20
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-45",
+      "type": "rectNode",
+      "position": {
+        "x": 176.7039677147922,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 95,
+      "measured": {
+        "width": 69,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-46",
+      "type": "rectNode",
+      "position": {
+        "x": 176.7039677147922,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "Pivot2",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 20,
+      "measured": {
+        "width": 69,
+        "height": 20
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-47",
+      "type": "rectNode",
+      "position": {
+        "x": 327.7039677147922,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 95,
+      "measured": {
+        "width": 69,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-48",
+      "type": "rectNode",
+      "position": {
+        "x": 327.7039677147922,
+        "y": 247.46887816831773
+      },
+      "data": {
+        "label": "Target",
+        "bgColor": "#fce7f3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 69,
+      "height": 20,
+      "measured": {
+        "width": 69,
+        "height": 20
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-50",
+      "type": "rectNode",
+      "position": {
+        "x": 307.7039677147922,
+        "y": 274.9688781683177
+      },
+      "data": {
+        "label": "11001",
+        "bgColor": "#fce7f3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 40,
+      "height": 20,
+      "measured": {
+        "width": 40,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-52",
+      "type": "rectNode",
+      "position": {
+        "x": -236.7960322852078,
+        "y": 409.7371950000009
+      },
+      "data": {
+        "label": "SRC",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 4
+      },
+      "width": 40,
+      "height": 19,
+      "measured": {
+        "width": 40,
+        "height": 19
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-53",
+      "type": "rectNode",
+      "position": {
+        "x": 342.2039677147922,
+        "y": 409.7371950000009
+      },
+      "data": {
+        "label": "DESC",
+        "bgColor": "#fce7f3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 4
+      },
+      "width": 40,
+      "height": 20,
+      "measured": {
+        "width": 40,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-54",
+      "type": "rectNode",
+      "position": {
+        "x": -36.79603228520779,
+        "y": 409.7371950000009
+      },
+      "data": {
+        "label": "pivot1",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 4
+      },
+      "width": 40,
+      "height": 20,
+      "measured": {
+        "width": 40,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-55",
+      "type": "rectNode",
+      "position": {
+        "x": 191.2039677147922,
+        "y": 409.7371950000009
+      },
+      "data": {
+        "label": "pivot2",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 4
+      },
+      "width": 44,
+      "height": 20,
+      "measured": {
+        "width": 44,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-56",
+      "type": "rectNode",
+      "position": {
+        "x": -210.2960322852078,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.1.10",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 52,
+      "height": 20,
+      "measured": {
+        "width": 52,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-57",
+      "type": "rectNode",
+      "position": {
+        "x": -80.29603228520779,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.1.20",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 54,
+      "height": 20,
+      "measured": {
+        "width": 54,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-58",
+      "type": "rectNode",
+      "position": {
+        "x": -10.296032285207787,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.2.20",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 54,
+      "height": 20,
+      "measured": {
+        "width": 54,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-59",
+      "type": "rectNode",
+      "position": {
+        "x": 143.7039677147922,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.2.20",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 60,
+      "height": 20,
+      "measured": {
+        "width": 60,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-60",
+      "type": "rectNode",
+      "position": {
+        "x": 226.70396771479219,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.3.10",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 60,
+      "height": 20,
+      "measured": {
+        "width": 60,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-61",
+      "type": "rectNode",
+      "position": {
+        "x": 302.2039677147922,
+        "y": 332.4688781683177
+      },
+      "data": {
+        "label": "10.10.3.20",
+        "bgColor": "#fce7f3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 9,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 3
+      },
+      "width": 60,
+      "height": 20,
+      "measured": {
+        "width": 60,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-62",
+      "type": "rectNode",
+      "position": {
+        "x": -364.2098936713464,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "chisel server",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 8
+      },
+      "width": 74,
+      "height": 14,
+      "measured": {
+        "width": 74,
+        "height": 14
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-63",
+      "type": "rectNode",
+      "position": {
+        "x": -290.2098936713464,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "-p 8080",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 8
+      },
+      "width": 47,
+      "height": 14,
+      "measured": {
+        "width": 47,
+        "height": 14
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-64",
+      "type": "rectNode",
+      "position": {
+        "x": -243.20989367134638,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "--reverse",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 8
+      },
+      "width": 59,
+      "height": 14,
+      "measured": {
+        "width": 59,
+        "height": 14
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-65",
+      "type": "rectNode",
+      "position": {
+        "x": -200.2960322852078,
+        "y": 268.4688781683177
+      },
+      "data": {
+        "label": "8080",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 10
+      },
+      "width": 32,
+      "height": 13,
+      "measured": {
+        "width": 32,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-66",
+      "type": "rectNode",
+      "position": {
+        "x": -90.79603228520779,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "chisel client",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 11
+      },
+      "width": 68,
+      "height": 13,
+      "measured": {
+        "width": 68,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-67",
+      "type": "rectNode",
+      "position": {
+        "x": -22.796032285207787,
+        "y": 164.63026430693162
+      },
+      "data": {
+        "label": "10.10.1.10:8080",
+        "bgColor": "#dcfce7",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 11
+      },
+      "width": 85,
+      "height": 12,
+      "measured": {
+        "width": 85,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-68",
+      "type": "rectNode",
+      "position": {
+        "x": 62.20396771479221,
+        "y": 164.63026430693162
+      },
+      "data": {
+        "label": "R:",
+        "bgColor": "#dcfce7",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 13
+      },
+      "width": 25,
+      "height": 12,
+      "measured": {
+        "width": 25,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-69",
+      "type": "rectNode",
+      "position": {
+        "x": 87.20396771479221,
+        "y": 164.63026430693162
+      },
+      "data": {
+        "label": "socks",
+        "bgColor": "#dcfce7",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 13
+      },
+      "width": 35,
+      "height": 12,
+      "measured": {
+        "width": 35,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-70",
+      "type": "zoneNode",
+      "position": {
+        "x": -183.70989367134638,
+        "y": 284.9688781683177
+      },
+      "data": {
+        "label": "tunnel",
+        "bgColor": "#ede9fe",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#1e293b",
+        "textColor": "#1e40af",
+        "fontSize": 8,
+        "borderWidth": 1,
+        "borderStyle": "dashed",
+        "borderRadius": 0,
+        "showAtStep": 12
+      },
+      "width": 132,
+      "height": 38,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 132,
+        "height": 38
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-71",
+      "type": "rectNode",
+      "position": {
+        "x": -199.70989367134638,
+        "y": 303.9688781683177
+      },
+      "data": {
+        "label": "1080",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 15
+      },
+      "width": 32,
+      "height": 13,
+      "measured": {
+        "width": 32,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-72",
+      "type": "rectNode",
+      "position": {
+        "x": -306.7098936713464,
+        "y": 326.7064677718546
+      },
+      "data": {
+        "label": "socks",
+        "bgColor": "#e61414",
+        "borderColor": "#000000",
+        "textColor": "#ffffff",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 17
+      },
+      "width": 40,
+      "height": 19,
+      "measured": {
+        "width": 40,
+        "height": 19
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": true
+    },
+    {
+      "id": "node-74",
+      "type": "rectNode",
+      "position": {
+        "x": -26.296032285207787,
+        "y": 291.9688781683177
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 3
+      },
+      "width": 12,
+      "height": 12,
+      "measured": {
+        "width": 12,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-75",
+      "type": "rectNode",
+      "position": {
+        "x": -11.796032285207788,
+        "y": 369.8401652970306
+      },
+      "data": {
+        "label": "chisel server",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 20
+      },
+      "width": 74,
+      "height": 14,
+      "measured": {
+        "width": 74,
+        "height": 14
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-76",
+      "type": "rectNode",
+      "position": {
+        "x": 62.20396771479221,
+        "y": 370.3401652970306
+      },
+      "data": {
+        "label": "-p 9090",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 20
+      },
+      "width": 49,
+      "height": 13,
+      "measured": {
+        "width": 49,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-77",
+      "type": "rectNode",
+      "position": {
+        "x": 110.70396771479221,
+        "y": 369.8401652970306
+      },
+      "data": {
+        "label": "--reverse",
+        "bgColor": "#d1fae5",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 20
+      },
+      "width": 59,
+      "height": 14,
+      "measured": {
+        "width": 59,
+        "height": 14
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-78",
+      "type": "rectNode",
+      "position": {
+        "x": 3.2039677147922134,
+        "y": 271.9688781683177
+      },
+      "data": {
+        "label": "9090",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 22
+      },
+      "width": 33,
+      "height": 12,
+      "measured": {
+        "width": 33,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-79",
+      "type": "rectNode",
+      "position": {
+        "x": 169.7039677147922,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "chisel client",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 24
+      },
+      "width": 68,
+      "height": 13,
+      "measured": {
+        "width": 68,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-80",
+      "type": "rectNode",
+      "position": {
+        "x": 235.2039677147922,
+        "y": 163.63026430693162
+      },
+      "data": {
+        "label": "10.10.2.10:9090",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 24
+      },
+      "width": 85,
+      "height": 13,
+      "measured": {
+        "width": 85,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-81",
+      "type": "rectNode",
+      "position": {
+        "x": 320.2039677147922,
+        "y": 164.63026430693162
+      },
+      "data": {
+        "label": "R:1081",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 27
+      },
+      "width": 41,
+      "height": 12,
+      "measured": {
+        "width": 41,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-82",
+      "type": "rectNode",
+      "position": {
+        "x": 361.2039677147922,
+        "y": 164.63026430693162
+      },
+      "data": {
+        "label": "socks",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 27
+      },
+      "width": 35,
+      "height": 12,
+      "measured": {
+        "width": 35,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-83",
+      "type": "rectNode",
+      "position": {
+        "x": 3.2039677147922134,
+        "y": 294.4688781683177
+      },
+      "data": {
+        "label": "1081",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 29,
+        "onTop": true
+      },
+      "width": 32,
+      "height": 13,
+      "measured": {
+        "width": 32,
+        "height": 13
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-84",
+      "type": "zoneNode",
+      "position": {
+        "x": 16.203967714792213,
+        "y": 283.9688781683177
+      },
+      "data": {
+        "label": "tunnel",
+        "bgColor": "#ede9fe",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#1e293b",
+        "textColor": "#1e40af",
+        "fontSize": 8,
+        "borderWidth": 1,
+        "borderStyle": "dashed",
+        "borderRadius": 0,
+        "showAtStep": 26
+      },
+      "width": 161,
+      "height": 37,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 161,
+        "height": 37
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-85",
+      "type": "rectNode",
+      "position": {
+        "x": 203.7039677147922,
+        "y": 294.4688781683177
+      },
+      "data": {
+        "label": "",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 3
+      },
+      "width": 12,
+      "height": 12,
+      "measured": {
+        "width": 12,
+        "height": 12
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-86",
+      "type": "rectNode",
+      "position": {
+        "x": -421.7098936713464,
+        "y": 244.96887816831773
+      },
+      "data": {
+        "label": "socks5 127.0.0.1 1080",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 33
+      },
+      "width": 115,
+      "height": 20,
+      "measured": {
+        "width": 115,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-87",
+      "type": "rectNode",
+      "position": {
+        "x": -421.7098936713464,
+        "y": 264.9688781683177
+      },
+      "data": {
+        "label": "socks5 127.0.0.1 1081",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 33
+      },
+      "width": 115,
+      "height": 20,
+      "measured": {
+        "width": 115,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-88",
+      "type": "rectNode",
+      "position": {
+        "x": -481.7098936713464,
+        "y": 198.20646777185456
+      },
+      "data": {
+        "label": "proxychains curl 10.10.3.20:11001",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 35
+      },
+      "width": 175,
+      "height": 17,
+      "measured": {
+        "width": 175,
+        "height": 17
+      },
+      "selected": false,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-52",
+      "sourceHandle": "right",
+      "target": "node-54",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 5
+      },
+      "id": "edge-2",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-54",
+      "sourceHandle": "right",
+      "target": "node-55",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 6
+      },
+      "id": "edge-3",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-55",
+      "sourceHandle": "right",
+      "target": "node-53",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 7
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-63",
+      "sourceHandle": "bottom",
+      "target": "node-65",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 9
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-69",
+      "sourceHandle": "bottom",
+      "target": "node-71",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 14,
+        "hideAtStep": 16
+      },
+      "id": "edge-11",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-72",
+      "sourceHandle": "right",
+      "target": "node-71",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 18
+      },
+      "id": "edge-12",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-71",
+      "sourceHandle": "right",
+      "target": "node-74",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 19
+      },
+      "id": "edge-15",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-67",
+      "sourceHandle": "bottom",
+      "target": "node-44",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 11
+      },
+      "id": "edge-16",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-76",
+      "sourceHandle": "top",
+      "target": "node-78",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 21,
+        "hideAtStep": 23
+      },
+      "id": "edge-19",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-80",
+      "sourceHandle": "bottom",
+      "target": "node-46",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 25
+      },
+      "id": "edge-22",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-82",
+      "sourceHandle": "bottom",
+      "target": "node-83",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 28,
+        "hideAtStep": 30,
+        "pathOffsetX": 172.32549504950495,
+        "pathOffsetY": 107.82623762376237
+      },
+      "id": "edge-23",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-83",
+      "sourceHandle": "right",
+      "target": "node-85",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 31
+      },
+      "id": "edge-25",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-85",
+      "sourceHandle": "right",
+      "target": "node-50",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "showAtStep": 32
+      },
+      "id": "edge-27",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-87",
+      "sourceHandle": "bottom",
+      "target": "node-72",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 34
+      },
+      "id": "edge-30",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-88",
+      "sourceHandle": "right",
+      "target": "node-86",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 36
+      },
+      "id": "edge-34",
+      "selected": false
+    }
+  ]
+}

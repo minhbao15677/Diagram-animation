@@ -6,6 +6,7 @@ import {
   Background,
   BackgroundVariant,
   ConnectionMode,
+  PanOnScrollMode,
   type NodeTypes,
   type EdgeTypes,
   type Connection,
@@ -14,15 +15,20 @@ import {
 import { useDiagramStore } from '../../store/diagramStore';
 import { RectNode } from './nodes/RectNode';
 import { LabeledBoxNode } from './nodes/LabeledBoxNode';
+import { ZoneNode } from './nodes/ZoneNode';
+import { TableNode } from './nodes/TableNode';
 import { CustomEdge } from './edges/CustomEdge';
 import { PresentationOverlay } from './PresentationOverlay';
 import { AlignmentGuides } from './AlignmentGuides';
+import { PanControls } from './PanControls';
 import { useKeyboard } from '../../hooks/useKeyboard';
 import { useAlignmentGuides } from '../../hooks/useAlignmentGuides';
 
 const nodeTypes: NodeTypes = {
   rectNode: RectNode,
   labeledBoxNode: LabeledBoxNode,
+  zoneNode: ZoneNode,
+  tableNode: TableNode,
 };
 
 const edgeTypes: EdgeTypes = {
@@ -41,6 +47,8 @@ export function DiagramCanvas() {
     presentationStep,
     presentationSteps,
     presentationTriggers,
+    hoveredElementId,
+    setHoveredElement,
   } = useDiagramStore();
 
   useKeyboard();
@@ -102,6 +110,7 @@ export function DiagramCanvas() {
       const hasConfig = show && show > 0;
       const visible = hasConfig ? getElementVisible(n.id, show, hide) : getElementVisible(n.id, undefined, undefined);
       const isCurrent = currentGroupIds.has(n.id);
+      const isHovered = hoveredElementId === n.id;
       const onTop = d.onTop as boolean | undefined;
       return {
         ...n,
@@ -109,38 +118,35 @@ export function DiagramCanvas() {
           ...n.style,
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.4s, filter 0.4s',
-          filter: isCurrent
-            ? 'drop-shadow(0 0 16px rgba(255,255,255,0.6)) drop-shadow(0 0 8px rgba(59,130,246,0.8))'
+          filter: isHovered
+            ? 'drop-shadow(0 0 18px rgba(59,130,246,0.55)) drop-shadow(0 0 8px rgba(37,99,235,0.7))'
+            : isCurrent
+            ? 'drop-shadow(0 0 14px rgba(59,130,246,0.4)) drop-shadow(0 0 6px rgba(37,99,235,0.55))'
             : undefined,
-          zIndex: isCurrent ? 10 : (onTop ? 1000 : undefined),
+          zIndex: isHovered ? 20 : isCurrent ? 10 : (onTop ? 1000 : undefined),
         },
+        data: { ...(n.data as Record<string, unknown>), __hovered: isHovered },
         draggable: false,
         selectable: false,
         connectable: false,
       };
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [nodes, presentationMode, currentTrigger, currentGroupIds]);
+  }, [nodes, presentationMode, currentTrigger, currentGroupIds, hoveredElementId]);
 
   const presentationEdges = useMemo(() => {
     if (!presentationMode) {
-      return edges.map((e) => {
-        const d = (e.data ?? {}) as Record<string, unknown>;
-        const onTop = d.onTop as boolean | undefined;
-        return onTop ? { ...e, zIndex: 1000 } : e;
-      });
+      return edges.map((e) => ({ ...e, zIndex: 1000 }));
     }
     return edges.map((e) => {
-      const d = (e.data ?? {}) as Record<string, unknown>;
-      const onTop = d.onTop as boolean | undefined;
-      return { ...e, animated: false, selectable: false, ...(onTop ? { zIndex: 1000 } : {}) };
+      return { ...e, animated: false, selectable: false, zIndex: 1000 };
     });
   }, [edges, presentationMode]);
 
   return (
     <div
       className="flex-1 relative"
-      style={presentationMode ? { background: '#0f1117' } : undefined}
+      style={presentationMode ? { background: '#f8fafc' } : undefined}
     >
       <ReactFlow
         nodes={presentationNodes}
@@ -150,6 +156,8 @@ export function DiagramCanvas() {
         onConnect={presentationMode ? undefined : handleConnect}
         onNodeDrag={presentationMode ? undefined : onNodeDrag}
         onNodeDragStop={handleNodeDragStop}
+        onNodeMouseEnter={presentationMode ? (_, node) => setHoveredElement(node.id) : undefined}
+        onNodeMouseLeave={presentationMode ? () => setHoveredElement(null) : undefined}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
         defaultEdgeOptions={defaultEdgeOptions}
@@ -159,10 +167,12 @@ export function DiagramCanvas() {
         fitView
         fitViewOptions={{ padding: 0.2 }}
         deleteKeyCode={null}
-        multiSelectionKeyCode="Shift"
+        multiSelectionKeyCode={['Shift', 'Control', 'Meta']}
         selectionOnDrag={!presentationMode}
         panOnDrag={presentationMode ? false : [1, 2]}
-        zoomOnScroll={!presentationMode}
+        zoomOnScroll={false}
+        panOnScroll={!presentationMode}
+        panOnScrollMode={PanOnScrollMode.Free}
         minZoom={0.1}
         maxZoom={4}
         elevateNodesOnSelect
@@ -172,8 +182,8 @@ export function DiagramCanvas() {
           variant={BackgroundVariant.Dots}
           gap={20}
           size={1.5}
-          color={presentationMode ? '#1e2330' : '#94a3b8'}
-          style={presentationMode ? { background: '#0f1117' } : undefined}
+          color={presentationMode ? '#cbd5e1' : '#94a3b8'}
+          style={presentationMode ? { background: '#f8fafc' } : undefined}
         />
         {!presentationMode && (
           <>
@@ -182,6 +192,7 @@ export function DiagramCanvas() {
               showInteractive={false}
               style={{ marginBottom: 8, marginLeft: 8 }}
             />
+            <PanControls />
             <MiniMap
               position="bottom-right"
               nodeColor={(n) => {

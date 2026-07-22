@@ -259,7 +259,7 @@
         "width": 247,
         "height": 197
       },
-      "selected": false,
+      "selected": true,
       "dragging": true,
       "resizing": false
     },
@@ -536,7 +536,7 @@
         "animationEffect": "arrow"
       },
       "id": "edge-7",
-      "selected": true
+      "selected": false
     },
     {
       "type": "customEdge",

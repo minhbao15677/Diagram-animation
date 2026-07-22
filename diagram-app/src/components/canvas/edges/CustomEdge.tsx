@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   BaseEdge,
   EdgeLabelRenderer,
   getSmoothStepPath,
   getBezierPath,
   getStraightPath,
+  useStore,
   type EdgeProps,
 } from '@xyflow/react';
 import type { EdgeData } from '../../../store/diagramStore';
@@ -32,13 +33,21 @@ export function CustomEdge({
     animationEffect: 'arrow',
   };
 
-  const { presentationMode, presentationStep, presentationSteps, presentationTriggers } = useDiagramStore();
+  const { presentationMode, presentationStep, presentationSteps, presentationTriggers, updateEdgeData, pushHistory } = useDiagramStore();
+  const zoom = useStore((s) => s.transform[2]);
+  const [dragOffset, setDragOffset] = useState<{ x: number; y: number } | null>(null);
+  const [pathDrag, setPathDrag] = useState<{ x: number; y: number } | null>(null);
+
+  // Offset that shifts the whole edge up/down/left/right
+  const pathOffX = pathDrag?.x ?? edgeData.pathOffsetX ?? 0;
+  const pathOffY = pathDrag?.y ?? edgeData.pathOffsetY ?? 0;
+
   const pathParams = {
     sourceX,
     sourceY,
     sourcePosition,
-    targetX,
-    targetY,
+    targetX: targetX,
+    targetY: targetY,
     targetPosition,
   };
 
@@ -54,8 +63,18 @@ export function CustomEdge({
     [edgePath, labelX, labelY] = getSmoothStepPath({ ...pathParams, borderRadius: 8 });
   }
 
-  const color = selected ? '#3b82f6' : presentationMode ? '#facc15' : (edgeData.color ?? '#64748b');
+  // Shift the middle of the path by the offset while keeping endpoints anchored
+  if (pathOffX !== 0 || pathOffY !== 0) {
+    const midX = (sourceX + targetX) / 2 + pathOffX;
+    const midY = (sourceY + targetY) / 2 + pathOffY;
+    edgePath = `M ${sourceX},${sourceY} Q ${midX},${midY} ${targetX},${targetY}`;
+    labelX = 0.25 * sourceX + 0.5 * midX + 0.25 * targetX;
+    labelY = 0.25 * sourceY + 0.5 * midY + 0.25 * targetY;
+  }
+
+  const color = selected ? '#3b82f6' : (edgeData.color ?? '#64748b');
   const strokeDash = edgeData.lineStyle === 'dashed' ? '6,4' : undefined;
+  const baseWidth = edgeData.strokeWidth ?? 1;
 
   const markerEnd =
     edgeData.arrowType !== 'none'
@@ -67,8 +86,90 @@ export function CustomEdge({
       ? `url(#${edgeData.arrowType === 'arrowclosed' ? 'arrow-closed-start' : 'arrow-open-start'}-${id})`
       : undefined;
 
+  // Compute final label position including any drag or saved offset
+  const offX = dragOffset?.x ?? edgeData.labelOffsetX ?? 0;
+  const offY = dragOffset?.y ?? edgeData.labelOffsetY ?? 0;
+  const finalLabelX = labelX + offX;
+  const finalLabelY = labelY + offY;
+
+  const handleLabelPointerDown = (e: React.PointerEvent) => {
+    if (presentationMode) return;
+    e.stopPropagation();
+    e.preventDefault();
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+
+    const startX = e.clientX;
+    const startY = e.clientY;
+    const startOffX = edgeData.labelOffsetX ?? 0;
+    const startOffY = edgeData.labelOffsetY ?? 0;
+    let moved = false;
+
+    const onMove = (ev: PointerEvent) => {
+      if (!moved) {
+        pushHistory();
+        moved = true;
+      }
+      const newOffX = startOffX + (ev.clientX - startX) / zoom;
+      const newOffY = startOffY + (ev.clientY - startY) / zoom;
+      setDragOffset({ x: newOffX, y: newOffY });
+    };
+
+    const onUp = (ev: PointerEvent) => {
+      const newOffX = startOffX + (ev.clientX - startX) / zoom;
+      const newOffY = startOffY + (ev.clientY - startY) / zoom;
+      updateEdgeData(id, { labelOffsetX: newOffX, labelOffsetY: newOffY });
+      setDragOffset(null);
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+    };
+
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
+  };
+
+  // Drag the whole edge up/down/left/right via a mid handle
+  const handlePathPointerDown = (e: React.PointerEvent) => {
+    if (presentationMode) return;
+    e.stopPropagation();
+    e.preventDefault();
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+
+    const startX = e.clientX;
+    const startY = e.clientY;
+    const startOffX = edgeData.pathOffsetX ?? 0;
+    const startOffY = edgeData.pathOffsetY ?? 0;
+    let moved = false;
+
+    const onMove = (ev: PointerEvent) => {
+      if (!moved) {
+        pushHistory();
+        moved = true;
+      }
+      const nx = startOffX + (ev.clientX - startX) / zoom;
+      const ny = startOffY + (ev.clientY - startY) / zoom;
+      setPathDrag({ x: nx, y: ny });
+    };
+    const onUp = (ev: PointerEvent) => {
+      const nx = startOffX + (ev.clientX - startX) / zoom;
+      const ny = startOffY + (ev.clientY - startY) / zoom;
+      updateEdgeData(id, { pathOffsetX: nx, pathOffsetY: ny });
+      setPathDrag(null);
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+    };
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
+  };
+
+  // Double-click the handle to reset the edge back to its default path
+  const handlePathDoubleClick = (e: React.MouseEvent) => {
+    if (presentationMode) return;
+    e.stopPropagation();
+    pushHistory();
+    updateEdgeData(id, { pathOffsetX: 0, pathOffsetY: 0 });
+  };
+
   const displayLabel = edgeData.label || label;
-  const showStepBadge = !presentationMode && edgeData.showAtStep !== undefined && edgeData.showAtStep > 0;
 
   const currentTrigger = presentationMode && presentationStep >= 0
     ? (presentationTriggers[presentationStep] ?? -1)
@@ -181,8 +282,8 @@ export function CustomEdge({
           viewBox="0 0 10 10"
           refX="9"
           refY="5"
-          markerWidth="8"
-          markerHeight="8"
+          markerWidth="5.1"
+          markerHeight="5.1"
           orient="auto-start-reverse"
         >
           <path d="M 0 0 L 10 5 L 0 10 z" fill={color} />
@@ -192,8 +293,8 @@ export function CustomEdge({
           viewBox="0 0 10 10"
           refX="9"
           refY="5"
-          markerWidth="8"
-          markerHeight="8"
+          markerWidth="5.1"
+          markerHeight="5.1"
           orient="auto-start-reverse"
         >
           <path d="M 0 0 L 10 5 L 0 10" fill="none" stroke={color} strokeWidth="1.5" />
@@ -205,8 +306,8 @@ export function CustomEdge({
               viewBox="0 0 10 10"
               refX="1"
               refY="5"
-              markerWidth="8"
-              markerHeight="8"
+              markerWidth="5.1"
+              markerHeight="5.1"
               orient="auto-start-reverse"
             >
               <path d="M 10 0 L 0 5 L 10 10 z" fill={color} />
@@ -216,8 +317,8 @@ export function CustomEdge({
               viewBox="0 0 10 10"
               refX="1"
               refY="5"
-              markerWidth="8"
-              markerHeight="8"
+              markerWidth="5.1"
+              markerHeight="5.1"
               orient="auto-start-reverse"
             >
               <path d="M 10 0 L 0 5 L 10 10" fill="none" stroke={color} strokeWidth="1.5" />
@@ -233,19 +334,34 @@ export function CustomEdge({
         markerStart={markerStart}
         style={{
           stroke: color,
-          strokeWidth: selected ? 2.5 : 2,
+          strokeWidth: selected ? baseWidth + 0.25 : baseWidth,
           strokeDasharray: strokeDash,
           filter: isCurrent ? 'drop-shadow(0 0 6px rgba(139,92,246,0.9))' : undefined,
           transition: 'filter 0.4s',
         }}
       />
 
+      {/* Mid-handle: drag to shift the whole edge, double-click to reset (editor only) */}
+      {!presentationMode && selected && (
+        <circle
+          cx={labelX}
+          cy={labelY}
+          r={5}
+          fill="#ffffff"
+          stroke="#3b82f6"
+          strokeWidth={2}
+          style={{ cursor: 'move', pointerEvents: 'all' }}
+          onPointerDown={handlePathPointerDown}
+          onDoubleClick={handlePathDoubleClick}
+        />
+      )}
+
       {showDotAnimation && (
         <circle
           ref={dotRef}
           r="6"
           fill={color}
-          style={{ display: 'none', filter: 'drop-shadow(0 0 4px rgba(255,255,255,0.8))' }}
+          style={{ display: 'none', filter: 'drop-shadow(0 0 4px rgba(37,99,235,0.7))' }}
         />
       )}
 
@@ -255,7 +371,7 @@ export function CustomEdge({
           ref={arrowRef}
           points="5.6,0 -2.8,-3.5 -2.8,3.5"
           fill={color}
-          style={{ display: 'none', filter: 'drop-shadow(0 0 4px rgba(255,255,255,0.8))' }}
+          style={{ display: 'none', filter: 'drop-shadow(0 0 4px rgba(37,99,235,0.7))' }}
         />
       )}
 
@@ -264,7 +380,7 @@ export function CustomEdge({
           <div
             style={{
               position: 'absolute',
-              transform: `translate(-50%, -50%) translate(${labelX}px,${labelY}px)`,
+              transform: `translate(-50%, -50%) translate(${finalLabelX}px,${finalLabelY}px)`,
               pointerEvents: 'all',
               opacity: edgeOpacity,
               transition: 'opacity 0.4s',
@@ -274,11 +390,14 @@ export function CustomEdge({
           >
             <span
               className="px-1.5 py-0.5 rounded text-xs font-medium"
+              onPointerDown={handleLabelPointerDown}
               style={{
                 background: 'white',
                 border: `1px solid ${color}`,
                 color: '#374151',
                 boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+                cursor: presentationMode ? 'default' : 'move',
+                userSelect: 'none',
               }}
             >
               {displayLabel}
@@ -287,39 +406,6 @@ export function CustomEdge({
         </EdgeLabelRenderer>
       )}
 
-      {showStepBadge && (
-        <EdgeLabelRenderer>
-          <div
-            style={{
-              position: 'absolute',
-              transform: `translate(-50%, -50%) translate(${labelX}px,${displayLabel ? labelY - 18 : labelY}px)`,
-              pointerEvents: 'none',
-            }}
-          >
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 2,
-                minWidth: 20,
-                height: 20,
-                borderRadius: 10,
-                padding: '0 5px',
-                background: '#7c3aed',
-                color: 'white',
-                fontSize: 10,
-                fontWeight: 700,
-                boxShadow: '0 1px 4px rgba(0,0,0,0.25)',
-              }}
-            >
-              <span>{edgeData.showAtStep}</span>
-              {edgeData.hideAtStep !== undefined && edgeData.hideAtStep > 0 && (
-                <span style={{ opacity: 0.7 }}>→{edgeData.hideAtStep}</span>
-              )}
-            </div>
-          </div>
-        </EdgeLabelRenderer>
-      )}
     </g>
   );
 }

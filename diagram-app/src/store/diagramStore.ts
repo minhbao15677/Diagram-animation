@@ -41,17 +41,50 @@ export type RectNodeData = {
   hideAtStep?: number;
 };
 
+export type ZoneNodeData = {
+  label: string;
+  bgColor: string;
+  labelBgColor: string;
+  borderColor: string;
+  textColor: string;
+  fontSize: number;
+  borderWidth: number;
+  borderStyle: 'solid' | 'dashed' | 'dotted';
+  borderRadius: number;
+  onTop?: boolean;
+  showAtStep?: number;
+  hideAtStep?: number;
+};
+
+export type TableNodeData = {
+  cells: string[][]; // rows of columns
+  headerRow: boolean;
+  bgColor: string;
+  headerBgColor: string;
+  borderColor: string;
+  textColor: string;
+  fontSize: number;
+  onTop?: boolean;
+  showAtStep?: number;
+  hideAtStep?: number;
+};
+
 export type EdgeData = {
   label?: string;
   edgeType: 'bezier' | 'smoothstep' | 'straight';
   arrowType: 'arrow' | 'arrowclosed' | 'none';
   color: string;
   lineStyle: 'solid' | 'dashed';
+  strokeWidth?: number;
   bidirectional: boolean;
   onTop?: boolean;
   showAtStep?: number;
   hideAtStep?: number;
   animationEffect?: 'none' | 'dot' | 'arrow';
+  labelOffsetX?: number;
+  labelOffsetY?: number;
+  pathOffsetX?: number;
+  pathOffsetY?: number;
 };
 
 type HistoryEntry = {
@@ -79,8 +112,11 @@ type DiagramState = {
 
   addNode: (position?: { x: number; y: number }) => void;
   addLabeledBoxNode: (position?: { x: number; y: number }) => void;
+  addZoneNode: (position?: { x: number; y: number }) => void;
+  addTableNode: (position?: { x: number; y: number }) => void;
   updateNodeData: (nodeId: string, data: Partial<RectNodeData>) => void;
   updateEdgeData: (edgeId: string, data: Partial<EdgeData>) => void;
+  clearAllSteps: () => void;
   deleteSelected: () => void;
   copySelected: () => void;
   copyToClipboard: () => void;
@@ -98,6 +134,8 @@ type DiagramState = {
   presentationStep: number;
   presentationSteps: PresentationStep[];
   presentationTriggers: number[]; // sorted unique trigger numbers (showAtStep + hideAtStep)
+  hoveredElementId: string | null;
+  setHoveredElement: (id: string | null) => void;
   enterPresentation: () => void;
   exitPresentation: () => void;
   nextStep: () => void;
@@ -110,11 +148,11 @@ const defaultLabeledBoxNodeData: LabeledBoxNodeData = {
   bodyText: 'Content goes here...',
   bgColor: '#ffffff',
   headerBgColor: '#3b82f6',
-  borderColor: '#3b82f6',
+  borderColor: '#000000',
   textColor: '#1e293b',
   fontSize: 13,
   bodyFontSize: 13,
-  borderWidth: 2,
+  borderWidth: 1.4,
   borderStyle: 'solid',
   borderRadius: 8,
 };
@@ -122,12 +160,34 @@ const defaultLabeledBoxNodeData: LabeledBoxNodeData = {
 const defaultNodeData: RectNodeData = {
   label: 'Node',
   bgColor: '#ffffff',
-  borderColor: '#94a3b8',
+  borderColor: '#000000',
   textColor: '#1e293b',
   fontSize: 14,
-  borderWidth: 2,
+  borderWidth: 1.4,
   borderStyle: 'solid',
   borderRadius: 8,
+};
+
+const defaultZoneNodeData: ZoneNodeData = {
+  label: 'Zone',
+  bgColor: 'rgba(59,130,246,0.04)',
+  labelBgColor: '#e0edff',
+  borderColor: '#3b82f6',
+  textColor: '#1e40af',
+  fontSize: 13,
+  borderWidth: 2,
+  borderStyle: 'dashed',
+  borderRadius: 8,
+};
+
+const defaultTableNodeData: TableNodeData = {
+  cells: [['Cột 1', 'Cột 2']],
+  headerRow: true,
+  bgColor: '#ffffff',
+  headerBgColor: '#f1f5f9',
+  borderColor: '#94a3b8',
+  textColor: '#1e293b',
+  fontSize: 13,
 };
 
 const defaultEdgeData: EdgeData = {
@@ -136,6 +196,7 @@ const defaultEdgeData: EdgeData = {
   arrowType: 'arrowclosed',
   color: '#64748b',
   lineStyle: 'solid',
+  strokeWidth: 1,
   bidirectional: false,
   animationEffect: 'arrow',
 };
@@ -195,6 +256,7 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
   presentationStep: -1,
   presentationSteps: [],
   presentationTriggers: [],
+  hoveredElementId: null,
 
   onNodesChange: (changes) => {
     set({ nodes: applyNodeChanges(changes, get().nodes) });
@@ -259,6 +321,34 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
     set({ nodes: [...get().nodes, newNode] });
   },
 
+  addZoneNode: (position = { x: 150 + Math.random() * 300, y: 150 + Math.random() * 200 }) => {
+    get().pushHistory();
+    const newNode: Node = {
+      id: `node-${++nodeIdCounter}`,
+      type: 'zoneNode',
+      position,
+      data: { ...defaultZoneNodeData } as unknown as Record<string, unknown>,
+      width: 280,
+      height: 200,
+      zIndex: -1,
+      dragHandle: '.zone-drag-handle',
+    };
+    set({ nodes: [...get().nodes, newNode] });
+  },
+
+  addTableNode: (position = { x: 150 + Math.random() * 300, y: 150 + Math.random() * 200 }) => {
+    get().pushHistory();
+    const newNode: Node = {
+      id: `node-${++nodeIdCounter}`,
+      type: 'tableNode',
+      position,
+      data: { ...defaultTableNodeData, cells: defaultTableNodeData.cells.map((r) => [...r]) } as unknown as Record<string, unknown>,
+      width: 240,
+      height: 80,
+    };
+    set({ nodes: [...get().nodes, newNode] });
+  },
+
   updateNodeData: (nodeId, data) => {
     set({
       nodes: get().nodes.map((n) =>
@@ -272,6 +362,19 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
       edges: get().edges.map((e) =>
         e.id === edgeId ? { ...e, data: { ...e.data, ...data } as unknown as Record<string, unknown> } : e
       ),
+    });
+  },
+
+  clearAllSteps: () => {
+    get().pushHistory();
+    const strip = (d: Record<string, unknown>) => {
+      const { showAtStep: _s, hideAtStep: _h, ...rest } = d;
+      void _s; void _h;
+      return rest;
+    };
+    set({
+      nodes: get().nodes.map((n) => ({ ...n, data: strip(n.data as Record<string, unknown>) as unknown as Record<string, unknown> })),
+      edges: get().edges.map((e) => ({ ...e, data: strip((e.data ?? {}) as Record<string, unknown>) as unknown as Record<string, unknown> })),
     });
   },
 
@@ -481,11 +584,27 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
   },
 
   exitPresentation: () => {
-    set({ presentationMode: false, presentationStep: -1, presentationSteps: [], presentationTriggers: [] });
+    set({ presentationMode: false, presentationStep: -1, presentationSteps: [], presentationTriggers: [], hoveredElementId: null });
+  },
+
+  setHoveredElement: (id) => {
+    set({ hoveredElementId: id });
   },
 
   loadState: (nodes, edges) => {
-    set({ nodes, edges });
+    // Reset ID counters based on loaded data to prevent ID collisions
+    const maxNodeId = nodes.reduce((max, n) => {
+      const match = n.id.match(/^node-(\d+)$/);
+      return match ? Math.max(max, parseInt(match[1], 10)) : max;
+    }, 0);
+    const maxEdgeId = edges.reduce((max, e) => {
+      const match = e.id.match(/^edge-(\d+)$/);
+      return match ? Math.max(max, parseInt(match[1], 10)) : max;
+    }, 0);
+    nodeIdCounter = maxNodeId;
+    edgeIdCounter = maxEdgeId;
+
+    set({ nodes, edges, history: [], historyIndex: -1, selectedNodes: [], selectedEdges: [] });
   },
 
   nextStep: () => {

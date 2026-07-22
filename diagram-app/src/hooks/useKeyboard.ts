@@ -42,7 +42,7 @@ export function useKeyboard() {
         const { currentFileName, saveFile } = useWorkspaceStore.getState();
         if (currentFileName) saveFile(currentFileName, nodes, edges);
       }
-      if (e.key === 'Delete' || e.key === 'Backspace') {
+      if (e.key === 'Delete') {
         deleteSelected();
       }
     };

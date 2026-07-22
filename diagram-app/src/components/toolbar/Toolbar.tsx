@@ -4,7 +4,7 @@ import { useDiagramStore } from '../../store/diagramStore';
 import { toPng, toSvg } from 'html-to-image';
 
 export function Toolbar() {
-  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode } = useDiagramStore();
+  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode, addZoneNode, addTableNode, clearAllSteps } = useDiagramStore();
   const { fitView, getViewport } = useReactFlow();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -52,6 +52,20 @@ export function Toolbar() {
     addNode({ x: canvasX - 70 + (Math.random() - 0.5) * 80, y: canvasY - 30 + (Math.random() - 0.5) * 80 });
   }, [addNode, getViewport]);
 
+  const handleAddZone = useCallback(() => {
+    const { x, y, zoom } = getViewport();
+    const canvasX = (-x + window.innerWidth / 2) / zoom;
+    const canvasY = (-y + window.innerHeight / 2) / zoom;
+    addZoneNode({ x: canvasX - 140, y: canvasY - 100 });
+  }, [addZoneNode, getViewport]);
+
+  const handleAddTable = useCallback(() => {
+    const { x, y, zoom } = getViewport();
+    const canvasX = (-x + window.innerWidth / 2) / zoom;
+    const canvasY = (-y + window.innerHeight / 2) / zoom;
+    addTableNode({ x: canvasX - 120, y: canvasY - 40 });
+  }, [addTableNode, getViewport]);
+
   const handleExportPng = useCallback(async () => {
     const el = document.querySelector('.react-flow__viewport') as HTMLElement | null;
     if (!el) return;
@@ -82,6 +96,17 @@ export function Toolbar() {
 
   const canUndo = historyIndex >= 0;
   const canRedo = historyIndex < history.length - 1;
+
+  const stepCount = [...nodes, ...edges].filter((el) => {
+    const s = (el.data as Record<string, unknown>)?.showAtStep as number | undefined;
+    return s !== undefined && s > 0;
+  }).length;
+
+  const handleClearSteps = useCallback(() => {
+    if (window.confirm('Xóa toàn bộ thứ tự hiển thị của sơ đồ?')) {
+      clearAllSteps();
+    }
+  }, [clearAllSteps]);
 
   return (
     <div className="flex items-center gap-2 px-4 py-2 bg-white border-b border-gray-200 shadow-sm">
@@ -126,6 +151,35 @@ export function Toolbar() {
           <path d="M3 8h8M3 10.5h5" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
         </svg>
         Add Labeled Box
+      </button>
+
+      <button
+        onClick={handleAddZone}
+        title="Add dashed zone rectangle"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors font-medium text-white"
+        style={{ background: '#8b5cf6' }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#7c3aed'; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#8b5cf6'; }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <rect x="1" y="1" width="12" height="12" rx="1.5" stroke="white" strokeWidth="1.5" strokeDasharray="2.5 2" />
+        </svg>
+        Add Zone
+      </button>
+
+      <button
+        onClick={handleAddTable}
+        title="Add table (editable rows & columns)"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors font-medium text-white"
+        style={{ background: '#0d9488' }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#0f766e'; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#0d9488'; }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <rect x="1" y="1" width="12" height="12" rx="1.5" stroke="white" strokeWidth="1.5" />
+          <path d="M1 5h12M1 9h12M5 1v12M9 1v12" stroke="white" strokeWidth="1.2" />
+        </svg>
+        Add Table
       </button>
 
       {/* Divider */}
@@ -194,6 +248,20 @@ export function Toolbar() {
 
       {/* Divider */}
       <div className="w-px h-6 bg-gray-200 mx-1" />
+
+      {/* Clear presentation order */}
+      <button
+        onClick={handleClearSteps}
+        disabled={stepCount === 0}
+        title="Xóa toàn bộ thứ tự hiển thị"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="7" cy="7" r="6" stroke="#374151" strokeWidth="1.5" />
+          <path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="#374151" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+        Clear thứ tự{stepCount > 0 ? ` (${stepCount})` : ''}
+      </button>
 
       {/* Present */}
       <button

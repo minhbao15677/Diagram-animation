@@ -1,0 +1,645 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-4",
+      "type": "rectNode",
+      "position": {
+        "x": 570.0066463372051,
+        "y": -12.02983911218783
+      },
+      "data": {
+        "label": "CRON/CROND.SERVICE",
+        "bgColor": "#fef9c3",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 19,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 1
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "rectNode",
+      "position": {
+        "x": 910.5299532205926,
+        "y": -72.02983911218783
+      },
+      "data": {
+        "label": "USER CRONTAB",
+        "bgColor": "#fee2e2",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-6",
+      "type": "rectNode",
+      "position": {
+        "x": 910.5299532205926,
+        "y": 63.8311187358968
+      },
+      "data": {
+        "label": "SYSTEM-WIDE CRONTAB",
+        "bgColor": "#d1fae5",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-7",
+      "type": "rectNode",
+      "position": {
+        "x": 1238.3348223758567,
+        "y": -72.02983911218783
+      },
+      "data": {
+        "label": "/var/spool/cron/crontabs/<user>",
+        "bgColor": "#fee2e2",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 4
+      },
+      "width": 273,
+      "height": 60,
+      "measured": {
+        "width": 273,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-8",
+      "type": "rectNode",
+      "position": {
+        "x": 1238.3348223758567,
+        "y": 17.970160887812177
+      },
+      "data": {
+        "label": "/etc/crontab",
+        "bgColor": "#d1fae5",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 6
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-9",
+      "type": "rectNode",
+      "position": {
+        "x": 1238.3348223758567,
+        "y": 93.83111873589681
+      },
+      "data": {
+        "label": "/etc/cron.d/*",
+        "bgColor": "#d1fae5",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 6
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-10",
+      "type": "rectNode",
+      "position": {
+        "x": 1238.3348223758567,
+        "y": 177.77695200173423
+      },
+      "data": {
+        "label": "/etc/cron.*",
+        "bgColor": "#d1fae5",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 6
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-11",
+      "type": "rectNode",
+      "position": {
+        "x": 127.06937130675328,
+        "y": -13.337786661292736
+      },
+      "data": {
+        "label": "*/2",
+        "bgColor": "#b9c7fd",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 9
+      },
+      "width": 80,
+      "height": 60,
+      "measured": {
+        "width": 80,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-12",
+      "type": "rectNode",
+      "position": {
+        "x": 207.06937130675328,
+        "y": -13.337786661292728
+      },
+      "data": {
+        "label": "ROOT",
+        "bgColor": "#b9e9fd",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 10
+      },
+      "width": 80,
+      "height": 60,
+      "measured": {
+        "width": 80,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-13",
+      "type": "rectNode",
+      "position": {
+        "x": 287.0693713067533,
+        "y": -13.337786661292725
+      },
+      "data": {
+        "label": "/TMP/JOB.SH",
+        "bgColor": "#fddeb9",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 11
+      },
+      "width": 158,
+      "height": 60,
+      "measured": {
+        "width": 158,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-36",
+      "type": "rectNode",
+      "position": {
+        "x": 563.0862316176247,
+        "y": 101.90493590874064
+      },
+      "data": {
+        "label": "CROND WEAK UP",
+        "bgColor": "#fce7f3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 17,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 13
+      },
+      "width": 224,
+      "height": 60,
+      "measured": {
+        "width": 224,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-48",
+      "type": "rectNode",
+      "position": {
+        "x": -164.93062869324672,
+        "y": -132.02983911218783
+      },
+      "data": {
+        "label": "PATH=/usr/local/sbin:/usr/local/bin",
+        "bgColor": "#b9e9fd",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 16
+      },
+      "width": 412,
+      "height": 60,
+      "measured": {
+        "width": 412,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-49",
+      "type": "rectNode",
+      "position": {
+        "x": -24.91376838237531,
+        "y": -213.4546734915718
+      },
+      "data": {
+        "label": "SHELL = /BIN/BASH",
+        "bgColor": "#b9e9fd",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 15
+      },
+      "width": 288,
+      "height": 60,
+      "measured": {
+        "width": 288,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-50",
+      "type": "rectNode",
+      "position": {
+        "x": 291.4615296012754,
+        "y": 49.877896749663044
+      },
+      "data": {
+        "label": "JOB.SH",
+        "bgColor": "#fddeb9",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 17
+      },
+      "width": 158,
+      "height": 60,
+      "measured": {
+        "width": 158,
+        "height": 60
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-51",
+      "type": "rectNode",
+      "position": {
+        "x": 445.0693713067533,
+        "y": -213.4546734915718
+      },
+      "data": {
+        "label": "cat /tmp/file",
+        "bgColor": "#ffffff",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 21,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 20
+      },
+      "width": 144,
+      "height": 60,
+      "measured": {
+        "width": 144,
+        "height": 60
+      },
+      "selected": false,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-8",
+      "sourceHandle": "left",
+      "target": "node-6",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-9",
+      "sourceHandle": "left",
+      "target": "node-6",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-10",
+      "sourceHandle": "left",
+      "target": "node-6",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-6",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "left",
+      "target": "node-4",
+      "targetHandle": "right",
+      "data": {
+        "label": "load",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 3
+      },
+      "id": "edge-7",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-6",
+      "sourceHandle": "left",
+      "target": "node-4",
+      "targetHandle": "right",
+      "data": {
+        "label": "load",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 3
+      },
+      "id": "edge-8",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-13",
+      "sourceHandle": "right",
+      "target": "node-4",
+      "targetHandle": "left",
+      "data": {
+        "label": "examp",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 12
+      },
+      "id": "edge-9",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-36",
+      "sourceHandle": "left",
+      "target": "node-11",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "check per 1 min",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 14
+      },
+      "id": "edge-33",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-13",
+      "sourceHandle": "top",
+      "target": "node-49",
+      "targetHandle": "right",
+      "data": {
+        "label": "env",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 15
+      },
+      "id": "edge-34",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-50",
+      "sourceHandle": "left",
+      "target": "node-48",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "find",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 18,
+        "onTop": true,
+        "labelOffsetX": -103.57932401578373,
+        "labelOffsetY": -48.94188876376564
+      },
+      "id": "edge-35",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-13",
+      "sourceHandle": "top",
+      "target": "node-51",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "run",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 19
+      },
+      "id": "edge-36",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-51",
+      "sourceHandle": "top",
+      "target": "node-48",
+      "targetHandle": "left",
+      "data": {
+        "label": "find",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 21
+      },
+      "id": "edge-38",
+      "selected": false
+    }
+  ]
+}

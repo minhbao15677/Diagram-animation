@@ -114,6 +114,8 @@ export function LabeledBoxNode({ id, data, selected }: NodeProps) {
           border: `${nodeData.borderWidth}px ${nodeData.borderStyle} ${nodeData.borderColor}`,
           borderRadius: radius,
           backgroundColor: nodeData.bgColor,
+          transform: (nodeData as { __hovered?: boolean }).__hovered ? 'scale(1.3)' : undefined,
+          transition: 'transform 0.25s ease',
         }}
       >
         {/* Header */}
@@ -181,35 +183,6 @@ export function LabeledBoxNode({ id, data, selected }: NodeProps) {
         </div>
       </div>
 
-      {!presentationMode && nodeData.showAtStep !== undefined && nodeData.showAtStep > 0 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: -10,
-            right: -10,
-            minWidth: 20,
-            height: 20,
-            borderRadius: 10,
-            padding: '0 4px',
-            background: '#7c3aed',
-            color: 'white',
-            fontSize: 10,
-            fontWeight: 700,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 2,
-            boxShadow: '0 1px 4px rgba(0,0,0,0.25)',
-            pointerEvents: 'none',
-            zIndex: 10,
-          }}
-        >
-          <span>{nodeData.showAtStep}</span>
-          {nodeData.hideAtStep !== undefined && nodeData.hideAtStep > 0 && (
-            <span style={{ opacity: 0.7 }}>→{nodeData.hideAtStep}</span>
-          )}
-        </div>
-      )}
     </>
   );
 }

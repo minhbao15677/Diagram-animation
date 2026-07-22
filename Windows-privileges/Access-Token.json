@@ -595,8 +595,86 @@
         "width": 140,
         "height": 60
       },
-      "selected": true,
+      "selected": false,
       "dragging": true
+    },
+    {
+      "id": "node-4",
+      "type": "rectNode",
+      "position": {
+        "x": 54.77804354765419,
+        "y": 55.702049852116104
+      },
+      "data": {
+        "label": "FILE",
+        "bgColor": "#ffffff",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 39,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 137,
+      "height": 74,
+      "measured": {
+        "width": 137,
+        "height": 74
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "rectNode",
+      "position": {
+        "x": 230.14151020244003,
+        "y": 55.702049852116104
+      },
+      "data": {
+        "label": "DACL",
+        "bgColor": "#ffffff",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 41,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 137,
+      "height": 74,
+      "measured": {
+        "width": 137,
+        "height": 74
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-6",
+      "type": "rectNode",
+      "position": {
+        "x": 54.77804354765419,
+        "y": -20.297950147883924
+      },
+      "data": {
+        "label": "SID XXXX -> Write",
+        "bgColor": "#ffffff",
+        "borderColor": "#94a3b8",
+        "textColor": "#1e293b",
+        "fontSize": 25,
+        "borderWidth": 2,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 290,
+      "height": 60,
+      "measured": {
+        "width": 290,
+        "height": 60
+      },
+      "selected": false,
+      "resizing": false
     }
   ],
   "edges": [
@@ -893,7 +971,7 @@
         "animationEffect": "arrow"
       },
       "id": "edge-71",
-      "selected": true
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -911,7 +989,7 @@
         "animationEffect": "arrow"
       },
       "id": "edge-72",
-      "selected": true
+      "selected": false
     }
   ]
 }
