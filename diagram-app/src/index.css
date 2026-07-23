@@ -92,3 +92,9 @@ body {
 .react-flow__selection {
   user-select: none;
 }
+
+/* Allow text selection inside nodes during presentation mode */
+.presentation-mode .react-flow__node {
+  user-select: text;
+  cursor: text;
+}

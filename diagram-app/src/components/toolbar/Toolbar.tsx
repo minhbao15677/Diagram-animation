@@ -4,7 +4,7 @@ import { useDiagramStore } from '../../store/diagramStore';
 import { toPng, toSvg } from 'html-to-image';
 
 export function Toolbar() {
-  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode, addZoneNode, addTableNode, clearAllSteps } = useDiagramStore();
+  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode, addZoneNode, addTableNode, addTextBoxNode, clearAllSteps } = useDiagramStore();
   const { fitView, getViewport } = useReactFlow();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -65,6 +65,13 @@ export function Toolbar() {
     const canvasY = (-y + window.innerHeight / 2) / zoom;
     addTableNode({ x: canvasX - 120, y: canvasY - 40 });
   }, [addTableNode, getViewport]);
+
+  const handleAddTextBox = useCallback(() => {
+    const { x, y, zoom } = getViewport();
+    const canvasX = (-x + window.innerWidth / 2) / zoom;
+    const canvasY = (-y + window.innerHeight / 2) / zoom;
+    addTextBoxNode({ x: canvasX - 110 + (Math.random() - 0.5) * 80, y: canvasY - 60 + (Math.random() - 0.5) * 80 });
+  }, [addTextBoxNode, getViewport]);
 
   const handleExportPng = useCallback(async () => {
     const el = document.querySelector('.react-flow__viewport') as HTMLElement | null;
@@ -180,6 +187,21 @@ export function Toolbar() {
           <path d="M1 5h12M1 9h12M5 1v12M9 1v12" stroke="white" strokeWidth="1.2" />
         </svg>
         Add Table
+      </button>
+
+      <button
+        onClick={handleAddTextBox}
+        title="Add text box (multiline, monospace font)"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors font-medium text-white"
+        style={{ background: '#64748b' }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#475569'; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#64748b'; }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <rect x="1" y="1" width="12" height="12" rx="1.5" stroke="white" strokeWidth="1.5" />
+          <path d="M3.5 4h7M3.5 6.5h7M3.5 9h5" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
+        </svg>
+        Add Text Box
       </button>
 
       {/* Divider */}

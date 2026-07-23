@@ -17,6 +17,7 @@ import { RectNode } from './nodes/RectNode';
 import { LabeledBoxNode } from './nodes/LabeledBoxNode';
 import { ZoneNode } from './nodes/ZoneNode';
 import { TableNode } from './nodes/TableNode';
+import { TextBoxNode } from './nodes/TextBoxNode';
 import { CustomEdge } from './edges/CustomEdge';
 import { PresentationOverlay } from './PresentationOverlay';
 import { AlignmentGuides } from './AlignmentGuides';
@@ -29,6 +30,7 @@ const nodeTypes: NodeTypes = {
   labeledBoxNode: LabeledBoxNode,
   zoneNode: ZoneNode,
   tableNode: TableNode,
+  textBoxNode: TextBoxNode,
 };
 
 const edgeTypes: EdgeTypes = {
@@ -145,7 +147,7 @@ export function DiagramCanvas() {
 
   return (
     <div
-      className="flex-1 relative"
+      className={`flex-1 relative${presentationMode ? ' presentation-mode' : ''}`}
       style={presentationMode ? { background: '#f8fafc' } : undefined}
     >
       <ReactFlow
@@ -169,7 +171,7 @@ export function DiagramCanvas() {
         deleteKeyCode={null}
         multiSelectionKeyCode={['Shift', 'Control', 'Meta']}
         selectionOnDrag={!presentationMode}
-        panOnDrag={presentationMode ? false : [1, 2]}
+        panOnDrag={presentationMode ? [1] : [1, 2]}
         zoomOnScroll={false}
         panOnScroll={!presentationMode}
         panOnScrollMode={PanOnScrollMode.Free}

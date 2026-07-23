@@ -69,6 +69,22 @@ export type TableNodeData = {
   hideAtStep?: number;
 };
 
+export type TextBoxNodeData = {
+  text: string;
+  bgColor: string;
+  borderColor: string;
+  textColor: string;
+  fontSize: number;
+  borderWidth: number;
+  borderStyle: 'solid' | 'dashed' | 'dotted';
+  borderRadius: number;
+  highlightedLines?: number[];
+  highlightColor?: string;
+  onTop?: boolean;
+  showAtStep?: number;
+  hideAtStep?: number;
+};
+
 export type EdgeData = {
   label?: string;
   edgeType: 'bezier' | 'smoothstep' | 'straight';
@@ -114,6 +130,7 @@ type DiagramState = {
   addLabeledBoxNode: (position?: { x: number; y: number }) => void;
   addZoneNode: (position?: { x: number; y: number }) => void;
   addTableNode: (position?: { x: number; y: number }) => void;
+  addTextBoxNode: (position?: { x: number; y: number }) => void;
   updateNodeData: (nodeId: string, data: Partial<RectNodeData>) => void;
   updateEdgeData: (edgeId: string, data: Partial<EdgeData>) => void;
   clearAllSteps: () => void;
@@ -188,6 +205,17 @@ const defaultTableNodeData: TableNodeData = {
   borderColor: '#94a3b8',
   textColor: '#1e293b',
   fontSize: 13,
+};
+
+const defaultTextBoxNodeData: TextBoxNodeData = {
+  text: 'Text here...',
+  bgColor: 'transparent',
+  borderColor: 'transparent',
+  textColor: '#1e293b',
+  fontSize: 13,
+  borderWidth: 1,
+  borderStyle: 'solid',
+  borderRadius: 4,
 };
 
 const defaultEdgeData: EdgeData = {
@@ -345,6 +373,19 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
       data: { ...defaultTableNodeData, cells: defaultTableNodeData.cells.map((r) => [...r]) } as unknown as Record<string, unknown>,
       width: 240,
       height: 80,
+    };
+    set({ nodes: [...get().nodes, newNode] });
+  },
+
+  addTextBoxNode: (position = { x: 150 + Math.random() * 300, y: 150 + Math.random() * 200 }) => {
+    get().pushHistory();
+    const newNode: Node = {
+      id: `node-${++nodeIdCounter}`,
+      type: 'textBoxNode',
+      position,
+      data: { ...defaultTextBoxNodeData } as unknown as Record<string, unknown>,
+      width: 220,
+      height: 120,
     };
     set({ nodes: [...get().nodes, newNode] });
   },
