@@ -5,68 +5,101 @@
       "id": "node-1",
       "type": "zoneNode",
       "position": {
-        "x": 547.4434370250282,
-        "y": 318.2247065660693
+        "x": 328.9305469682477,
+        "y": 231.7881479682137
       },
       "data": {
-        "label": "Pulbic",
+        "label": "network 1",
         "bgColor": "rgba(59,130,246,0.04)",
         "labelBgColor": "#e0edff",
         "borderColor": "#3b82f6",
         "textColor": "#1e40af",
-        "fontSize": 13,
+        "fontSize": 8,
         "borderWidth": 1,
         "borderStyle": "dashed",
-        "borderRadius": 2,
+        "borderRadius": 1,
         "showAtStep": 1
       },
-      "width": 280,
-      "height": 200,
+      "width": 230,
+      "height": 191,
       "zIndex": -1,
       "dragHandle": ".zone-drag-handle",
       "measured": {
-        "width": 280,
-        "height": 200
+        "width": 230,
+        "height": 191
       },
       "selected": false,
-      "dragging": false
+      "dragging": false,
+      "resizing": false
     },
     {
-      "id": "node-2",
+      "id": "node-4",
       "type": "zoneNode",
       "position": {
-        "x": 828.059775360825,
-        "y": 317.60836823027245
+        "x": 558.9305469682477,
+        "y": 128.7881479682137
       },
       "data": {
-        "label": "DMZ",
+        "label": "network2",
+        "bgColor": "#f1f5f9",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 8,
+        "borderWidth": 1,
+        "borderStyle": "dashed",
+        "borderRadius": 1,
+        "showAtStep": 1
+      },
+      "width": 230,
+      "height": 383,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 230,
+        "height": 383
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "zoneNode",
+      "position": {
+        "x": 788.9305469682477,
+        "y": 130.7881479682137
+      },
+      "data": {
+        "label": "localhost",
         "bgColor": "#fef9c3",
         "labelBgColor": "#e0edff",
         "borderColor": "#3b82f6",
         "textColor": "#1e40af",
-        "fontSize": 13,
+        "fontSize": 8,
         "borderWidth": 1,
         "borderStyle": "dashed",
-        "borderRadius": 2,
+        "borderRadius": 1,
         "showAtStep": 1
       },
-      "width": 280,
-      "height": 200,
+      "width": 131,
+      "height": 380,
       "zIndex": -1,
       "dragHandle": ".zone-drag-handle",
       "measured": {
-        "width": 280,
-        "height": 200
+        "width": 131,
+        "height": 380
       },
       "selected": false,
-      "dragging": false
+      "dragging": true,
+      "resizing": false
     },
     {
-      "id": "node-3",
+      "id": "node-7",
       "type": "labeledBoxNode",
       "position": {
-        "x": 545.4889881901116,
-        "y": 350.0128430062918
+        "x": 278.9305469682477,
+        "y": 267.7881479682137
       },
       "data": {
         "label": "KALI",
@@ -83,24 +116,24 @@
         "showAtStep": 2
       },
       "width": 100,
-      "height": 126,
+      "height": 105,
       "measured": {
         "width": 100,
-        "height": 126
+        "height": 105
       },
       "selected": false,
-      "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "dragging": true
     },
     {
-      "id": "node-4",
+      "id": "node-8",
       "type": "labeledBoxNode",
       "position": {
-        "x": 775.4889881901116,
-        "y": 350.0128430062918
+        "x": 508.9305469682477,
+        "y": 254.2881479682137
       },
       "data": {
-        "label": "PIVOT1",
+        "label": "client",
         "bodyText": "\n",
         "bgColor": "#ffffff",
         "headerBgColor": "#f73b3b",
@@ -114,27 +147,27 @@
         "showAtStep": 2
       },
       "width": 100,
-      "height": 126,
+      "height": 133,
       "measured": {
         "width": 100,
-        "height": 126
+        "height": 133
       },
       "selected": false,
-      "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "dragging": true
     },
     {
-      "id": "node-5",
+      "id": "node-9",
       "type": "labeledBoxNode",
       "position": {
-        "x": 1006.1053265259083,
-        "y": 350.0128430062918
+        "x": 738.9305469682477,
+        "y": 161.2881479682137
       },
       "data": {
-        "label": "PIVOT2",
+        "label": "Service",
         "bodyText": "\n",
         "bgColor": "#ffffff",
-        "headerBgColor": "#f73bce",
+        "headerBgColor": "#f43bf7",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 13,
@@ -145,321 +178,177 @@
         "showAtStep": 2
       },
       "width": 100,
-      "height": 126,
+      "height": 141,
       "measured": {
         "width": 100,
-        "height": 126
+        "height": 141
       },
       "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-6",
-      "type": "rectNode",
-      "position": {
-        "x": 595.4889881901116,
-        "y": 456.0128430062918
-      },
-      "data": {
-        "label": "10.10.1.10",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 74,
-      "height": 20,
-      "measured": {
-        "width": 74,
-        "height": 20
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-7",
-      "type": "rectNode",
-      "position": {
-        "x": 738.4889881901116,
-        "y": 456.0128430062918
-      },
-      "data": {
-        "label": "10.10.1.20",
-        "bgColor": "#fee2e2",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 74,
-      "height": 20,
-      "measured": {
-        "width": 74,
-        "height": 20
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-8",
-      "type": "rectNode",
-      "position": {
-        "x": 838.4889881901116,
-        "y": 456.0128430062918
-      },
-      "data": {
-        "label": "10.10.2.20",
-        "bgColor": "#fee2e2",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 74,
-      "height": 20,
-      "measured": {
-        "width": 74,
-        "height": 20
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-9",
-      "type": "rectNode",
-      "position": {
-        "x": 969.1053265259083,
-        "y": 456.0128430062918
-      },
-      "data": {
-        "label": "10.10.2.30",
-        "bgColor": "#fce7f3",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 74,
-      "height": 20,
-      "measured": {
-        "width": 74,
-        "height": 20
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false
-    },
-    {
-      "id": "node-10",
-      "type": "rectNode",
-      "position": {
-        "x": 979.1053265259083,
-        "y": 389.0128430062918
-      },
-      "data": {
-        "label": "3030",
-        "bgColor": "#fce7f3",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 54,
-      "height": 16,
-      "measured": {
-        "width": 54,
-        "height": 16
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false
-    },
-    {
-      "id": "node-11",
-      "type": "rectNode",
-      "position": {
-        "x": 616.4889881901116,
-        "y": 381.0128430062918
-      },
-      "data": {
-        "label": "22/ssh",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 3
-      },
-      "width": 53,
-      "height": 16,
-      "measured": {
-        "width": 53,
-        "height": 16
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "dragging": true
     },
     {
       "id": "node-12",
-      "type": "rectNode",
+      "type": "labeledBoxNode",
       "position": {
-        "x": 547.4434370250282,
-        "y": 476.0128430062918
+        "x": 738.9305469682477,
+        "y": 334.7881479682137
       },
       "data": {
-        "label": "SSH SERVER",
-        "bgColor": "#dbeafe",
+        "label": "DC",
+        "bodyText": "Target",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#f7b23b",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1,
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
-        "showAtStep": 4
+        "borderRadius": 8,
+        "showAtStep": 2
       },
-      "width": 98,
-      "height": 20,
+      "width": 100,
+      "height": 154,
       "measured": {
-        "width": 98,
-        "height": 20
+        "width": 100,
+        "height": 154
       },
       "selected": false,
-      "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "dragging": true
     },
     {
       "id": "node-13",
       "type": "rectNode",
       "position": {
-        "x": 779.059775360825,
-        "y": 476.0128430062918
+        "x": 517.4305469682477,
+        "y": 284.2881479682137
       },
       "data": {
-        "label": "SSH CLIENT",
-        "bgColor": "#fee2e2",
+        "label": "enum-01",
+        "bgColor": "#f1f5f9",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
         "showAtStep": 4
       },
-      "width": 98,
+      "width": 83,
       "height": 20,
       "measured": {
-        "width": 98,
+        "width": 83,
         "height": 20
       },
       "selected": false,
-      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-14",
+      "type": "rectNode",
+      "position": {
+        "x": 517.4305469682477,
+        "y": 304.2881479682137
+      },
+      "data": {
+        "label": "Win - PE",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 7
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
       "resizing": false
     },
     {
       "id": "node-15",
       "type": "rectNode",
       "position": {
-        "x": 690.4889881901116,
-        "y": 270.69084637608324
+        "x": 517.4305469682477,
+        "y": 324.2881479682137
       },
       "data": {
-        "label": "ssh kali@10.10.1.10 -N",
+        "label": "enum-02",
         "bgColor": "#fee2e2",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 5
+        "showAtStep": 8
       },
-      "width": 162,
-      "height": 19,
+      "width": 83,
+      "height": 20,
       "measured": {
-        "width": 162,
-        "height": 19
+        "width": 83,
+        "height": 20
       },
       "selected": false,
-      "dragging": false,
       "resizing": false
     },
     {
       "id": "node-16",
       "type": "rectNode",
       "position": {
-        "x": 852.4889881901116,
-        "y": 270.69084637608324
+        "x": 517.4305469682477,
+        "y": 344.2881479682137
       },
       "data": {
-        "label": "-R\n",
-        "bgColor": "#fee2e2",
+        "label": "pivot",
+        "bgColor": "#ede9fe",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 10
+        "showAtStep": 9
       },
-      "width": 38,
-      "height": 19,
+      "width": 83,
+      "height": 20,
       "measured": {
-        "width": 38,
-        "height": 19
+        "width": 83,
+        "height": 20
       },
       "selected": false,
-      "dragging": false,
       "resizing": false
     },
     {
       "id": "node-17",
-      "type": "zoneNode",
+      "type": "rectNode",
       "position": {
-        "x": 643.4889881901116,
-        "y": 412.0128430062918
+        "x": 517.4305469682477,
+        "y": 364.2881479682137
       },
       "data": {
-        "label": "tunnel",
-        "bgColor": "#ede9fe",
-        "labelBgColor": "#e0edff",
-        "borderColor": "#1e293b",
-        "textColor": "#1e40af",
-        "fontSize": 13,
-        "borderWidth": 1,
-        "borderStyle": "dashed",
+        "label": "Lateral Mov",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 7
+        "showAtStep": 10
       },
-      "width": 135,
-      "height": 40,
-      "zIndex": -1,
-      "dragHandle": ".zone-drag-handle",
+      "width": 83,
+      "height": 20,
       "measured": {
-        "width": 135,
-        "height": 40
+        "width": 83,
+        "height": 20
       },
       "selected": false,
       "resizing": false
@@ -468,112 +357,324 @@
       "id": "node-18",
       "type": "rectNode",
       "position": {
-        "x": 890.4889881901116,
-        "y": 270.69084637608324
+        "x": 558.9305469682477,
+        "y": 192.17639924671445
       },
       "data": {
-        "label": "127.0.0.1:1010",
-        "bgColor": "#fee2e2",
+        "label": "local",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 12
+        "showAtStep": 6
       },
-      "width": 108,
-      "height": 19,
+      "width": 53,
+      "height": 17,
       "measured": {
-        "width": 108,
-        "height": 19
+        "width": 53,
+        "height": 17
       },
       "selected": false,
-      "dragging": false,
       "resizing": false
     },
     {
       "id": "node-19",
       "type": "rectNode",
       "position": {
-        "x": 998.4889881901116,
-        "y": 270.69084637608324
+        "x": 558.9305469682477,
+        "y": 209.17639924671445
       },
       "data": {
-        "label": "10.10.2.30:3030",
-        "bgColor": "#fee2e2",
+        "label": "AD",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 16
+        "showAtStep": 6
       },
-      "width": 136,
-      "height": 19,
+      "width": 53,
+      "height": 17,
       "measured": {
-        "width": 136,
-        "height": 19
+        "width": 53,
+        "height": 17
       },
       "selected": false,
-      "dragging": false,
       "resizing": false
     },
     {
       "id": "node-20",
       "type": "rectNode",
       "position": {
-        "x": 520.9434370250282,
-        "y": 424.0128430062918
+        "x": 747.4305469682477,
+        "y": 196.17639924671445
       },
       "data": {
-        "label": "1010",
-        "bgColor": "#dbeafe",
+        "label": "enum-01",
+        "bgColor": "#f1f5f9",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 14
+        "showAtStep": 12
       },
-      "width": 53,
-      "height": 16,
+      "width": 83,
+      "height": 20,
       "measured": {
-        "width": 53,
-        "height": 16
+        "width": 83,
+        "height": 20
       },
       "selected": false,
-      "dragging": false,
       "resizing": false
     },
     {
       "id": "node-21",
       "type": "rectNode",
       "position": {
-        "x": 483.4889881901116,
-        "y": 270.69084637608324
+        "x": 747.4305469682477,
+        "y": 216.17639924671445
       },
       "data": {
-        "label": "curl 127.0.0.1:1010",
+        "label": "Win - PE",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 12
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-22",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 234.2881479682137
+      },
+      "data": {
+        "label": "enum-02",
+        "bgColor": "#fee2e2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 12
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-23",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 254.2881479682137
+      },
+      "data": {
+        "label": "pivot",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 12
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-24",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 274.2881479682137
+      },
+      "data": {
+        "label": "Lateral Mov",
         "bgColor": "#dbeafe",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
-        "borderWidth": 1,
+        "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "showAtStep": 18
+        "showAtStep": 12
       },
-      "width": 162,
-      "height": 19,
+      "width": 83,
+      "height": 20,
       "measured": {
-        "width": 162,
-        "height": 19
+        "width": 83,
+        "height": 20
       },
       "selected": false,
-      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-25",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 372.7881479682137
+      },
+      "data": {
+        "label": "enum-01",
+        "bgColor": "#f1f5f9",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 14
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-26",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 391.7881479682137
+      },
+      "data": {
+        "label": "Win - PE",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 14
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-27",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 411.7881479682137
+      },
+      "data": {
+        "label": "enum-02",
+        "bgColor": "#fee2e2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 14
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-28",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 431.7881479682137
+      },
+      "data": {
+        "label": "pivot",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 14
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-29",
+      "type": "rectNode",
+      "position": {
+        "x": 747.4305469682477,
+        "y": 451.7881479682137
+      },
+      "data": {
+        "label": "Lateral Mov",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "showAtStep": 14
+      },
+      "width": 83,
+      "height": 20,
+      "measured": {
+        "width": 83,
+        "height": 20
+      },
+      "selected": true,
       "resizing": false
     }
   ],
@@ -581,11 +682,11 @@
     {
       "type": "customEdge",
       "source": "node-7",
-      "sourceHandle": "left",
-      "target": "node-11",
-      "targetHandle": "right",
+      "sourceHandle": "right",
+      "target": "node-8",
+      "targetHandle": "left",
       "data": {
-        "label": "",
+        "label": "rdp",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -593,39 +694,20 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "showAtStep": 6,
-        "hideAtStep": 8
+        "labelOffsetX": 0,
+        "labelOffsetY": 0,
+        "onTop": true,
+        "showAtStep": 3
       },
-      "id": "edge-3",
+      "id": "edge-2",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-13",
-      "sourceHandle": "left",
-      "target": "node-12",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "dot",
-        "showAtStep": 9,
-        "hideAtStep": 11
-      },
-      "id": "edge-4",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-12",
-      "sourceHandle": "bottom",
-      "target": "node-13",
-      "targetHandle": "bottom",
+      "source": "node-8",
+      "sourceHandle": "right",
+      "target": "node-9",
+      "targetHandle": "left",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -637,14 +719,14 @@
         "animationEffect": "dot",
         "showAtStep": 11
       },
-      "id": "edge-7",
-      "selected": true
+      "id": "edge-5",
+      "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-18",
-      "sourceHandle": "bottom",
-      "target": "node-20",
+      "source": "node-13",
+      "sourceHandle": "right",
+      "target": "node-19",
       "targetHandle": "right",
       "data": {
         "label": "",
@@ -655,50 +737,31 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "showAtStep": 13,
-        "hideAtStep": 15
+        "showAtStep": 5
+      },
+      "id": "edge-7",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-9",
+      "sourceHandle": "left",
+      "target": "node-12",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "pathOffsetX": 0,
+        "pathOffsetY": 0,
+        "showAtStep": 13
       },
       "id": "edge-8",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-20",
-      "sourceHandle": "right",
-      "target": "node-10",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "dot",
-        "showAtStep": 17
-      },
-      "id": "edge-9",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-21",
-      "sourceHandle": "left",
-      "target": "node-20",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "dot",
-        "showAtStep": 19
-      },
-      "id": "edge-10",
       "selected": false
     }
   ]

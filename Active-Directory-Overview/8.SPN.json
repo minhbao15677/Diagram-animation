@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-12",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1225.3695081887772,
+        "y": 131.4549157578233
+      },
+      "data": {
+        "label": "Object Computer01",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 13
+      },
+      "width": 160,
+      "height": 164,
+      "measured": {
+        "width": 160,
+        "height": 164
+      },
+      "selected": false,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "node-13",
+      "type": "rectNode",
+      "position": {
+        "x": 1254.3695081887772,
+        "y": 253.4549157578233
+      },
+      "data": {
+        "label": "Distinguished Name\n",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 14
+      },
+      "width": 102,
+      "height": 38,
+      "measured": {
+        "width": 102,
+        "height": 38
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-14",
+      "type": "rectNode",
+      "position": {
+        "x": 1254.3695081887772,
+        "y": 213.4549157578233
+      },
+      "data": {
+        "label": "objectClass\n",
+        "bgColor": "#3d48e6",
+        "borderColor": "#000000",
+        "textColor": "#ffffff",
+        "fontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 14
+      },
+      "width": 102,
+      "height": 25,
+      "measured": {
+        "width": 102,
+        "height": 25
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 1254.3695081887772,
+        "y": 172.4549157578233
+      },
+      "data": {
+        "label": "Attributes\n",
+        "bgColor": "#e85ff2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 14
+      },
+      "width": 102,
+      "height": 25,
+      "measured": {
+        "width": 102,
+        "height": 25
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-16",
+      "type": "textBoxNode",
+      "position": {
+        "x": 1453.5981139622388,
+        "y": 20.76101562995288
+      },
+      "data": {
+        "text": "sAMAccountName          : WORKSTATION01$\nobjectClass             : computer\nobjectSid               : S-1-5-21-xxx\nobjectGUID              : {a1b2c3d4-...}\nservicePrincipalName    : {MSSQLSvc / sqlserver01.corp.local : 1433,...}\npwdLastSet              : 7/20/2026 3:12:45 AM\n",
+        "bgColor": "#fee2e2",
+        "borderColor": "transparent",
+        "textColor": "#000000",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0,
+          4
+        ]
+      },
+      "width": 587,
+      "height": 134,
+      "measured": {
+        "width": 587,
+        "height": 134
+      },
+      "selected": true,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-17",
+      "type": "rectNode",
+      "position": {
+        "x": 1431.1414986971267,
+        "y": 197.4549157578233
+      },
+      "data": {
+        "label": "MSSQLSvc",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 114,
+      "height": 32,
+      "measured": {
+        "width": 114,
+        "height": 32
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-18",
+      "type": "rectNode",
+      "position": {
+        "x": 1545.1414986971267,
+        "y": 197.4549157578233
+      },
+      "data": {
+        "label": "sqlserver01.corp.local",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 180,
+      "height": 32,
+      "measured": {
+        "width": 180,
+        "height": 32
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-19",
+      "type": "rectNode",
+      "position": {
+        "x": 1725.1414986971267,
+        "y": 197.4549157578233
+      },
+      "data": {
+        "label": "1433\n",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 87,
+      "height": 32,
+      "measured": {
+        "width": 87,
+        "height": 32
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-20",
+      "type": "textBoxNode",
+      "position": {
+        "x": 1521.8476986381233,
+        "y": 417.26495592959986
+      },
+      "data": {
+        "text": "ServiceClass\nLoại dịch vụ — ở đây là SQL Server. Windows định nghĩa sẵn 1 số class chuẩn (HTTP, CIFS, LDAP, HOST, TERMSRV...)",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 353,
+      "height": 81,
+      "measured": {
+        "width": 353,
+        "height": 81
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-21",
+      "type": "textBoxNode",
+      "position": {
+        "x": 1667.1414986971267,
+        "y": 327.8054794487656
+      },
+      "data": {
+        "text": "Host\nFQDN - Tên đầy đủ của server chạy dịch vụ đó",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 230,
+      "height": 75,
+      "measured": {
+        "width": 230,
+        "height": 75
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-22",
+      "type": "textBoxNode",
+      "position": {
+        "x": 1795.6414986971267,
+        "y": 272.4549157578233
+      },
+      "data": {
+        "text": "Port\nCổng chạy dịch vụ đó",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 203,
+      "height": 49,
+      "measured": {
+        "width": 203,
+        "height": 49
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-23",
+      "type": "rectNode",
+      "position": {
+        "x": 1897.1414986971267,
+        "y": 197.4549157578233
+      },
+      "data": {
+        "label": "WORKSTATION01$\n",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 141,
+      "height": 31,
+      "measured": {
+        "width": 141,
+        "height": 31
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-24",
+      "type": "textBoxNode",
+      "position": {
+        "x": 2109.2387256024235,
+        "y": 178.9549157578233
+      },
+      "data": {
+        "text": "Runas Account\nChạy dưới quyền tài khoản máy WORKSTATION01$ (Local System)",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 258,
+      "height": 68,
+      "measured": {
+        "width": 258,
+        "height": 68
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-25",
+      "type": "textBoxNode",
+      "position": {
+        "x": 2091.7387256024235,
+        "y": 291.4549157578233
+      },
+      "data": {
+        "text": "Notice\nTài khoản máy luôn có password random -> khó crack -> không phải mục tiêu của chúng ta",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 293,
+      "height": 109,
+      "measured": {
+        "width": 293,
+        "height": 109
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-15",
+      "sourceHandle": "right",
+      "target": "node-16",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-2",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-17",
+      "sourceHandle": "bottom",
+      "target": "node-20",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-3",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-18",
+      "sourceHandle": "bottom",
+      "target": "node-21",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-19",
+      "sourceHandle": "bottom",
+      "target": "node-22",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-23",
+      "sourceHandle": "right",
+      "target": "node-24",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-6",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-24",
+      "sourceHandle": "bottom",
+      "target": "node-25",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-7"
+    }
+  ]
+}

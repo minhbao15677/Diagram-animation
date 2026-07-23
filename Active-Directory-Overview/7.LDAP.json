@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-1",
+      "type": "rectNode",
+      "position": {
+        "x": 989.300414268733,
+        "y": -86.35221873818833
+      },
+      "data": {
+        "label": "administrator",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 101,
+      "height": 32,
+      "measured": {
+        "width": 101,
+        "height": 32
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-2",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1387.7316578893603,
+        "y": -127.35221873818833
+      },
+      "data": {
+        "label": "OBJECT USER",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 100,
+      "height": 114,
+      "measured": {
+        "width": 100,
+        "height": 114
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-3",
+      "type": "zoneNode",
+      "position": {
+        "x": 1348.3985150959784,
+        "y": -149.35221873818833
+      },
+      "data": {
+        "label": "AD",
+        "bgColor": "rgba(59,130,246,0.04)",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 13,
+        "borderWidth": 2,
+        "borderStyle": "dashed",
+        "borderRadius": 8
+      },
+      "width": 406,
+      "height": 158,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 406,
+        "height": 158
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-4",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1505.3278137992093,
+        "y": -127.35221873818833
+      },
+      "data": {
+        "label": "OBJECT GROUPS",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 100,
+      "height": 114,
+      "measured": {
+        "width": 100,
+        "height": 114
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1636.3278137992093,
+        "y": -127.35221873818833
+      },
+      "data": {
+        "label": "OBJECT OU",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 100,
+      "height": 114,
+      "measured": {
+        "width": 100,
+        "height": 114
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-8",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 979.300414268733,
+        "y": 75.84292389657622
+      },
+      "data": {
+        "label": "LDAP CLIENT",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#f73b3b",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 121,
+      "height": 188,
+      "measured": {
+        "width": 121,
+        "height": 188
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-9",
+      "type": "zoneNode",
+      "position": {
+        "x": 1348.3985150959784,
+        "y": 64.3429238965762
+      },
+      "data": {
+        "label": "AD",
+        "bgColor": "rgba(59,130,246,0.04)",
+        "labelBgColor": "#e0edff",
+        "borderColor": "#3b82f6",
+        "textColor": "#1e40af",
+        "fontSize": 13,
+        "borderWidth": 2,
+        "borderStyle": "dashed",
+        "borderRadius": 8
+      },
+      "width": 406,
+      "height": 158,
+      "zIndex": -1,
+      "dragHandle": ".zone-drag-handle",
+      "measured": {
+        "width": 406,
+        "height": 158
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-10",
+      "type": "rectNode",
+      "position": {
+        "x": 1417.7316578893603,
+        "y": 88.84292389657621
+      },
+      "data": {
+        "label": "LDAP SERVER (DC01.CORP.LOCAL)",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 122,
+      "measured": {
+        "width": 140,
+        "height": 122
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-11",
+      "type": "rectNode",
+      "position": {
+        "x": 1636.3278137992093,
+        "y": 120.34292389657622
+      },
+      "data": {
+        "label": "NTDS.DIT",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 81,
+      "height": 59,
+      "measured": {
+        "width": 81,
+        "height": 59
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-12",
+      "type": "rectNode",
+      "position": {
+        "x": 1387.7316578893603,
+        "y": 102.3429238965762
+      },
+      "data": {
+        "label": "389",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 52,
+      "height": 23,
+      "measured": {
+        "width": 52,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-13",
+      "type": "rectNode",
+      "position": {
+        "x": 1387.7316578893603,
+        "y": 187.84292389657622
+      },
+      "data": {
+        "label": "636",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 52,
+      "height": 23,
+      "measured": {
+        "width": 52,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-14",
+      "type": "rectNode",
+      "position": {
+        "x": 989.300414268733,
+        "y": 113.8429238965762
+      },
+      "data": {
+        "label": "powerview",
+        "bgColor": "#f1f5f9",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": true
+      },
+      "width": 99,
+      "height": 23,
+      "measured": {
+        "width": 99,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 989.300414268733,
+        "y": 149.84292389657622
+      },
+      "data": {
+        "label": "sharphound",
+        "bgColor": "#fef3c7",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": true
+      },
+      "width": 99,
+      "height": 23,
+      "measured": {
+        "width": 99,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-16",
+      "type": "rectNode",
+      "position": {
+        "x": 989.300414268733,
+        "y": 187.84292389657622
+      },
+      "data": {
+        "label": "goldap",
+        "bgColor": "#fee2e2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": true
+      },
+      "width": 99,
+      "height": 23,
+      "measured": {
+        "width": 99,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-17",
+      "type": "rectNode",
+      "position": {
+        "x": 990.300414268733,
+        "y": 222.3429238965762
+      },
+      "data": {
+        "label": "ldapsearch",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": true
+      },
+      "width": 99,
+      "height": 23,
+      "measured": {
+        "width": 99,
+        "height": 23
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-1",
+      "sourceHandle": "right",
+      "target": "node-2",
+      "targetHandle": "left",
+      "data": {
+        "label": "query, del, add, update",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": -25.617185686298047,
+        "labelOffsetY": -2.851811324454271
+      },
+      "id": "edge-1",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-8",
+      "sourceHandle": "right",
+      "target": "node-12",
+      "targetHandle": "left",
+      "data": {
+        "label": "plaint text",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "labelOffsetX": 60.41603732678632,
+        "labelOffsetY": -27.198114461426087,
+        "onTop": true
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-8",
+      "sourceHandle": "right",
+      "target": "node-13",
+      "targetHandle": "left",
+      "data": {
+        "label": "tls/ssl",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "labelOffsetX": 63.086732539138545,
+        "labelOffsetY": 15.290497531869452,
+        "onTop": true
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-10",
+      "sourceHandle": "right",
+      "target": "node-11",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-6"
+    }
+  ]
+}

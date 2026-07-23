@@ -1,0 +1,767 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-1",
+      "type": "rectNode",
+      "position": {
+        "x": 1382.6504140394002,
+        "y": 182.2135017140947
+      },
+      "data": {
+        "label": "Active Directory OSCP",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 193,
+      "height": 33,
+      "measured": {
+        "width": 193,
+        "height": 33
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-4",
+      "type": "rectNode",
+      "position": {
+        "x": 1145.0046436841394,
+        "y": 251.83822689854424
+      },
+      "data": {
+        "label": "Attacking AD Authentication",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 198,
+      "height": 38,
+      "measured": {
+        "width": 198,
+        "height": 38
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "rectNode",
+      "position": {
+        "x": 1380.1504140394002,
+        "y": 251.83822689854424
+      },
+      "data": {
+        "label": "Lateral Movement in AD",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 198,
+      "height": 38,
+      "measured": {
+        "width": 198,
+        "height": 38
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-6",
+      "type": "rectNode",
+      "position": {
+        "x": 1609.3117578807241,
+        "y": 251.83822689854424
+      },
+      "data": {
+        "label": "Enumeration in AD",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 198,
+      "height": 38,
+      "measured": {
+        "width": 198,
+        "height": 38
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-7",
+      "type": "rectNode",
+      "position": {
+        "x": 1075.0046436841394,
+        "y": 305.7598075281488
+      },
+      "data": {
+        "label": "Password Attack",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-8",
+      "type": "rectNode",
+      "position": {
+        "x": 1075.0046436841394,
+        "y": 341.7598075281488
+      },
+      "data": {
+        "label": "AS-REP roasting",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-9",
+      "type": "rectNode",
+      "position": {
+        "x": 1075.0046436841394,
+        "y": 377.7598075281488
+      },
+      "data": {
+        "label": "Kerberoasting",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-10",
+      "type": "rectNode",
+      "position": {
+        "x": 1075.0046436841394,
+        "y": 413.7223705620676
+      },
+      "data": {
+        "label": "Silver tickets",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-11",
+      "type": "rectNode",
+      "position": {
+        "x": 1075.0046436841394,
+        "y": 452.1610358877391
+      },
+      "data": {
+        "label": "DC synchronization",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false
+    },
+    {
+      "id": "node-12",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 317.7598075281488
+      },
+      "data": {
+        "label": "WMI and WinRM",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-13",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 365.7598075281488
+      },
+      "data": {
+        "label": "PsExec",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-14",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 413.7223705620676
+      },
+      "data": {
+        "label": "Pass the hash",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 464.1610358877391
+      },
+      "data": {
+        "label": "Overpass the hash",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-16",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 507.7456466055571
+      },
+      "data": {
+        "label": "Pass the ticket",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-18",
+      "type": "rectNode",
+      "position": {
+        "x": 1312.6504140394002,
+        "y": 552.6707627105047
+      },
+      "data": {
+        "label": "DCOM",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-19",
+      "type": "rectNode",
+      "position": {
+        "x": 1505.6504140394002,
+        "y": 317.7598075281488
+      },
+      "data": {
+        "label": "Golden ticket",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-20",
+      "type": "rectNode",
+      "position": {
+        "x": 1505.6504140394002,
+        "y": 365.7598075281488
+      },
+      "data": {
+        "label": "Shadow copies",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 140,
+      "height": 24,
+      "measured": {
+        "width": 140,
+        "height": 24
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-1",
+      "sourceHandle": "bottom",
+      "target": "node-5",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-1",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-1",
+      "sourceHandle": "left",
+      "target": "node-4",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-2",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-1",
+      "sourceHandle": "right",
+      "target": "node-6",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-3",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "bottom",
+      "target": "node-7",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "bottom",
+      "target": "node-8",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "bottom",
+      "target": "node-9",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-6"
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "bottom",
+      "target": "node-10",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-7"
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "bottom",
+      "target": "node-11",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-8"
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-12",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-9",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-13",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-10",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-14",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-11",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-15",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-12",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-16",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-13",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-19",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-15",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-18",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-16",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-5",
+      "sourceHandle": "bottom",
+      "target": "node-20",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-17",
+      "selected": false
+    }
+  ]
+}

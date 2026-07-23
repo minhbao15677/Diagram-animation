@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-2",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1031.9607413175695,
+        "y": 384.7982817023559
+      },
+      "data": {
+        "label": "Container objects ",
+        "bodyText": "OU, GROUPS, ...",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 160,
+      "height": 100,
+      "measured": {
+        "width": 160,
+        "height": 100
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-3",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 1223.4607413175693,
+        "y": 384.7982817023559
+      },
+      "data": {
+        "label": "Leaf objects\n",
+        "bodyText": "USER, COMPUTER, GPO ...",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#f73bb2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 160,
+      "height": 100,
+      "measured": {
+        "width": 160,
+        "height": 100
+      },
+      "selected": false,
+      "dragging": true
+    }
+  ],
+  "edges": []
+}
