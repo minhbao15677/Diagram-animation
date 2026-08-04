@@ -5,8 +5,8 @@
       "id": "node-1",
       "type": "labeledBoxNode",
       "position": {
-        "x": 327.3153898158089,
-        "y": 145.3212010960319
+        "x": 359.3153898158089,
+        "y": 177.3212010960319
       },
       "data": {
         "label": "COM01",
@@ -19,7 +19,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 1
       },
       "width": 110,
       "height": 124,
@@ -35,8 +36,8 @@
       "id": "node-2",
       "type": "zoneNode",
       "position": {
-        "x": 646.29500695725,
-        "y": 94.32120109603193
+        "x": 678.29500695725,
+        "y": 126.32120109603193
       },
       "data": {
         "label": "Domain Controller - 10.10.10.1",
@@ -47,7 +48,8 @@
         "fontSize": 13,
         "borderWidth": 2,
         "borderStyle": "dashed",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 1
       },
       "width": 621,
       "height": 175,
@@ -65,8 +67,8 @@
       "id": "node-3",
       "type": "labeledBoxNode",
       "position": {
-        "x": 671.1695392159063,
-        "y": 145.32120109603187
+        "x": 703.1695392159063,
+        "y": 177.32120109603187
       },
       "data": {
         "label": "AS",
@@ -79,7 +81,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 1
       },
       "width": 110,
       "height": 124,
@@ -95,8 +98,8 @@
       "id": "node-4",
       "type": "rectNode",
       "position": {
-        "x": 1030.29500695725,
-        "y": 94.32120109603193
+        "x": 1062.29500695725,
+        "y": 126.32120109603193
       },
       "data": {
         "label": "Key Distribution Center",
@@ -107,7 +110,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 1
       },
       "width": 237,
       "height": 31,
@@ -127,8 +131,8 @@
       "id": "node-5",
       "type": "labeledBoxNode",
       "position": {
-        "x": 1001.6194528904132,
-        "y": 145.32120109603187
+        "x": 1033.6194528904132,
+        "y": 177.32120109603187
       },
       "data": {
         "label": "TGS",
@@ -141,7 +145,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 1
       },
       "width": 110,
       "height": 124,
@@ -157,8 +162,8 @@
       "id": "node-6",
       "type": "rectNode",
       "position": {
-        "x": 367.3153898158089,
-        "y": 1293.314094742195
+        "x": 399.3153898158089,
+        "y": 1325.314094742195
       },
       "data": {
         "label": "\n",
@@ -184,8 +189,8 @@
       "id": "node-7",
       "type": "rectNode",
       "position": {
-        "x": 711.6695392159063,
-        "y": 599.9840054917312
+        "x": 743.6695392159063,
+        "y": 631.9840054917312
       },
       "data": {
         "label": "\n",
@@ -208,11 +213,11 @@
       "resizing": false
     },
     {
-      "id": "node-13",
+      "id": "node-8",
       "type": "rectNode",
       "position": {
-        "x": 1042.1194528904132,
-        "y": 917.6522803993452
+        "x": 1074.1194528904132,
+        "y": 949.6522803993452
       },
       "data": {
         "label": "\n",
@@ -235,11 +240,11 @@
       "resizing": false
     },
     {
-      "id": "node-14",
+      "id": "node-9",
       "type": "rectNode",
       "position": {
-        "x": 453.3806157574427,
-        "y": 167.32120109603193
+        "x": 485.3806157574427,
+        "y": 199.32120109603193
       },
       "data": {
         "label": "GD1: Xin vé TGT",
@@ -250,7 +255,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 1
       },
       "width": 184,
       "height": 26,
@@ -266,11 +272,11 @@
       }
     },
     {
-      "id": "node-15",
+      "id": "node-10",
       "type": "rectNode",
       "position": {
-        "x": 302.22978101561625,
-        "y": 187.32120109603187
+        "x": 334.22978101561625,
+        "y": 219.32120109603187
       },
       "data": {
         "label": "ALICE",
@@ -281,7 +287,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 77,
       "height": 20,
@@ -297,11 +304,11 @@
       }
     },
     {
-      "id": "node-16",
+      "id": "node-11",
       "type": "rectNode",
       "position": {
-        "x": 302.22978101561625,
-        "y": 207.3212010960319
+        "x": 334.22978101561625,
+        "y": 239.3212010960319
       },
       "data": {
         "label": "QAZ@123",
@@ -312,7 +319,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 77,
       "height": 19,
@@ -328,11 +336,11 @@
       }
     },
     {
-      "id": "node-17",
+      "id": "node-12",
       "type": "rectNode",
       "position": {
-        "x": 144.93744593603742,
-        "y": 162.82120109603193
+        "x": 176.93744593603742,
+        "y": 194.82120109603193
       },
       "data": {
         "label": "LSASS.EXE",
@@ -343,7 +351,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 99,
       "height": 19,
@@ -359,11 +368,11 @@
       }
     },
     {
-      "id": "node-18",
+      "id": "node-13",
       "type": "rectNode",
       "position": {
-        "x": 68.67065872756228,
-        "y": 226.3212010960319
+        "x": 100.67065872756228,
+        "y": 258.3212010960319
       },
       "data": {
         "label": "Long Term Key",
@@ -374,7 +383,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 107,
       "height": 22,
@@ -390,11 +400,11 @@
       }
     },
     {
-      "id": "node-21",
+      "id": "node-14",
       "type": "rectNode",
       "position": {
-        "x": 175.67065872756228,
-        "y": 281.8212010960319
+        "x": 207.67065872756228,
+        "y": 313.8212010960319
       },
       "data": {
         "label": "timestamp nonce",
@@ -405,7 +415,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 85,
       "height": 49,
@@ -421,11 +432,11 @@
       }
     },
     {
-      "id": "node-23",
+      "id": "node-15",
       "type": "labeledBoxNode",
       "position": {
-        "x": 332.22978101561625,
-        "y": 293.8212010960319
+        "x": 364.22978101561625,
+        "y": 325.8212010960319
       },
       "data": {
         "label": "AS-REQ",
@@ -439,7 +450,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 102,
       "height": 123,
@@ -455,11 +467,11 @@
       }
     },
     {
-      "id": "node-26",
+      "id": "node-16",
       "type": "rectNode",
       "position": {
-        "x": 344.3153898158089,
-        "y": 379.82246992777345
+        "x": 376.3153898158089,
+        "y": 411.82246992777345
       },
       "data": {
         "label": "ALICE",
@@ -470,7 +482,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 84,
       "height": 21,
@@ -486,11 +499,107 @@
       }
     },
     {
-      "id": "node-27",
+      "id": "node-17",
       "type": "rectNode",
       "position": {
-        "x": 343.8153898158089,
-        "y": 330.8212010960319
+        "x": 375.8153898158089,
+        "y": 362.8212010960319
+      },
+      "data": {
+        "label": "timestamp nonce",
+        "bgColor": "#d466ea",
+        "borderColor": "#000000",
+        "textColor": "#ffffff",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 85,
+      "height": 49,
+      "measured": {
+        "width": 85,
+        "height": 49
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-18",
+      "type": "rectNode",
+      "position": {
+        "x": 743.6695392159063,
+        "y": 374.8212010960319
+      },
+      "data": {
+        "label": "\n",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 29,
+      "height": 25,
+      "measured": {
+        "width": 29,
+        "height": 25
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-19",
+      "type": "rectNode",
+      "position": {
+        "x": 778.3544096174472,
+        "y": 351.3212010960319
+      },
+      "data": {
+        "label": "ALICE",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 54,
+      "height": 22,
+      "measured": {
+        "width": 54,
+        "height": 22
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-20",
+      "type": "rectNode",
+      "position": {
+        "x": 949.3806157574427,
+        "y": 337.8212010960319
       },
       "data": {
         "label": "timestamp nonce",
@@ -517,11 +626,239 @@
       }
     },
     {
+      "id": "node-21",
+      "type": "rectNode",
+      "position": {
+        "x": 832.3544096174472,
+        "y": 193.3212010960319
+      },
+      "data": {
+        "label": "NTDS.DIT",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 96,
+      "height": 52,
+      "measured": {
+        "width": 96,
+        "height": 52
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-22",
+      "type": "rectNode",
+      "position": {
+        "x": 826.8544096174472,
+        "y": 303.8212010960319
+      },
+      "data": {
+        "label": "Long Term Key",
+        "bgColor": "#fee2e2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 107,
+      "height": 22,
+      "measured": {
+        "width": 107,
+        "height": 22
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-23",
+      "type": "rectNode",
+      "position": {
+        "x": 948.3806157574428,
+        "y": 337.8212010960319
+      },
+      "data": {
+        "label": "timestamp nonce",
+        "bgColor": "#dbeafe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 85,
+      "height": 49,
+      "measured": {
+        "width": 85,
+        "height": 49
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      },
+      "zIndex": 1000
+    },
+    {
+      "id": "node-24",
+      "type": "textBoxNode",
+      "position": {
+        "x": 832.3544096174472,
+        "y": 523.8212010960319
+      },
+      "data": {
+        "text": "session-key: \nMã hoá bằng LTK của ALICE\nTGT-Ticket:\nMã hoá bằng krbtgt's NTHash",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          2,
+          0
+        ],
+        "label": "decr",
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 210,
+      "height": 102,
+      "measured": {
+        "width": 210,
+        "height": 102
+      },
+      "selected": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      },
+      "zIndex": 1000
+    },
+    {
+      "id": "node-25",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 710.3544096174472,
+        "y": 438.3212010960319
+      },
+      "data": {
+        "label": "AS-REP",
+        "bodyText": "\n",
+        "bgColor": "#d220df",
+        "headerBgColor": "#f73b4e",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "onTop": false,
+        "showAtStep": 2
+      },
+      "width": 108,
+      "height": 104,
+      "measured": {
+        "width": 108,
+        "height": 104
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-26",
+      "type": "rectNode",
+      "position": {
+        "x": 722.8544096174472,
+        "y": 472.3212010960319
+      },
+      "data": {
+        "label": "enc-session-key",
+        "bgColor": "#fee2e2",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 86,
+      "height": 36,
+      "measured": {
+        "width": 86,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
+      "id": "node-27",
+      "type": "rectNode",
+      "position": {
+        "x": 721.3544096174472,
+        "y": 512.3212010960319
+      },
+      "data": {
+        "label": "enc-TGT",
+        "bgColor": "#ee2020",
+        "borderColor": "#000000",
+        "textColor": "#ffffff",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1,
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "width": 88,
+      "height": 21,
+      "measured": {
+        "width": 88,
+        "height": 21
+      },
+      "selected": false,
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "zIndex": 1000
+      }
+    },
+    {
       "id": "node-28",
       "type": "rectNode",
       "position": {
-        "x": 711.6695392159063,
-        "y": 342.8212010960319
+        "x": 399.8153898158089,
+        "y": 475.8212010960319
       },
       "data": {
         "label": "\n",
@@ -532,7 +869,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 29,
       "height": 25,
@@ -551,320 +889,8 @@
       "id": "node-29",
       "type": "rectNode",
       "position": {
-        "x": 746.3544096174472,
-        "y": 319.3212010960319
-      },
-      "data": {
-        "label": "ALICE",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 54,
-      "height": 22,
-      "measured": {
-        "width": 54,
-        "height": 22
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-30",
-      "type": "rectNode",
-      "position": {
-        "x": 917.3806157574427,
-        "y": 305.8212010960319
-      },
-      "data": {
-        "label": "timestamp nonce",
-        "bgColor": "#d466ea",
-        "borderColor": "#000000",
-        "textColor": "#ffffff",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 85,
-      "height": 49,
-      "measured": {
-        "width": 85,
-        "height": 49
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-31",
-      "type": "rectNode",
-      "position": {
-        "x": 800.3544096174472,
-        "y": 161.3212010960319
-      },
-      "data": {
-        "label": "NTDS.DIT",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8
-      },
-      "width": 96,
-      "height": 52,
-      "measured": {
-        "width": 96,
-        "height": 52
-      },
-      "selected": false,
-      "resizing": false
-    },
-    {
-      "id": "node-32",
-      "type": "rectNode",
-      "position": {
-        "x": 794.8544096174472,
-        "y": 271.8212010960319
-      },
-      "data": {
-        "label": "Long Term Key",
-        "bgColor": "#fee2e2",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 107,
-      "height": 22,
-      "measured": {
-        "width": 107,
-        "height": 22
-      },
-      "selected": true,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-33",
-      "type": "rectNode",
-      "position": {
-        "x": 917.3806157574427,
-        "y": 319.3212010960319
-      },
-      "data": {
-        "label": "timestamp nonce",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 85,
-      "height": 49,
-      "measured": {
-        "width": 85,
-        "height": 49
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-40",
-      "type": "textBoxNode",
-      "position": {
-        "x": 800.3544096174472,
-        "y": 491.8212010960319
-      },
-      "data": {
-        "text": "session-key: \nMã hoá bằng LTK của ALICE\nTGT-Ticket:\nMã hoá bằng krbtgt's NTHash",
-        "bgColor": "transparent",
-        "borderColor": "#1e293b",
-        "textColor": "#1e293b",
-        "fontSize": 13,
-        "borderWidth": 1,
-        "borderStyle": "solid",
-        "borderRadius": 4,
-        "highlightedLines": [
-          2,
-          0
-        ],
-        "label": "decr",
-        "onTop": true
-      },
-      "width": 210,
-      "height": 102,
-      "measured": {
-        "width": 210,
-        "height": 102
-      },
-      "selected": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-41",
-      "type": "labeledBoxNode",
-      "position": {
-        "x": 678.3544096174472,
-        "y": 406.3212010960319
-      },
-      "data": {
-        "label": "AS-REP",
-        "bodyText": "\n",
-        "bgColor": "#d220df",
-        "headerBgColor": "#f73b4e",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 13,
-        "bodyFontSize": 13,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": false
-      },
-      "width": 108,
-      "height": 104,
-      "measured": {
-        "width": 108,
-        "height": 104
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-42",
-      "type": "rectNode",
-      "position": {
-        "x": 690.8544096174472,
-        "y": 440.3212010960319
-      },
-      "data": {
-        "label": "enc-session-key",
-        "bgColor": "#fee2e2",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 86,
-      "height": 36,
-      "measured": {
-        "width": 86,
-        "height": 36
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-43",
-      "type": "rectNode",
-      "position": {
-        "x": 689.3544096174472,
-        "y": 480.3212010960319
-      },
-      "data": {
-        "label": "enc-TGT",
-        "bgColor": "#ee2020",
-        "borderColor": "#000000",
-        "textColor": "#ffffff",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true
-      },
-      "width": 88,
-      "height": 21,
-      "measured": {
-        "width": 88,
-        "height": 21
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-44",
-      "type": "rectNode",
-      "position": {
-        "x": 367.8153898158089,
-        "y": 443.8212010960319
-      },
-      "data": {
-        "label": "\n",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": true
-      },
-      "width": 29,
-      "height": 25,
-      "measured": {
-        "width": 29,
-        "height": 25
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-45",
-      "type": "rectNode",
-      "position": {
-        "x": 203.22978101561625,
-        "y": 446.3212010960319
+        "x": 235.22978101561625,
+        "y": 478.3212010960319
       },
       "data": {
         "label": "LSASS.EXE",
@@ -875,7 +901,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 99,
       "height": 19,
@@ -891,11 +918,11 @@
       }
     },
     {
-      "id": "node-46",
+      "id": "node-30",
       "type": "rectNode",
       "position": {
-        "x": 260.6706587275623,
-        "y": 491.8212010960319
+        "x": 292.6706587275623,
+        "y": 523.8212010960319
       },
       "data": {
         "label": "session-key",
@@ -906,7 +933,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 86,
       "height": 22,
@@ -922,11 +950,11 @@
       }
     },
     {
-      "id": "node-50",
+      "id": "node-31",
       "type": "rectNode",
       "position": {
-        "x": 151.93744593603742,
-        "y": 559.9789301647652
+        "x": 183.93744593603742,
+        "y": 591.9789301647652
       },
       "data": {
         "label": "enc-TGT\n",
@@ -937,7 +965,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 86,
       "height": 23,
@@ -953,11 +982,11 @@
       }
     },
     {
-      "id": "node-51",
+      "id": "node-32",
       "type": "rectNode",
       "position": {
-        "x": 462.29500695725005,
-        "y": 567.8212010960319
+        "x": 494.29500695725005,
+        "y": 588.9789301647652
       },
       "data": {
         "label": "GD2: Xin vé TGS",
@@ -968,7 +997,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 3
       },
       "width": 184,
       "height": 26,
@@ -981,14 +1011,15 @@
       "resizing": false,
       "style": {
         "zIndex": 1000
-      }
+      },
+      "zIndex": 1000
     },
     {
-      "id": "node-52",
+      "id": "node-33",
       "type": "rectNode",
       "position": {
-        "x": 261.6706587275623,
-        "y": 546.9789301647652
+        "x": 293.6706587275623,
+        "y": 578.9789301647652
       },
       "data": {
         "label": "timestamp nonce",
@@ -999,7 +1030,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 4
       },
       "width": 85,
       "height": 49,
@@ -1015,11 +1047,11 @@
       }
     },
     {
-      "id": "node-56",
+      "id": "node-34",
       "type": "textBoxNode",
       "position": {
-        "x": -116.06255406396258,
-        "y": 704.9840054917312
+        "x": -84.06255406396258,
+        "y": 736.9840054917312
       },
       "data": {
         "text": "Service muốn truy cập\nMSSQLSvc / sqlserver01.corp.local : 1433",
@@ -1034,7 +1066,8 @@
           2,
           3,
           0
-        ]
+        ],
+        "showAtStep": 10
       },
       "width": 268,
       "height": 62,
@@ -1046,11 +1079,11 @@
       "resizing": false
     },
     {
-      "id": "node-57",
+      "id": "node-35",
       "type": "labeledBoxNode",
       "position": {
-        "x": 325.22978101561625,
-        "y": 612.4840054917312
+        "x": 357.22978101561625,
+        "y": 644.4840054917312
       },
       "data": {
         "label": "TGS-REQ",
@@ -1064,7 +1097,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": false
+        "onTop": false,
+        "showAtStep": 11
       },
       "width": 114,
       "height": 148,
@@ -1080,11 +1114,11 @@
       }
     },
     {
-      "id": "node-58",
+      "id": "node-36",
       "type": "rectNode",
       "position": {
-        "x": 339.8153898158089,
-        "y": 651.4840054917312
+        "x": 371.8153898158089,
+        "y": 683.4840054917312
       },
       "data": {
         "label": "timestamp nonce",
@@ -1095,7 +1129,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 6
       },
       "width": 85,
       "height": 45,
@@ -1111,11 +1146,11 @@
       }
     },
     {
-      "id": "node-59",
+      "id": "node-37",
       "type": "rectNode",
       "position": {
-        "x": 338.8153898158089,
-        "y": 719.4840054917312
+        "x": 370.8153898158089,
+        "y": 751.4840054917312
       },
       "data": {
         "label": "SPN",
@@ -1126,7 +1161,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 9
       },
       "width": 86,
       "height": 33,
@@ -1142,11 +1178,11 @@
       }
     },
     {
-      "id": "node-61",
+      "id": "node-38",
       "type": "rectNode",
       "position": {
-        "x": 338.8153898158089,
-        "y": 696.4840054917312
+        "x": 370.8153898158089,
+        "y": 728.4840054917312
       },
       "data": {
         "label": "enc-TGT\n",
@@ -1157,7 +1193,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 8
       },
       "width": 86,
       "height": 23,
@@ -1173,11 +1210,11 @@
       }
     },
     {
-      "id": "node-62",
+      "id": "node-39",
       "type": "rectNode",
       "position": {
-        "x": 1042.1194528904132,
-        "y": 673.9840054917312
+        "x": 1074.1194528904132,
+        "y": 705.9840054917312
       },
       "data": {
         "label": "\n",
@@ -1188,7 +1225,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 13
       },
       "width": 29,
       "height": 25,
@@ -1204,11 +1242,11 @@
       }
     },
     {
-      "id": "node-63",
+      "id": "node-40",
       "type": "rectNode",
       "position": {
-        "x": 1108.8806157574427,
-        "y": 395.3212010960319
+        "x": 1140.8806157574427,
+        "y": 427.3212010960319
       },
       "data": {
         "label": "timestamp nonce",
@@ -1235,11 +1273,11 @@
       }
     },
     {
-      "id": "node-64",
+      "id": "node-41",
       "type": "rectNode",
       "position": {
-        "x": 1108.3806157574427,
-        "y": 468.8212010960319
+        "x": 1140.3806157574427,
+        "y": 500.8212010960319
       },
       "data": {
         "label": "enc-TGT\n",
@@ -1266,11 +1304,11 @@
       }
     },
     {
-      "id": "node-65",
+      "id": "node-42",
       "type": "rectNode",
       "position": {
-        "x": 928.3806157574427,
-        "y": 400.82246992777345
+        "x": 960.3806157574427,
+        "y": 432.82246992777345
       },
       "data": {
         "label": "session-key",
@@ -1281,7 +1319,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 86,
       "height": 22,
@@ -1297,11 +1336,11 @@
       }
     },
     {
-      "id": "node-66",
+      "id": "node-43",
       "type": "rectNode",
       "position": {
-        "x": 928.3806157574427,
-        "y": 432.3212010960319
+        "x": 960.3806157574427,
+        "y": 464.3212010960319
       },
       "data": {
         "label": "TGT",
@@ -1312,7 +1351,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
       "width": 86,
       "height": 23,
@@ -1328,11 +1368,11 @@
       }
     },
     {
-      "id": "node-68",
+      "id": "node-44",
       "type": "rectNode",
       "position": {
-        "x": 1267.29500695725,
-        "y": 393.3212010960319
+        "x": 1299.29500695725,
+        "y": 425.3212010960319
       },
       "data": {
         "label": "timestamp nonce",
@@ -1359,11 +1399,11 @@
       }
     },
     {
-      "id": "node-69",
+      "id": "node-45",
       "type": "rectNode",
       "position": {
-        "x": 1267.29500695725,
-        "y": 468.8212010960319
+        "x": 1299.29500695725,
+        "y": 500.8212010960319
       },
       "data": {
         "label": "TGT\n",
@@ -1390,11 +1430,11 @@
       }
     },
     {
-      "id": "node-70",
+      "id": "node-46",
       "type": "rectNode",
       "position": {
-        "x": 1411.645850999048,
-        "y": 422.82246992777345
+        "x": 1443.645850999048,
+        "y": 454.82246992777345
       },
       "data": {
         "label": "OK",
@@ -1416,11 +1456,11 @@
       "resizing": false
     },
     {
-      "id": "node-71",
+      "id": "node-47",
       "type": "rectNode",
       "position": {
-        "x": 1397.645850999048,
-        "y": 514.9789301647652
+        "x": 1429.645850999048,
+        "y": 546.9789301647652
       },
       "data": {
         "label": "PAC",
@@ -1442,11 +1482,11 @@
       "resizing": false
     },
     {
-      "id": "node-72",
+      "id": "node-48",
       "type": "textBoxNode",
       "position": {
-        "x": 1164.29500695725,
-        "y": 514.9789301647652
+        "x": 1196.29500695725,
+        "y": 546.9789301647652
       },
       "data": {
         "text": "PAC:\nChứa thông tin về USER ALICE giống như SAM-INFO",
@@ -1477,11 +1517,11 @@
       }
     },
     {
-      "id": "node-73",
+      "id": "node-49",
       "type": "labeledBoxNode",
       "position": {
-        "x": 1154.8806157574427,
-        "y": 694.4840054917312
+        "x": 1186.8806157574427,
+        "y": 726.4840054917312
       },
       "data": {
         "label": "FOR CLIENT",
@@ -1494,7 +1534,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 14
       },
       "width": 148,
       "height": 113,
@@ -1506,11 +1547,11 @@
       "resizing": false
     },
     {
-      "id": "node-74",
+      "id": "node-50",
       "type": "rectNode",
       "position": {
-        "x": 1168.3806157574427,
-        "y": 734.9840054917312
+        "x": 1200.3806157574427,
+        "y": 766.9840054917312
       },
       "data": {
         "label": "Service SessKey\n",
@@ -1521,7 +1562,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 14
       },
       "width": 121,
       "height": 32,
@@ -1537,11 +1579,11 @@
       }
     },
     {
-      "id": "node-75",
+      "id": "node-51",
       "type": "rectNode",
       "position": {
-        "x": 1168.3806157574427,
-        "y": 766.9840054917312
+        "x": 1200.3806157574427,
+        "y": 798.9840054917312
       },
       "data": {
         "label": "Time ...",
@@ -1552,7 +1594,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 14
       },
       "width": 121,
       "height": 32,
@@ -1568,11 +1611,11 @@
       }
     },
     {
-      "id": "node-76",
+      "id": "node-52",
       "type": "labeledBoxNode",
       "position": {
-        "x": 1154.8806157574427,
-        "y": 825.6522803993452
+        "x": 1186.8806157574427,
+        "y": 857.6522803993452
       },
       "data": {
         "label": "FOR SERVICE HOST",
@@ -1585,7 +1628,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 17
       },
       "width": 148,
       "height": 154,
@@ -1597,11 +1641,11 @@
       "resizing": false
     },
     {
-      "id": "node-77",
+      "id": "node-53",
       "type": "rectNode",
       "position": {
-        "x": 1168.3806157574427,
-        "y": 866.1522803993452
+        "x": 1200.3806157574427,
+        "y": 898.1522803993452
       },
       "data": {
         "label": "Service SessKey\n",
@@ -1612,7 +1656,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 17
       },
       "width": 121,
       "height": 32,
@@ -1628,11 +1673,11 @@
       }
     },
     {
-      "id": "node-78",
+      "id": "node-54",
       "type": "rectNode",
       "position": {
-        "x": 1167.3806157574427,
-        "y": 898.1522803993452
+        "x": 1199.3806157574427,
+        "y": 930.1522803993452
       },
       "data": {
         "label": "CLientID",
@@ -1643,7 +1688,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 17
       },
       "width": 123,
       "height": 32,
@@ -1659,11 +1705,11 @@
       }
     },
     {
-      "id": "node-79",
+      "id": "node-55",
       "type": "rectNode",
       "position": {
-        "x": 1193.8806157574427,
-        "y": 930.1522803993452
+        "x": 1225.8806157574427,
+        "y": 962.1522803993452
       },
       "data": {
         "label": "PAC",
@@ -1674,7 +1720,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 2,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 17
       },
       "width": 70,
       "height": 32,
@@ -1686,11 +1733,11 @@
       "resizing": false
     },
     {
-      "id": "node-80",
+      "id": "node-56",
       "type": "labeledBoxNode",
       "position": {
-        "x": 994.3806157574427,
-        "y": 782.1522803993452
+        "x": 1026.3806157574427,
+        "y": 814.1522803993452
       },
       "data": {
         "label": "TGS-REP",
@@ -1704,7 +1751,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": false
+        "onTop": false,
+        "showAtStep": 20
       },
       "width": 110,
       "height": 87,
@@ -1720,11 +1768,11 @@
       }
     },
     {
-      "id": "node-81",
+      "id": "node-57",
       "type": "rectNode",
       "position": {
-        "x": 1082.3806157574427,
-        "y": 634.9840054917312
+        "x": 1114.3806157574427,
+        "y": 666.9840054917312
       },
       "data": {
         "label": "SPN",
@@ -1751,11 +1799,11 @@
       }
     },
     {
-      "id": "node-82",
+      "id": "node-58",
       "type": "rectNode",
       "position": {
-        "x": 1258.79500695725,
-        "y": 633.9840054917312
+        "x": 1290.79500695725,
+        "y": 665.9840054917312
       },
       "data": {
         "label": "nthash sqlserver01",
@@ -1782,11 +1830,11 @@
       }
     },
     {
-      "id": "node-83",
+      "id": "node-59",
       "type": "textBoxNode",
       "position": {
-        "x": 1467.645850999048,
-        "y": 692.9840054917312
+        "x": 1499.645850999048,
+        "y": 724.9840054917312
       },
       "data": {
         "text": "FOR CLIENT:\nMã hoá bằng ",
@@ -1798,11 +1846,11 @@
         "borderStyle": "solid",
         "borderRadius": 4,
         "highlightedLines": [
-          2,
-          0
+          2
         ],
         "label": "decr",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 15
       },
       "width": 189,
       "height": 84,
@@ -1814,14 +1862,15 @@
       "resizing": false,
       "style": {
         "zIndex": 1000
-      }
+      },
+      "zIndex": 1000
     },
     {
-      "id": "node-84",
+      "id": "node-60",
       "type": "textBoxNode",
       "position": {
-        "x": 1467.645850999048,
-        "y": 846.1522803993452
+        "x": 1499.645850999048,
+        "y": 878.1522803993452
       },
       "data": {
         "text": "FOR SERVICE HOST:\nMã hoá bằng",
@@ -1838,7 +1887,8 @@
           1
         ],
         "label": "decr",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 18
       },
       "width": 189,
       "height": 84,
@@ -1853,11 +1903,11 @@
       }
     },
     {
-      "id": "node-85",
+      "id": "node-61",
       "type": "rectNode",
       "position": {
-        "x": 1476.145850999048,
-        "y": 741.4840054917312
+        "x": 1508.145850999048,
+        "y": 773.4840054917312
       },
       "data": {
         "label": "session-key",
@@ -1868,7 +1918,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 15
       },
       "width": 86,
       "height": 22,
@@ -1884,14 +1935,14 @@
       }
     },
     {
-      "id": "node-86",
+      "id": "node-62",
       "type": "rectNode",
       "position": {
-        "x": 1476.145850999048,
-        "y": 888.1522803993452
+        "x": 1508.145850999048,
+        "y": 920.1522803993452
       },
       "data": {
-        "label": "nthash sqlserver01",
+        "label": "nthash BOB01",
         "bgColor": "#dbeafe",
         "borderColor": "#000000",
         "textColor": "#1e293b",
@@ -1899,7 +1950,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 18
       },
       "width": 151,
       "height": 35,
@@ -1912,14 +1964,15 @@
       "resizing": false,
       "style": {
         "zIndex": 1000
-      }
+      },
+      "zIndex": 1000
     },
     {
-      "id": "node-87",
+      "id": "node-63",
       "type": "rectNode",
       "position": {
-        "x": 368.72978101561625,
-        "y": 813.1522803993452
+        "x": 400.72978101561625,
+        "y": 845.1522803993452
       },
       "data": {
         "label": "\n",
@@ -1930,7 +1983,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 22
       },
       "width": 29,
       "height": 25,
@@ -1946,11 +2000,11 @@
       }
     },
     {
-      "id": "node-88",
+      "id": "node-64",
       "type": "rectNode",
       "position": {
-        "x": 211.17065872756228,
-        "y": 816.1522803993452
+        "x": 243.17065872756228,
+        "y": 848.1522803993452
       },
       "data": {
         "label": "LSASS.EXE",
@@ -1961,7 +2015,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 24
       },
       "width": 99,
       "height": 19,
@@ -1977,11 +2032,11 @@
       }
     },
     {
-      "id": "node-89",
+      "id": "node-65",
       "type": "rectNode",
       "position": {
-        "x": -42.56255406396258,
-        "y": 809.6522803993452
+        "x": -10.56255406396258,
+        "y": 841.6522803993452
       },
       "data": {
         "label": "Service SessKey\n",
@@ -1992,7 +2047,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 26
       },
       "width": 121,
       "height": 32,
@@ -2008,11 +2064,11 @@
       }
     },
     {
-      "id": "node-90",
+      "id": "node-66",
       "type": "labeledBoxNode",
       "position": {
-        "x": 115.22978101561623,
-        "y": 912.582005156155
+        "x": 147.22978101561623,
+        "y": 944.582005156155
       },
       "data": {
         "label": "FOR SERVICE HOST",
@@ -2025,7 +2081,8 @@
         "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 27
       },
       "width": 148,
       "height": 154,
@@ -2037,11 +2094,11 @@
       "resizing": false
     },
     {
-      "id": "node-91",
+      "id": "node-67",
       "type": "rectNode",
       "position": {
-        "x": 130.1706587275623,
-        "y": 947.6522803993452
+        "x": 162.1706587275623,
+        "y": 979.6522803993452
       },
       "data": {
         "label": "Service SessKey\n",
@@ -2052,7 +2109,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 27
       },
       "width": 121,
       "height": 32,
@@ -2068,11 +2126,11 @@
       }
     },
     {
-      "id": "node-92",
+      "id": "node-68",
       "type": "rectNode",
       "position": {
-        "x": 130.1706587275623,
-        "y": 986.3437176966866
+        "x": 162.1706587275623,
+        "y": 1018.3437176966866
       },
       "data": {
         "label": "CLientID",
@@ -2083,7 +2141,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 1,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 27
       },
       "width": 123,
       "height": 32,
@@ -2099,11 +2158,11 @@
       }
     },
     {
-      "id": "node-93",
+      "id": "node-69",
       "type": "rectNode",
       "position": {
-        "x": 154.22978101561623,
-        "y": 1021.8437176966866
+        "x": 186.22978101561623,
+        "y": 1053.8437176966866
       },
       "data": {
         "label": "PAC",
@@ -2114,7 +2173,8 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 2,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 27
       },
       "width": 70,
       "height": 32,
@@ -2129,11 +2189,11 @@
       }
     },
     {
-      "id": "node-94",
+      "id": "node-70",
       "type": "rectNode",
       "position": {
-        "x": -24.56255406396258,
-        "y": 918.6522803993452
+        "x": 7.43744593603742,
+        "y": 950.6522803993452
       },
       "data": {
         "label": "timestamp nonce",
@@ -2160,11 +2220,11 @@
       }
     },
     {
-      "id": "node-95",
+      "id": "node-71",
       "type": "rectNode",
       "position": {
-        "x": 148.1706587275623,
-        "y": 1076.582005156155
+        "x": 180.1706587275623,
+        "y": 1108.582005156155
       },
       "data": {
         "label": "timestamp nonce",
@@ -2191,11 +2251,11 @@
       }
     },
     {
-      "id": "node-96",
+      "id": "node-72",
       "type": "rectNode",
       "position": {
-        "x": 462.29500695725005,
-        "y": 866.1522803993452
+        "x": 494.29500695725005,
+        "y": 898.1522803993452
       },
       "data": {
         "label": "GD3: Truy cập dịch vụ",
@@ -2222,11 +2282,11 @@
       }
     },
     {
-      "id": "node-97",
+      "id": "node-73",
       "type": "labeledBoxNode",
       "position": {
-        "x": 740.6695392159063,
-        "y": 846.1522803993452
+        "x": 772.6695392159063,
+        "y": 878.1522803993452
       },
       "data": {
         "label": "SQLSERVER01",
@@ -2252,11 +2312,11 @@
       "resizing": false
     },
     {
-      "id": "node-98",
+      "id": "node-74",
       "type": "rectNode",
       "position": {
-        "x": 781.1695392159063,
-        "y": 1293.314094742195
+        "x": 813.1695392159063,
+        "y": 1325.314094742195
       },
       "data": {
         "label": "\n",
@@ -2279,11 +2339,11 @@
       "resizing": false
     },
     {
-      "id": "node-99",
+      "id": "node-75",
       "type": "labeledBoxNode",
       "position": {
-        "x": 338.8153898158089,
-        "y": 989.582005156155
+        "x": 370.8153898158089,
+        "y": 1021.582005156155
       },
       "data": {
         "label": "AP-REQ",
@@ -2313,11 +2373,11 @@
       }
     },
     {
-      "id": "node-100",
+      "id": "node-76",
       "type": "rectNode",
       "position": {
-        "x": 781.1695392159063,
-        "y": 1020.582005156155
+        "x": 813.1695392159063,
+        "y": 1052.582005156155
       },
       "data": {
         "label": "\n",
@@ -2344,14 +2404,14 @@
       }
     },
     {
-      "id": "node-101",
+      "id": "node-77",
       "type": "rectNode",
       "position": {
-        "x": 863.3806157574427,
-        "y": 888.1522803993452
+        "x": 895.3806157574427,
+        "y": 920.1522803993452
       },
       "data": {
-        "label": "nthash sqlserver01",
+        "label": "nthash BOB01",
         "bgColor": "#dbeafe",
         "borderColor": "#000000",
         "textColor": "#1e293b",
@@ -2372,14 +2432,15 @@
       "resizing": false,
       "style": {
         "zIndex": 1000
-      }
+      },
+      "zIndex": 1000
     },
     {
-      "id": "node-102",
+      "id": "node-78",
       "type": "labeledBoxNode",
       "position": {
-        "x": 858.3806157574427,
-        "y": 979.6522803993452
+        "x": 890.3806157574427,
+        "y": 1011.6522803993452
       },
       "data": {
         "label": "FOR SERVICE HOST",
@@ -2404,11 +2465,11 @@
       "resizing": false
     },
     {
-      "id": "node-103",
+      "id": "node-79",
       "type": "rectNode",
       "position": {
-        "x": 873.3806157574427,
-        "y": 1013.5820051561551
+        "x": 905.3806157574427,
+        "y": 1045.582005156155
       },
       "data": {
         "label": "Service SessKey\n",
@@ -2435,11 +2496,11 @@
       }
     },
     {
-      "id": "node-104",
+      "id": "node-80",
       "type": "rectNode",
       "position": {
-        "x": 873.3806157574427,
-        "y": 1045.582005156155
+        "x": 905.3806157574427,
+        "y": 1077.582005156155
       },
       "data": {
         "label": "CLientID",
@@ -2466,11 +2527,11 @@
       }
     },
     {
-      "id": "node-105",
+      "id": "node-81",
       "type": "rectNode",
       "position": {
-        "x": 897.3806157574427,
-        "y": 1076.582005156155
+        "x": 929.3806157574427,
+        "y": 1108.582005156155
       },
       "data": {
         "label": "PAC",
@@ -2496,11 +2557,11 @@
       }
     },
     {
-      "id": "node-106",
+      "id": "node-82",
       "type": "rectNode",
       "position": {
-        "x": 1082.3806157574427,
-        "y": 1013.5820051561551
+        "x": 1114.3806157574427,
+        "y": 1045.582005156155
       },
       "data": {
         "label": "Service SessKey\n",
@@ -2527,11 +2588,11 @@
       }
     },
     {
-      "id": "node-107",
+      "id": "node-83",
       "type": "rectNode",
       "position": {
-        "x": 1100.3806157574427,
-        "y": 1094.1522803993453
+        "x": 1132.3806157574427,
+        "y": 1126.1522803993453
       },
       "data": {
         "label": "timestamp nonce",
@@ -2558,11 +2619,11 @@
       }
     },
     {
-      "id": "node-108",
+      "id": "node-84",
       "type": "rectNode",
       "position": {
-        "x": 897.3806157574427,
-        "y": 1157.582005156155
+        "x": 929.3806157574427,
+        "y": 1189.582005156155
       },
       "data": {
         "label": "PAC",
@@ -2588,11 +2649,11 @@
       }
     },
     {
-      "id": "node-109",
+      "id": "node-85",
       "type": "rectNode",
       "position": {
-        "x": 1100.3806157574427,
-        "y": 1108.582005156155
+        "x": 1132.3806157574427,
+        "y": 1140.582005156155
       },
       "data": {
         "label": "timestamp nonce",
@@ -2619,11 +2680,11 @@
       }
     },
     {
-      "id": "node-110",
+      "id": "node-86",
       "type": "rectNode",
       "position": {
-        "x": 862.3806157574427,
-        "y": 1245.814094742195
+        "x": 894.3806157574427,
+        "y": 1277.814094742195
       },
       "data": {
         "label": "ACCESS TOKEN ALICE",
@@ -2642,6 +2703,127 @@
         "height": 60
       },
       "selected": false
+    },
+    {
+      "id": "node-87",
+      "type": "textBoxNode",
+      "position": {
+        "x": -343.34961283946825,
+        "y": 967.582005156155
+      },
+      "data": {
+        "text": "sudo hashcat -m 13100\nhashes.kerberoast\n/usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule --force",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          3,
+          1,
+          0
+        ],
+        "showAtStep": 28
+      },
+      "width": 295,
+      "height": 108,
+      "measured": {
+        "width": 295,
+        "height": 108
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-88",
+      "type": "rectNode",
+      "position": {
+        "x": -292.9228635291005,
+        "y": 1124.582005156155
+      },
+      "data": {
+        "label": "password service user",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 31
+      },
+      "width": 140,
+      "height": 60,
+      "measured": {
+        "width": 140,
+        "height": 60
+      },
+      "selected": false
+    },
+    {
+      "id": "node-89",
+      "type": "textBoxNode",
+      "position": {
+        "x": -316.34961283946825,
+        "y": 638.9840054917312
+      },
+      "data": {
+        "text": "sudo impacket-GetUserSPNs -request -dc-ip 192.168.50.70 corp.com/pete",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          2,
+          3
+        ],
+        "showAtStep": 33
+      },
+      "width": 268,
+      "height": 62,
+      "measured": {
+        "width": 268,
+        "height": 62
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-90",
+      "type": "textBoxNode",
+      "position": {
+        "x": -316.34961283946825,
+        "y": 514.9789301647652
+      },
+      "data": {
+        "text": "Ai cũng có thể yêu cầu lấy TGS-REP - Chỉ nên focus vào Service gắn với User, Không focus vào Service gắn với tk compu",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          2,
+          3,
+          0
+        ],
+        "showAtStep": 32
+      },
+      "width": 273,
+      "height": 100,
+      "measured": {
+        "width": 273,
+        "height": 100
+      },
+      "selected": false,
+      "resizing": false
     }
   ],
   "edges": [
@@ -2659,9 +2841,10 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 1
       },
-      "id": "edge-3",
+      "id": "edge-1",
       "selected": false
     },
     {
@@ -2678,16 +2861,17 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 1
       },
-      "id": "edge-4",
+      "id": "edge-2",
       "selected": false
     },
     {
       "type": "customEdge",
       "source": "node-5",
       "sourceHandle": "bottom",
-      "target": "node-13",
+      "target": "node-8",
       "targetHandle": "top",
       "data": {
         "label": "",
@@ -2697,16 +2881,17 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 1
       },
-      "id": "edge-5",
+      "id": "edge-3",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-16",
+      "source": "node-11",
       "sourceHandle": "left",
-      "target": "node-17",
+      "target": "node-12",
       "targetHandle": "right",
       "data": {
         "label": "in",
@@ -2719,16 +2904,17 @@
         "animationEffect": "arrow",
         "labelOffsetX": 0,
         "labelOffsetY": 0,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-6",
+      "id": "edge-4",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-17",
+      "source": "node-12",
       "sourceHandle": "left",
-      "target": "node-18",
+      "target": "node-13",
       "targetHandle": "top",
       "data": {
         "label": "out",
@@ -2741,16 +2927,17 @@
         "animationEffect": "arrow",
         "onTop": true,
         "labelOffsetX": 0.11651387396560686,
-        "labelOffsetY": 5.809622819112663
+        "labelOffsetY": 5.809622819112663,
+        "showAtStep": 2
       },
-      "id": "edge-7",
+      "id": "edge-5",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-21",
+      "source": "node-14",
       "sourceHandle": "right",
-      "target": "node-23",
+      "target": "node-15",
       "targetHandle": "left",
       "data": {
         "label": "out",
@@ -2761,16 +2948,17 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-9",
+      "id": "edge-6",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-23",
+      "source": "node-15",
       "sourceHandle": "right",
-      "target": "node-28",
+      "target": "node-18",
       "targetHandle": "left",
       "data": {
         "label": "1. send AS-REQ",
@@ -2783,16 +2971,17 @@
         "animationEffect": "arrow",
         "onTop": true,
         "labelOffsetX": 0,
-        "labelOffsetY": 0
+        "labelOffsetY": 0,
+        "showAtStep": 2
       },
-      "id": "edge-10",
+      "id": "edge-7",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-18",
+      "source": "node-13",
       "sourceHandle": "bottom",
-      "target": "node-21",
+      "target": "node-14",
       "targetHandle": "left",
       "data": {
         "label": "enc",
@@ -2805,16 +2994,17 @@
         "animationEffect": "arrow",
         "labelOffsetX": -0.25311634689080065,
         "labelOffsetY": -13.748637127941585,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-11",
+      "id": "edge-8",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-29",
+      "source": "node-19",
       "sourceHandle": "top",
-      "target": "node-31",
+      "target": "node-21",
       "targetHandle": "left",
       "data": {
         "label": "in",
@@ -2825,16 +3015,17 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-13",
+      "id": "edge-9",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-31",
+      "source": "node-21",
       "sourceHandle": "bottom",
-      "target": "node-32",
+      "target": "node-22",
       "targetHandle": "top",
       "data": {
         "label": "out",
@@ -2845,16 +3036,19 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "labelOffsetX": -0.3393161284329649,
+        "labelOffsetY": 0,
+        "showAtStep": 2
       },
-      "id": "edge-14",
+      "id": "edge-10",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-32",
+      "source": "node-22",
       "sourceHandle": "bottom",
-      "target": "node-30",
+      "target": "node-20",
       "targetHandle": "left",
       "data": {
         "label": "dcr",
@@ -2867,16 +3061,17 @@
         "animationEffect": "arrow",
         "labelOffsetX": 4.19449946276184,
         "labelOffsetY": -0.9481818708925231,
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-19",
+      "id": "edge-11",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-41",
+      "source": "node-25",
       "sourceHandle": "left",
-      "target": "node-44",
+      "target": "node-28",
       "targetHandle": "right",
       "data": {
         "label": "2. send AS-REP",
@@ -2887,16 +3082,17 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 2
       },
-      "id": "edge-24",
+      "id": "edge-12",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-44",
+      "source": "node-28",
       "sourceHandle": "left",
-      "target": "node-45",
+      "target": "node-29",
       "targetHandle": "right",
       "data": {
         "label": "in",
@@ -2907,16 +3103,19 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0,
+        "showAtStep": 2
       },
-      "id": "edge-25",
+      "id": "edge-13",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-18",
+      "source": "node-13",
       "sourceHandle": "left",
-      "target": "node-45",
+      "target": "node-29",
       "targetHandle": "top",
       "data": {
         "label": "",
@@ -2928,14 +3127,14 @@
         "bidirectional": false,
         "animationEffect": "arrow"
       },
-      "id": "edge-27",
+      "id": "edge-14",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-45",
+      "source": "node-29",
       "sourceHandle": "left",
-      "target": "node-46",
+      "target": "node-30",
       "targetHandle": "left",
       "data": {
         "label": "decr",
@@ -2946,19 +3145,292 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": -0.3393161284329649,
+        "labelOffsetY": 0,
+        "showAtStep": 2
+      },
+      "id": "edge-15",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-29",
+      "sourceHandle": "left",
+      "target": "node-31",
+      "targetHandle": "left",
+      "data": {
+        "label": "save",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 2
+      },
+      "id": "edge-16",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-30",
+      "sourceHandle": "right",
+      "target": "node-33",
+      "targetHandle": "right",
+      "data": {
+        "label": "enc",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 3
+      },
+      "id": "edge-17",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-33",
+      "sourceHandle": "bottom",
+      "target": "node-36",
+      "targetHandle": "left",
+      "data": {
+        "label": "out",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 5
+      },
+      "id": "edge-18",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-34",
+      "sourceHandle": "right",
+      "target": "node-37",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 10
+      },
+      "id": "edge-19",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-38",
+      "sourceHandle": "bottom",
+      "target": "node-38",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-20",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-31",
+      "sourceHandle": "bottom",
+      "target": "node-38",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-21",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-35",
+      "sourceHandle": "right",
+      "target": "node-39",
+      "targetHandle": "left",
+      "data": {
+        "label": "3. send TGS-REQ",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 12
+      },
+      "id": "edge-22",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-43",
+      "sourceHandle": "right",
+      "target": "node-24",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 2
+      },
+      "id": "edge-23",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-42",
+      "sourceHandle": "right",
+      "target": "node-24",
+      "targetHandle": "right",
+      "data": {
+        "label": "in",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": -1.491232479168372,
+        "labelOffsetY": 2.518973782379007,
+        "showAtStep": 2
+      },
+      "id": "edge-24",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-24",
+      "sourceHandle": "top",
+      "target": "node-25",
+      "targetHandle": "right",
+      "data": {
+        "label": "out",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": -0.34506724925386256,
+        "labelOffsetY": 0,
+        "showAtStep": 2
+      },
+      "id": "edge-25",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-42",
+      "sourceHandle": "top",
+      "target": "node-40",
+      "targetHandle": "top",
+      "data": {
+        "label": "decr",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": 32.14210546315613,
+        "labelOffsetY": -0.9169064567859584
+      },
+      "id": "edge-26",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-40",
+      "sourceHandle": "right",
+      "target": "node-44",
+      "targetHandle": "left",
+      "data": {
+        "label": "out",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
         "onTop": true
+      },
+      "id": "edge-27",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-24",
+      "sourceHandle": "right",
+      "target": "node-41",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
       },
       "id": "edge-28",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-45",
-      "sourceHandle": "left",
-      "target": "node-47",
+      "source": "node-41",
+      "sourceHandle": "right",
+      "target": "node-45",
       "targetHandle": "left",
       "data": {
-        "label": "save",
+        "label": "out",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -2973,9 +3445,9 @@
     },
     {
       "type": "customEdge",
-      "source": "node-45",
-      "sourceHandle": "left",
-      "target": "node-48",
+      "source": "node-44",
+      "sourceHandle": "right",
+      "target": "node-46",
       "targetHandle": "left",
       "data": {
         "label": "",
@@ -2993,19 +3465,18 @@
     {
       "type": "customEdge",
       "source": "node-45",
-      "sourceHandle": "left",
-      "target": "node-50",
+      "sourceHandle": "right",
+      "target": "node-46",
       "targetHandle": "left",
       "data": {
-        "label": "save",
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
+        "animationEffect": "arrow"
       },
       "id": "edge-31",
       "selected": false
@@ -3014,10 +3485,10 @@
       "type": "customEdge",
       "source": "node-46",
       "sourceHandle": "right",
-      "target": "node-52",
+      "target": "node-47",
       "targetHandle": "right",
       "data": {
-        "label": "enc",
+        "label": "create",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -3032,10 +3503,10 @@
     },
     {
       "type": "customEdge",
-      "source": "node-52",
-      "sourceHandle": "bottom",
-      "target": "node-53",
-      "targetHandle": "top",
+      "source": "node-47",
+      "sourceHandle": "left",
+      "target": "node-48",
+      "targetHandle": "right",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3051,10 +3522,32 @@
     },
     {
       "type": "customEdge",
-      "source": "node-39",
-      "sourceHandle": "right",
+      "source": "node-47",
+      "sourceHandle": "bottom",
       "target": "node-55",
-      "targetHandle": "bottom",
+      "targetHandle": "right",
+      "data": {
+        "label": "in",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "labelOffsetX": 0,
+        "labelOffsetY": 0,
+        "onTop": true
+      },
+      "id": "edge-34",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-49",
+      "sourceHandle": "left",
+      "target": "node-56",
+      "targetHandle": "right",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3063,17 +3556,18 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 19
       },
       "id": "edge-35",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-56",
-      "sourceHandle": "right",
-      "target": "node-55",
-      "targetHandle": "left",
+      "source": "node-52",
+      "sourceHandle": "left",
+      "target": "node-56",
+      "targetHandle": "right",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3082,17 +3576,18 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 19
       },
       "id": "edge-36",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-55",
-      "sourceHandle": "top",
-      "target": "node-50",
-      "targetHandle": "bottom",
+      "source": "node-57",
+      "sourceHandle": "right",
+      "target": "node-58",
+      "targetHandle": "left",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3108,125 +3603,9 @@
     },
     {
       "type": "customEdge",
-      "source": "node-52",
-      "sourceHandle": "bottom",
-      "target": "node-58",
-      "targetHandle": "left",
-      "data": {
-        "label": "out",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-39",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-50",
-      "sourceHandle": "bottom",
-      "target": "node-60",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-40",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-56",
-      "sourceHandle": "right",
-      "target": "node-59",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-41",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-61",
-      "sourceHandle": "bottom",
-      "target": "node-61",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-42",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-50",
-      "sourceHandle": "bottom",
-      "target": "node-61",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-43",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-57",
-      "sourceHandle": "right",
-      "target": "node-62",
-      "targetHandle": "left",
-      "data": {
-        "label": "3. send TGS-REQ",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-45",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-66",
-      "sourceHandle": "right",
-      "target": "node-40",
+      "source": "node-59",
+      "sourceHandle": "left",
+      "target": "node-49",
       "targetHandle": "right",
       "data": {
         "label": "",
@@ -3236,16 +3615,58 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 16
       },
-      "id": "edge-46",
+      "id": "edge-38",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-65",
-      "sourceHandle": "right",
-      "target": "node-40",
+      "source": "node-60",
+      "sourceHandle": "left",
+      "target": "node-52",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 18
+      },
+      "id": "edge-39",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-56",
+      "sourceHandle": "left",
+      "target": "node-63",
+      "targetHandle": "right",
+      "data": {
+        "label": "4. Send TGS-REP",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 21
+      },
+      "id": "edge-40",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-63",
+      "sourceHandle": "left",
+      "target": "node-64",
       "targetHandle": "right",
       "data": {
         "label": "in",
@@ -3257,20 +3678,143 @@
         "bidirectional": false,
         "animationEffect": "arrow",
         "onTop": true,
-        "labelOffsetX": -1.491232479168372,
-        "labelOffsetY": 2.518973782379007
+        "labelOffsetX": -0.6786322568659298,
+        "labelOffsetY": 0.3335650076120672,
+        "showAtStep": 23
+      },
+      "id": "edge-41",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-64",
+      "sourceHandle": "left",
+      "target": "node-65",
+      "targetHandle": "right",
+      "data": {
+        "label": "decr",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": -0.3393161284329649,
+        "labelOffsetY": 0,
+        "showAtStep": 25
+      },
+      "id": "edge-42",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-65",
+      "sourceHandle": "bottom",
+      "target": "node-70",
+      "targetHandle": "top",
+      "data": {
+        "label": "enc",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true
+      },
+      "id": "edge-43",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-70",
+      "sourceHandle": "bottom",
+      "target": "node-71",
+      "targetHandle": "left",
+      "data": {
+        "label": "out",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true
+      },
+      "id": "edge-44",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-73",
+      "sourceHandle": "bottom",
+      "target": "node-74",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-45",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-66",
+      "sourceHandle": "right",
+      "target": "node-75",
+      "targetHandle": "left",
+      "data": {
+        "label": "in",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true
+      },
+      "id": "edge-46",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-71",
+      "sourceHandle": "right",
+      "target": "node-75",
+      "targetHandle": "left",
+      "data": {
+        "label": "in",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true
       },
       "id": "edge-47",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-40",
-      "sourceHandle": "top",
-      "target": "node-41",
-      "targetHandle": "right",
+      "source": "node-75",
+      "sourceHandle": "right",
+      "target": "node-76",
+      "targetHandle": "left",
       "data": {
-        "label": "out",
+        "label": "5. send AP-REQ",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -3285,12 +3829,12 @@
     },
     {
       "type": "customEdge",
-      "source": "node-65",
-      "sourceHandle": "top",
-      "target": "node-63",
+      "source": "node-77",
+      "sourceHandle": "bottom",
+      "target": "node-78",
       "targetHandle": "top",
       "data": {
-        "label": "decr",
+        "label": "dscr",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -3298,18 +3842,18 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
-        "labelOffsetX": 32.14210546315613,
-        "labelOffsetY": -0.9169064567859584
+        "labelOffsetX": 0,
+        "labelOffsetY": 0,
+        "onTop": true
       },
       "id": "edge-49",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-63",
+      "source": "node-79",
       "sourceHandle": "right",
-      "target": "node-68",
+      "target": "node-82",
       "targetHandle": "left",
       "data": {
         "label": "out",
@@ -3320,17 +3864,38 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0
       },
       "id": "edge-50",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-40",
-      "sourceHandle": "right",
-      "target": "node-64",
-      "targetHandle": "bottom",
+      "source": "node-82",
+      "sourceHandle": "bottom",
+      "target": "node-83",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-51",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-81",
+      "sourceHandle": "bottom",
+      "target": "node-84",
+      "targetHandle": "top",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3346,30 +3911,29 @@
     },
     {
       "type": "customEdge",
-      "source": "node-64",
-      "sourceHandle": "right",
-      "target": "node-69",
-      "targetHandle": "left",
+      "source": "node-84",
+      "sourceHandle": "bottom",
+      "target": "node-86",
+      "targetHandle": "top",
       "data": {
-        "label": "out",
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
+        "animationEffect": "arrow"
       },
       "id": "edge-53",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-68",
-      "sourceHandle": "right",
-      "target": "node-70",
-      "targetHandle": "left",
+      "source": "node-188",
+      "sourceHandle": "top",
+      "target": "node-16",
+      "targetHandle": "bottom",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3385,10 +3949,10 @@
     },
     {
       "type": "customEdge",
-      "source": "node-69",
-      "sourceHandle": "right",
-      "target": "node-70",
-      "targetHandle": "left",
+      "source": "node-22",
+      "sourceHandle": "bottom",
+      "target": "node-39",
+      "targetHandle": "right",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -3404,12 +3968,12 @@
     },
     {
       "type": "customEdge",
-      "source": "node-70",
+      "source": "node-87",
       "sourceHandle": "right",
-      "target": "node-71",
-      "targetHandle": "right",
+      "target": "node-66",
+      "targetHandle": "left",
       "data": {
-        "label": "create",
+        "label": "crack",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -3417,354 +3981,20 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true
+        "onTop": true,
+        "showAtStep": 29,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0
       },
       "id": "edge-56",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-71",
-      "sourceHandle": "left",
-      "target": "node-72",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-57",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-71",
+      "source": "node-66",
       "sourceHandle": "bottom",
-      "target": "node-79",
-      "targetHandle": "right",
-      "data": {
-        "label": "in",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": 0,
-        "labelOffsetY": 0,
-        "onTop": true
-      },
-      "id": "edge-59",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-73",
-      "sourceHandle": "left",
-      "target": "node-80",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-60",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-76",
-      "sourceHandle": "left",
-      "target": "node-80",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-61",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-81",
-      "sourceHandle": "right",
-      "target": "node-82",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-62",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-83",
-      "sourceHandle": "left",
-      "target": "node-73",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-63",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-84",
-      "sourceHandle": "left",
-      "target": "node-76",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-64",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-80",
-      "sourceHandle": "left",
-      "target": "node-87",
-      "targetHandle": "right",
-      "data": {
-        "label": "4. Send TGS-REP",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-65",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-87",
-      "sourceHandle": "left",
       "target": "node-88",
       "targetHandle": "right",
-      "data": {
-        "label": "in",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-68",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-88",
-      "sourceHandle": "left",
-      "target": "node-89",
-      "targetHandle": "right",
-      "data": {
-        "label": "decr",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-69",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-89",
-      "sourceHandle": "bottom",
-      "target": "node-94",
-      "targetHandle": "top",
-      "data": {
-        "label": "enc",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-70",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-94",
-      "sourceHandle": "bottom",
-      "target": "node-95",
-      "targetHandle": "left",
-      "data": {
-        "label": "out",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-71",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-97",
-      "sourceHandle": "bottom",
-      "target": "node-98",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-72",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-90",
-      "sourceHandle": "right",
-      "target": "node-99",
-      "targetHandle": "left",
-      "data": {
-        "label": "in",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-73",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-95",
-      "sourceHandle": "right",
-      "target": "node-99",
-      "targetHandle": "left",
-      "data": {
-        "label": "in",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-74",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-99",
-      "sourceHandle": "right",
-      "target": "node-100",
-      "targetHandle": "left",
-      "data": {
-        "label": "5. send AP-REQ",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true
-      },
-      "id": "edge-75",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-101",
-      "sourceHandle": "bottom",
-      "target": "node-102",
-      "targetHandle": "top",
-      "data": {
-        "label": "dscr",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": 0,
-        "labelOffsetY": 0,
-        "onTop": true
-      },
-      "id": "edge-76",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-103",
-      "sourceHandle": "right",
-      "target": "node-106",
-      "targetHandle": "left",
       "data": {
         "label": "out",
         "edgeType": "smoothstep",
@@ -3775,86 +4005,30 @@
         "bidirectional": false,
         "animationEffect": "arrow",
         "onTop": true,
-        "labelOffsetX": 0,
-        "labelOffsetY": 0
+        "showAtStep": 30
       },
-      "id": "edge-77",
+      "id": "edge-57",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-106",
+      "source": "node-89",
       "sourceHandle": "bottom",
-      "target": "node-107",
-      "targetHandle": "top",
+      "target": "node-34",
+      "targetHandle": "left",
       "data": {
-        "label": "",
+        "label": "find",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 33
       },
-      "id": "edge-78",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-105",
-      "sourceHandle": "bottom",
-      "target": "node-108",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-79",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-108",
-      "sourceHandle": "bottom",
-      "target": "node-110",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-80",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-38",
-      "sourceHandle": "bottom",
-      "target": "node-16",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-81",
+      "id": "edge-58",
       "selected": false
     }
   ]

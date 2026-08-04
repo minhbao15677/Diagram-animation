@@ -638,7 +638,7 @@
         "showAtStep": 11
       },
       "id": "edge-7",
-      "selected": true
+      "selected": false
     },
     {
       "type": "customEdge",

@@ -4,7 +4,7 @@ import { useDiagramStore } from '../../store/diagramStore';
 import { toPng, toSvg } from 'html-to-image';
 
 export function Toolbar() {
-  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode, addZoneNode, addTableNode, addTextBoxNode, clearAllSteps } = useDiagramStore();
+  const { addNode, undo, redo, history, historyIndex, copySelected, selectedNodes, enterPresentation, nodes, edges, loadState, addLabeledBoxNode, addZoneNode, addTableNode, addTextBoxNode, addTreeNode, addBranchToggleNode, clearAllSteps } = useDiagramStore();
   const { fitView, getViewport } = useReactFlow();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -72,6 +72,20 @@ export function Toolbar() {
     const canvasY = (-y + window.innerHeight / 2) / zoom;
     addTextBoxNode({ x: canvasX - 110 + (Math.random() - 0.5) * 80, y: canvasY - 60 + (Math.random() - 0.5) * 80 });
   }, [addTextBoxNode, getViewport]);
+
+  const handleAddTree = useCallback(() => {
+    const { x, y, zoom } = getViewport();
+    const canvasX = (-x + window.innerWidth / 2) / zoom;
+    const canvasY = (-y + window.innerHeight / 2) / zoom;
+    addTreeNode({ x: canvasX - 110 + (Math.random() - 0.5) * 80, y: canvasY - 60 + (Math.random() - 0.5) * 80 });
+  }, [addTreeNode, getViewport]);
+
+  const handleAddBranchToggle = useCallback(() => {
+    const { x, y, zoom } = getViewport();
+    const canvasX = (-x + window.innerWidth / 2) / zoom;
+    const canvasY = (-y + window.innerHeight / 2) / zoom;
+    addBranchToggleNode({ x: canvasX - 75 + (Math.random() - 0.5) * 80, y: canvasY - 17 + (Math.random() - 0.5) * 80 });
+  }, [addBranchToggleNode, getViewport]);
 
   const handleExportPng = useCallback(async () => {
     const el = document.querySelector('.react-flow__viewport') as HTMLElement | null;
@@ -202,6 +216,38 @@ export function Toolbar() {
           <path d="M3.5 4h7M3.5 6.5h7M3.5 9h5" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
         </svg>
         Add Text Box
+      </button>
+
+      <button
+        onClick={handleAddTree}
+        title="Add collapsible tree (click header to expand/collapse branches)"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors font-medium text-white"
+        style={{ background: '#4f46e5' }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#4338ca'; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#4f46e5'; }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1.5 3.5l2 2 2-2" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M7.5 4h5" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M4.5 7.5h8M4.5 10.5h6" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+        Add Tree
+      </button>
+
+      <button
+        onClick={handleAddBranchToggle}
+        title="Add toggle button (click to collapse/expand the branch it points to)"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded transition-colors font-medium text-white"
+        style={{ background: '#0f766e' }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#115e59'; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#0f766e'; }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <rect x="0.5" y="3" width="8" height="8" rx="4" stroke="white" strokeWidth="1.5" />
+          <path d="M3 7h3.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M10.5 7H13M11.75 5.75v2.5" stroke="white" strokeWidth="1.3" strokeLinecap="round" />
+        </svg>
+        Add Toggle
       </button>
 
       {/* Divider */}

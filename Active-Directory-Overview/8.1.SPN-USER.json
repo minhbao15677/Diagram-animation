@@ -9,7 +9,7 @@
         "y": 163.4549157578233
       },
       "data": {
-        "label": "Object svc_sql",
+        "label": "Object BOB01",
         "bodyText": "\n",
         "bgColor": "#ffffff",
         "headerBgColor": "#3b82f6",
@@ -133,8 +133,8 @@
         "borderStyle": "solid",
         "borderRadius": 4,
         "highlightedLines": [
-          4,
-          0
+          0,
+          4
         ]
       },
       "width": 587,

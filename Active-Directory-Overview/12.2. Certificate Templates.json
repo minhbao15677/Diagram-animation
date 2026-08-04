@@ -2,14 +2,73 @@
   "version": 1,
   "nodes": [
     {
-      "id": "node-3",
-      "type": "labeledBoxNode",
+      "id": "node-1",
+      "type": "rectNode",
       "position": {
-        "x": 563.8875792621097,
-        "y": 160.71842314178645
+        "x": 411.8918026876892,
+        "y": -372.392036833277
       },
       "data": {
-        "label": "CLIENT01",
+        "label": "Certificate Templates",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 2
+      },
+      "width": 163,
+      "height": 33,
+      "measured": {
+        "width": 163,
+        "height": 33
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-3",
+      "type": "textBoxNode",
+      "position": {
+        "x": 642.1113790090228,
+        "y": -380.392036833277
+      },
+      "data": {
+        "text": "Kỹ thuật này dùng trong leo thang đặc quyền. Từ user thường lên admin domain",
+        "bgColor": "transparent",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ],
+        "showAtStep": 4
+      },
+      "width": 317,
+      "height": 49,
+      "measured": {
+        "width": 317,
+        "height": 49
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-4",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 694.6113790090228,
+        "y": -301.267036833277
+      },
+      "data": {
+        "label": "AD CS",
         "bodyText": "\n",
         "bgColor": "#ffffff",
         "headerBgColor": "#3b82f6",
@@ -22,28 +81,28 @@
         "borderRadius": 8,
         "showAtStep": 1
       },
-      "width": 102,
-      "height": 106,
+      "width": 106,
+      "height": 102,
       "measured": {
-        "width": 102,
-        "height": 106
+        "width": 106,
+        "height": 102
       },
       "selected": false,
-      "dragging": false,
+      "dragging": true,
       "resizing": false
     },
     {
-      "id": "node-4",
+      "id": "node-5",
       "type": "labeledBoxNode",
       "position": {
-        "x": 852.8007225374905,
-        "y": 160.71842314178645
+        "x": 935.6113790090229,
+        "y": -302.267036833277
       },
       "data": {
-        "label": "DC",
+        "label": "AS",
         "bodyText": "\n",
         "bgColor": "#ffffff",
-        "headerBgColor": "#d83bf7",
+        "headerBgColor": "#3b82f6",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 13,
@@ -53,38 +112,11 @@
         "borderRadius": 8,
         "showAtStep": 1
       },
-      "width": 102,
-      "height": 106,
+      "width": 106,
+      "height": 102,
       "measured": {
-        "width": 102,
-        "height": 106
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false
-    },
-    {
-      "id": "node-5",
-      "type": "rectNode",
-      "position": {
-        "x": 603.3875792621097,
-        "y": 648.8842747275655
-      },
-      "data": {
-        "label": "\n",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8
-      },
-      "width": 23,
-      "height": 23,
-      "measured": {
-        "width": 23,
-        "height": 23
+        "width": 106,
+        "height": 102
       },
       "selected": false,
       "dragging": true,
@@ -92,26 +124,30 @@
     },
     {
       "id": "node-6",
-      "type": "rectNode",
+      "type": "labeledBoxNode",
       "position": {
-        "x": 892.3007225374905,
-        "y": 648.8842747275655
+        "x": 1158.611379009023,
+        "y": -302.267036833277
       },
       "data": {
-        "label": "\n",
+        "label": "TGS",
+        "bodyText": "\n",
         "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 14,
+        "fontSize": 13,
+        "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8
+        "borderRadius": 8,
+        "showAtStep": 1
       },
-      "width": 23,
-      "height": 23,
+      "width": 106,
+      "height": 102,
       "measured": {
-        "width": 23,
-        "height": 23
+        "width": 106,
+        "height": 102
       },
       "selected": false,
       "dragging": true,
@@ -121,26 +157,24 @@
       "id": "node-7",
       "type": "rectNode",
       "position": {
-        "x": 577.8875792621097,
-        "y": 288.41948197231216
+        "x": 732.1113790090228,
+        "y": 147.55515155904553
       },
       "data": {
-        "label": "ALICE",
+        "label": "\n",
         "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 3
+        "borderRadius": 8
       },
-      "width": 77,
-      "height": 20,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 77,
-        "height": 20
+        "width": 31,
+        "height": 21
       },
       "selected": false,
       "dragging": true,
@@ -150,26 +184,24 @@
       "id": "node-8",
       "type": "rectNode",
       "position": {
-        "x": 577.8875792621097,
-        "y": 308.41948197231216
+        "x": 973.1113790090229,
+        "y": 147.55515155904553
       },
       "data": {
-        "label": "QAZ@123",
-        "bgColor": "#dbeafe",
+        "label": "\n",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 3
+        "borderRadius": 8
       },
-      "width": 77,
-      "height": 19,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 77,
-        "height": 19
+        "width": 31,
+        "height": 21
       },
       "selected": false,
       "dragging": true,
@@ -179,8 +211,8 @@
       "id": "node-9",
       "type": "rectNode",
       "position": {
-        "x": 892.3007225374905,
-        "y": 286.91948197231216
+        "x": 1196.111379009023,
+        "y": 147.55515155904553
       },
       "data": {
         "label": "\n",
@@ -190,93 +222,134 @@
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": true,
-        "showAtStep": 5
+        "borderRadius": 8
       },
-      "width": 23,
-      "height": 23,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 23,
-        "height": 23
+        "width": 31,
+        "height": 21
       },
       "selected": false,
       "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
+      "resizing": false
     },
     {
       "id": "node-10",
       "type": "rectNode",
       "position": {
-        "x": 927.3007225374905,
-        "y": 286.91948197231216
+        "x": 434.8918026876892,
+        "y": -281.267036833277
       },
       "data": {
-        "label": "ALICE",
+        "label": "MALICE",
         "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 5
+        "borderRadius": 8,
+        "showAtStep": 1
       },
-      "width": 69,
-      "height": 21,
+      "width": 140,
+      "height": 60,
       "measured": {
-        "width": 69,
-        "height": 21
+        "width": 140,
+        "height": 60
       },
       "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
+      "dragging": true
     },
     {
       "id": "node-11",
       "type": "rectNode",
       "position": {
-        "x": 880.8007225374905,
-        "y": 354.6323713259719
+        "x": 489.3918026876892,
+        "y": 147.55515155904553
       },
       "data": {
-        "label": "CHALL",
-        "bgColor": "#fce7f3",
+        "label": "\n",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 6
+        "borderRadius": 8
       },
-      "width": 69,
+      "width": 31,
       "height": 21,
       "measured": {
-        "width": 69,
+        "width": 31,
         "height": 21
       },
       "selected": false,
       "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
+      "resizing": false
     },
     {
-      "id": "node-12",
+      "id": "node-13",
       "type": "rectNode",
       "position": {
-        "x": 603.3875792621097,
-        "y": 352.6323713259719
+        "x": 318.8918026876892,
+        "y": -264.267036833277
+      },
+      "data": {
+        "label": "private key",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 5
+      },
+      "width": 93,
+      "height": 26,
+      "measured": {
+        "width": 93,
+        "height": 26
+      },
+      "selected": true,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-14",
+      "type": "rectNode",
+      "position": {
+        "x": 318.8918026876892,
+        "y": -212.26703683327702
+      },
+      "data": {
+        "label": "public key",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 5
+      },
+      "width": 93,
+      "height": 26,
+      "measured": {
+        "width": 93,
+        "height": 26
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 489.3918026876892,
+        "y": -179.15045675255575
       },
       "data": {
         "label": "\n",
@@ -288,145 +361,47 @@
         "borderStyle": "solid",
         "borderRadius": 8,
         "onTop": true,
-        "showAtStep": 8
+        "showAtStep": 7
       },
-      "width": 23,
-      "height": 23,
-      "measured": {
-        "width": 23,
-        "height": 23
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-13",
-      "type": "rectNode",
-      "position": {
-        "x": 529.3875792621097,
-        "y": 353.6323713259719
-      },
-      "data": {
-        "label": "CHALL",
-        "bgColor": "#fce7f3",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 8
-      },
-      "width": 69,
+      "width": 31,
       "height": 21,
       "measured": {
-        "width": 69,
+        "width": 31,
         "height": 21
       },
       "selected": false,
       "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
+      "resizing": false
     },
     {
-      "id": "node-14",
+      "id": "node-16",
       "type": "rectNode",
       "position": {
-        "x": 412.31693401493476,
-        "y": 308.41948197231216
+        "x": 732.1113790090228,
+        "y": -179.15045675255575
       },
       "data": {
-        "label": "LSASS.EXEX",
+        "label": "\n",
         "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 1,
+        "borderRadius": 8,
         "onTop": true,
-        "showAtStep": 10
+        "showAtStep": 9
       },
-      "width": 99,
-      "height": 19,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 99,
-        "height": 19
+        "width": 31,
+        "height": 21
       },
       "selected": false,
       "dragging": true,
       "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-15",
-      "type": "rectNode",
-      "position": {
-        "x": 324.31693401493476,
-        "y": 354.6323713259719
-      },
-      "data": {
-        "label": "NTHASH",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 12
-      },
-      "width": 88,
-      "height": 19,
-      "measured": {
-        "width": 88,
-        "height": 19
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-16",
-      "type": "rectNode",
-      "position": {
-        "x": 598.3875792621097,
-        "y": 428.63094090776974
-      },
-      "data": {
-        "label": "ENC - CHALL",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 15
-      },
-      "width": 63,
-      "height": 36,
-      "measured": {
-        "width": 63,
-        "height": 36
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
+      "zIndex": 1000,
       "style": {
         "zIndex": 1000
       }
@@ -435,8 +410,150 @@
       "id": "node-17",
       "type": "rectNode",
       "position": {
-        "x": 892.3007225374905,
-        "y": 435.13094090776974
+        "x": 318.8918026876892,
+        "y": -186.26703683327702
+      },
+      "data": {
+        "label": "SAN: domain admin",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 6
+      },
+      "width": 91,
+      "height": 36,
+      "measured": {
+        "width": 91,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-18",
+      "type": "rectNode",
+      "position": {
+        "x": 800.6113790090228,
+        "y": -218.15045675255575
+      },
+      "data": {
+        "label": "public key",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 10
+      },
+      "width": 93,
+      "height": 26,
+      "measured": {
+        "width": 93,
+        "height": 26
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-19",
+      "type": "textBoxNode",
+      "position": {
+        "x": 768.6113790090229,
+        "y": -170.15045675255575
+      },
+      "data": {
+        "text": "Các lỗi cấu trình trên các template chấp nhận SAN được sửa bởi người dùng",
+        "bgColor": "transparent",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ],
+        "showAtStep": 12
+      },
+      "width": 194,
+      "height": 80,
+      "measured": {
+        "width": 194,
+        "height": 80
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-20",
+      "type": "rectNode",
+      "position": {
+        "x": 316.8918026876892,
+        "y": -67.02691706489563
+      },
+      "data": {
+        "label": "enc-timestamp",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 16
+      },
+      "width": 91,
+      "height": 37,
+      "measured": {
+        "width": 91,
+        "height": 37
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-21",
+      "type": "rectNode",
+      "position": {
+        "x": 315.8918026876892,
+        "y": -30.026917064895628
+      },
+      "data": {
+        "label": "cert",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 15
+      },
+      "width": 93,
+      "height": 26,
+      "measured": {
+        "width": 93,
+        "height": 26
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-22",
+      "type": "rectNode",
+      "position": {
+        "x": 489.3918026876892,
+        "y": -40.52691706489563
       },
       "data": {
         "label": "\n",
@@ -448,152 +565,31 @@
         "borderStyle": "solid",
         "borderRadius": 8,
         "onTop": true,
-        "showAtStep": 17
-      },
-      "width": 23,
-      "height": 23,
-      "measured": {
-        "width": 23,
-        "height": 23
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-18",
-      "type": "rectNode",
-      "position": {
-        "x": 933.3007225374905,
-        "y": 428.63094090776974
-      },
-      "data": {
-        "label": "ENC - CHALL",
-        "bgColor": "#dbeafe",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 17
-      },
-      "width": 63,
-      "height": 36,
-      "measured": {
-        "width": 63,
-        "height": 36
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-19",
-      "type": "rectNode",
-      "position": {
-        "x": 1016.8783135164848,
-        "y": 183.71842314178645
-      },
-      "data": {
-        "label": "NTDS.DIT",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
         "showAtStep": 19
       },
-      "width": 140,
-      "height": 60,
-      "measured": {
-        "width": 140,
-        "height": 60
-      },
-      "selected": false
-    },
-    {
-      "id": "node-20",
-      "type": "rectNode",
-      "position": {
-        "x": 1027.378313516485,
-        "y": 299.41948197231216
-      },
-      "data": {
-        "label": "NTHASH - ALICE",
-        "bgColor": "#fce7f3",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 21
-      },
-      "width": 119,
+      "width": 31,
       "height": 21,
       "measured": {
-        "width": 119,
+        "width": 31,
         "height": 21
       },
       "selected": false,
       "dragging": true,
       "resizing": false,
+      "zIndex": 1000,
       "style": {
         "zIndex": 1000
       }
     },
     {
-      "id": "node-21",
+      "id": "node-23",
       "type": "rectNode",
       "position": {
-        "x": 1125.378313516485,
-        "y": 428.63094090776974
+        "x": 973.1113790090229,
+        "y": -40.52691706489563
       },
       "data": {
-        "label": "ENC - CHALL",
-        "bgColor": "#fce7f3",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 1,
-        "onTop": true,
-        "showAtStep": 24
-      },
-      "width": 63,
-      "height": 36,
-      "measured": {
-        "width": 63,
-        "height": 36
-      },
-      "selected": false,
-      "dragging": true,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-22",
-      "type": "rectNode",
-      "position": {
-        "x": 1027.378313516485,
-        "y": 437.63094090776974
-      },
-      "data": {
-        "label": "compare",
+        "label": "\n",
         "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
@@ -602,85 +598,136 @@
         "borderStyle": "solid",
         "borderRadius": 8,
         "onTop": true,
-        "showAtStep": 26
+        "showAtStep": 20
       },
-      "width": 73,
-      "height": 18,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 73,
-        "height": 18
+        "width": 31,
+        "height": 21
       },
       "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-24",
+      "type": "rectNode",
+      "position": {
+        "x": 1023.2888598241184,
+        "y": -108.65045675255575
+      },
+      "data": {
+        "label": "enc-timestamp",
+        "bgColor": "#fef9c3",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 21
+      },
+      "width": 91,
+      "height": 37,
+      "measured": {
+        "width": 91,
+        "height": 37
+      },
+      "selected": false,
+      "dragging": true,
       "resizing": false
     },
     {
       "id": "node-25",
       "type": "rectNode",
       "position": {
-        "x": 1073.378313516485,
-        "y": 545.771992999086
+        "x": 1023.2888598241184,
+        "y": -71.65045675255575
       },
       "data": {
-        "label": "true",
-        "bgColor": "#d1fae5",
+        "label": "cert",
+        "bgColor": "#fef9c3",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": true,
-        "showAtStep": 28
+        "borderRadius": 0,
+        "showAtStep": 23
       },
-      "width": 73,
-      "height": 18,
+      "width": 93,
+      "height": 26,
       "measured": {
-        "width": 73,
-        "height": 18
+        "width": 93,
+        "height": 26
       },
       "selected": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
+      "dragging": true,
+      "resizing": false
     },
     {
       "id": "node-26",
-      "type": "labeledBoxNode",
+      "type": "rectNode",
       "position": {
-        "x": 848.3007225374905,
-        "y": 503.2719929990861
+        "x": 1024.2888598241184,
+        "y": -4.026917064895628
       },
       "data": {
-        "label": "SAM_INFO",
-        "bodyText": "some info in object user ALICE (SID, GID ...)",
-        "bgColor": "#ffffff",
-        "headerBgColor": "#3b82f6",
+        "label": "SAN: domain admin",
+        "bgColor": "#ede9fe",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 13,
-        "bodyFontSize": 13,
+        "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": true,
-        "showAtStep": 30
+        "borderRadius": 0,
+        "showAtStep": 25
       },
-      "width": 121,
-      "height": 103,
+      "width": 91,
+      "height": 36,
       "measured": {
-        "width": 121,
-        "height": 103
+        "width": 91,
+        "height": 36
       },
       "selected": false,
+      "dragging": true,
       "resizing": false
     },
     {
       "id": "node-27",
       "type": "rectNode",
       "position": {
-        "x": 603.3875792621097,
-        "y": 543.271992999086
+        "x": 315.8918026876892,
+        "y": 76.33945507090937
+      },
+      "data": {
+        "label": "TGT-domain admin",
+        "bgColor": "#ede9fe",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 27
+      },
+      "width": 91,
+      "height": 36,
+      "measured": {
+        "width": 91,
+        "height": 36
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-28",
+      "type": "rectNode",
+      "position": {
+        "x": 1196.111379009023,
+        "y": 83.83945507090937
       },
       "data": {
         "label": "\n",
@@ -691,93 +738,29 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "onTop": true,
-        "showAtStep": 31
+        "onTop": true
       },
-      "width": 23,
-      "height": 23,
+      "width": 31,
+      "height": 21,
       "measured": {
-        "width": 23,
-        "height": 23
+        "width": 31,
+        "height": 21
       },
       "selected": false,
       "dragging": true,
       "resizing": false,
+      "zIndex": 1000,
       "style": {
         "zIndex": 1000
       }
-    },
-    {
-      "id": "node-28",
-      "type": "labeledBoxNode",
-      "position": {
-        "x": 468.88757926210974,
-        "y": 503.271992999086
-      },
-      "data": {
-        "label": "SAM_INFO",
-        "bodyText": "some info in object user ALICE (SID, GID ...)",
-        "bgColor": "#ffffff",
-        "headerBgColor": "#3b82f6",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 13,
-        "bodyFontSize": 13,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "onTop": true,
-        "showAtStep": 31
-      },
-      "width": 121,
-      "height": 103,
-      "measured": {
-        "width": 121,
-        "height": 103
-      },
-      "selected": false,
-      "resizing": false,
-      "style": {
-        "zIndex": 1000
-      }
-    },
-    {
-      "id": "node-29",
-      "type": "labeledBoxNode",
-      "position": {
-        "x": 265.31693401493476,
-        "y": 507.7719929990861
-      },
-      "data": {
-        "label": "token access",
-        "bodyText": "\n",
-        "bgColor": "#ffffff",
-        "headerBgColor": "#3b82f6",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 13,
-        "bodyFontSize": 13,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 34
-      },
-      "width": 118,
-      "height": 94,
-      "measured": {
-        "width": 118,
-        "height": 94
-      },
-      "selected": false,
-      "resizing": false
     }
   ],
   "edges": [
     {
       "type": "customEdge",
-      "source": "node-3",
+      "source": "node-4",
       "sourceHandle": "bottom",
-      "target": "node-5",
+      "target": "node-7",
       "targetHandle": "top",
       "data": {
         "label": "",
@@ -788,17 +771,16 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 2
+        "showAtStep": 1
       },
       "id": "edge-1",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-4",
+      "source": "node-5",
       "sourceHandle": "bottom",
-      "target": "node-6",
+      "target": "node-8",
       "targetHandle": "top",
       "data": {
         "label": "",
@@ -809,84 +791,20 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "showAtStep": 2
+        "onTop": true,
+        "showAtStep": 1
       },
       "id": "edge-2",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-7",
-      "sourceHandle": "right",
+      "source": "node-6",
+      "sourceHandle": "bottom",
       "target": "node-9",
-      "targetHandle": "left",
-      "data": {
-        "label": "1. send username",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true,
-        "labelOffsetX": 0.17800567668752557,
-        "labelOffsetY": 0,
-        "showAtStep": 4
-      },
-      "id": "edge-5",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-11",
-      "sourceHandle": "left",
-      "target": "node-12",
-      "targetHandle": "right",
-      "data": {
-        "label": "2. send challenge",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 7
-      },
-      "id": "edge-6",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-8",
-      "sourceHandle": "left",
-      "target": "node-14",
-      "targetHandle": "right",
-      "data": {
-        "label": "in",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 9
-      },
-      "id": "edge-7",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-14",
-      "sourceHandle": "left",
-      "target": "node-15",
       "targetHandle": "top",
       "data": {
-        "label": "out",
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -894,20 +812,62 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 11
+        "showAtStep": 1
       },
-      "id": "edge-8",
+      "id": "edge-3",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-1",
+      "sourceHandle": "right",
+      "target": "node-3",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 3
+      },
+      "id": "edge-4",
       "selected": false
     },
     {
       "type": "customEdge",
       "source": "node-15",
       "sourceHandle": "right",
-      "target": "node-13",
+      "target": "node-16",
       "targetHandle": "left",
       "data": {
-        "label": "enc",
+        "label": "send request cert",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0,
+        "showAtStep": 8
+      },
+      "id": "edge-7",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-17",
+      "sourceHandle": "right",
+      "target": "node-15",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -915,30 +875,47 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 13
+        "showAtStep": 7
+      },
+      "id": "edge-8",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-18",
+      "sourceHandle": "top",
+      "target": "node-4",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "showAtStep": 11
       },
       "id": "edge-9",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-13",
+      "source": "node-16",
       "sourceHandle": "bottom",
-      "target": "node-16",
-      "targetHandle": "left",
+      "target": "node-15",
+      "targetHandle": "bottom",
       "data": {
-        "label": "out",
+        "label": "send cert hợp lệ",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow",
+        "animationEffect": "dot",
         "onTop": true,
-        "labelOffsetX": -0.18414380346985404,
-        "labelOffsetY": -11.407708624957458,
         "showAtStep": 14
       },
       "id": "edge-10",
@@ -946,12 +923,12 @@
     },
     {
       "type": "customEdge",
-      "source": "node-16",
-      "sourceHandle": "right",
-      "target": "node-17",
+      "source": "node-13",
+      "sourceHandle": "left",
+      "target": "node-20",
       "targetHandle": "left",
       "data": {
-        "label": "3. send enc-challenge",
+        "label": "enc",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -959,22 +936,20 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "labelOffsetX": 0.35601135337505113,
-        "labelOffsetY": -0.1810747400786898,
         "onTop": true,
-        "showAtStep": 16
+        "showAtStep": 17
       },
       "id": "edge-11",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-10",
-      "sourceHandle": "top",
-      "target": "node-19",
+      "source": "node-21",
+      "sourceHandle": "right",
+      "target": "node-22",
       "targetHandle": "left",
       "data": {
-        "label": "in",
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -982,43 +957,42 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
         "showAtStep": 18
+      },
+      "id": "edge-12",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-22",
+      "sourceHandle": "right",
+      "target": "node-23",
+      "targetHandle": "left",
+      "data": {
+        "label": "AS-request",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "labelOffsetX": 68.06392377047091,
+        "labelOffsetY": -1.0274578368503946,
+        "showAtStep": 20
       },
       "id": "edge-13",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-19",
-      "sourceHandle": "bottom",
-      "target": "node-20",
+      "source": "node-5",
+      "sourceHandle": "right",
+      "target": "node-24",
       "targetHandle": "top",
       "data": {
-        "label": "out",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true,
-        "labelOffsetX": 0,
-        "labelOffsetY": -0.1810747400786898,
-        "showAtStep": 20
-      },
-      "id": "edge-14",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-20",
-      "sourceHandle": "bottom",
-      "target": "node-11",
-      "targetHandle": "right",
-      "data": {
-        "label": "enc",
+        "label": "check",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -1034,12 +1008,12 @@
     },
     {
       "type": "customEdge",
-      "source": "node-11",
+      "source": "node-25",
       "sourceHandle": "bottom",
-      "target": "node-21",
+      "target": "node-26",
       "targetHandle": "top",
       "data": {
-        "label": "out",
+        "label": "",
         "edgeType": "smoothstep",
         "arrowType": "arrowclosed",
         "color": "#64748b",
@@ -1047,17 +1021,39 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 23
+        "showAtStep": 24
       },
       "id": "edge-16",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-18",
+      "source": "node-23",
+      "sourceHandle": "bottom",
+      "target": "node-22",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "AS-Response-TGT-domain-admin",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "labelOffsetX": -68.64986358104423,
+        "labelOffsetY": -0.9944471432969682,
+        "showAtStep": 26
+      },
+      "id": "edge-17",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-27",
       "sourceHandle": "right",
-      "target": "node-21",
+      "target": "node-28",
       "targetHandle": "left",
       "data": {
         "label": "",
@@ -1067,38 +1063,17 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
-      },
-      "id": "edge-17"
-    },
-    {
-      "type": "customEdge",
-      "source": "node-21",
-      "sourceHandle": "left",
-      "target": "node-18",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
         "animationEffect": "dot",
-        "onTop": true,
-        "labelOffsetX": 0,
-        "labelOffsetY": 0,
-        "showAtStep": 25
+        "showAtStep": 28
       },
-      "id": "edge-18",
+      "id": "edge-19",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-22",
+      "source": "node-10",
       "sourceHandle": "bottom",
-      "target": "node-25",
+      "target": "node-11",
       "targetHandle": "top",
       "data": {
         "label": "",
@@ -1109,96 +1084,9 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "showAtStep": 27
+        "showAtStep": 1
       },
-      "id": "edge-21",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-25",
-      "sourceHandle": "left",
-      "target": "node-26",
-      "targetHandle": "right",
-      "data": {
-        "label": "build",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": 0.17800567668752557,
-        "labelOffsetY": 0,
-        "onTop": true,
-        "showAtStep": 29
-      },
-      "id": "edge-23",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-26",
-      "sourceHandle": "left",
-      "target": "node-27",
-      "targetHandle": "right",
-      "data": {
-        "label": "4. send sam-info",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": 0,
-        "labelOffsetY": 0,
-        "onTop": true,
-        "showAtStep": 31
-      },
-      "id": "edge-24",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-14",
-      "sourceHandle": "bottom",
-      "target": "node-28",
-      "targetHandle": "top",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "dot",
-        "showAtStep": 32
-      },
-      "id": "edge-26",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-28",
-      "sourceHandle": "left",
-      "target": "node-29",
-      "targetHandle": "right",
-      "data": {
-        "label": "out",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "showAtStep": 33,
-        "onTop": true
-      },
-      "id": "edge-27",
+      "id": "edge-20",
       "selected": false
     }
   ]

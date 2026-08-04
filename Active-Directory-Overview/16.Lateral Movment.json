@@ -2,28 +2,31 @@
   "version": 1,
   "nodes": [
     {
-      "id": "node-1",
-      "type": "rectNode",
+      "id": "node-2",
+      "type": "labeledBoxNode",
       "position": {
-        "x": 870.4680600453613,
-        "y": 69.74714382244838
+        "x": 99.15945054335893,
+        "y": 169.4435794556345
       },
       "data": {
-        "label": "computer01",
+        "label": "Client206",
+        "bodyText": "\n",
         "bgColor": "#ffffff",
+        "headerBgColor": "#3b82f6",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 14,
+        "fontSize": 13,
+        "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
         "showAtStep": 1
       },
-      "width": 112,
-      "height": 44,
+      "width": 122,
+      "height": 121,
       "measured": {
-        "width": 112,
-        "height": 44
+        "width": 122,
+        "height": 121
       },
       "selected": false,
       "dragging": false,
@@ -31,156 +34,47 @@
     },
     {
       "id": "node-3",
-      "type": "rectNode",
+      "type": "labeledBoxNode",
       "position": {
-        "x": 1124.8597123265404,
-        "y": 69.74714382244838
+        "x": 356.58576609813906,
+        "y": 169.4435794556345
       },
       "data": {
-        "label": "corp.local",
+        "label": "Srv202",
+        "bodyText": "\n",
         "bgColor": "#ffffff",
+        "headerBgColor": "#f73b3b",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 14,
+        "fontSize": 13,
+        "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "showAtStep": 3
+        "showAtStep": 1
       },
-      "width": 112,
-      "height": 44,
+      "width": 122,
+      "height": 121,
       "measured": {
-        "width": 112,
-        "height": 44
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-4",
-      "type": "rectNode",
-      "position": {
-        "x": 1299.0648752417212,
-        "y": 69.74714382244838
-      },
-      "data": {
-        "label": "Domain Controller",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 5
-      },
-      "width": 112,
-      "height": 44,
-      "measured": {
-        "width": 112,
-        "height": 44
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-6",
-      "type": "rectNode",
-      "position": {
-        "x": 1210.5054071437264,
-        "y": 141.18071929210294
-      },
-      "data": {
-        "label": "$computer01\n",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 7
-      },
-      "width": 112,
-      "height": 44,
-      "measured": {
-        "width": 112,
-        "height": 44
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-7",
-      "type": "rectNode",
-      "position": {
-        "x": 1210.5054071437264,
-        "y": 200.5676724202579
-      },
-      "data": {
-        "label": "RANDOM PASSWORD",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 7
-      },
-      "width": 112,
-      "height": 44,
-      "measured": {
-        "width": 112,
-        "height": 44
-      },
-      "selected": false,
-      "dragging": false,
-      "resizing": false
-    },
-    {
-      "id": "node-8",
-      "type": "rectNode",
-      "position": {
-        "x": 1170.5054071437264,
-        "y": 278.934823359567
-      },
-      "data": {
-        "label": "password ngẫu nhiên và tự động thay đổi sau 30 ngày",
-        "bgColor": "#ffffff",
-        "borderColor": "#000000",
-        "textColor": "#1e293b",
-        "fontSize": 14,
-        "borderWidth": 1.4,
-        "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 11
-      },
-      "width": 192,
-      "height": 77,
-      "measured": {
-        "width": 192,
-        "height": 77
+        "width": 122,
+        "height": 121
       },
       "selected": false,
       "dragging": true,
       "resizing": false
     },
     {
-      "id": "node-9",
+      "id": "node-4",
       "type": "labeledBoxNode",
       "position": {
-        "x": 926.4680600453613,
-        "y": 141.18071929210294
+        "x": 615.4182642767431,
+        "y": 177.9435794556345
       },
       "data": {
-        "label": "NTDS.DIT",
+        "label": "DC200",
         "bodyText": "\n",
         "bgColor": "#ffffff",
-        "headerBgColor": "#3b82f6",
+        "headerBgColor": "#c53bf7",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 13,
@@ -188,69 +82,155 @@
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "showAtStep": 9
+        "showAtStep": 1
       },
-      "width": 160,
-      "height": 100,
+      "width": 122,
+      "height": 121,
       "measured": {
-        "width": 160,
-        "height": 100
+        "width": 122,
+        "height": 121
       },
-      "selected": false
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "rectNode",
+      "position": {
+        "x": 67.15945054335893,
+        "y": 212.9435794556345
+      },
+      "data": {
+        "label": "alice",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 2
+      },
+      "width": 64,
+      "height": 17,
+      "measured": {
+        "width": 64,
+        "height": 17
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-7",
+      "type": "rectNode",
+      "position": {
+        "x": 67.15945054335894,
+        "y": 229.9435794556345
+      },
+      "data": {
+        "label": "QAZ123",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0,
+        "showAtStep": 2
+      },
+      "width": 64,
+      "height": 17,
+      "measured": {
+        "width": 64,
+        "height": 17
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-8",
+      "type": "rectNode",
+      "position": {
+        "x": 100.15945054335893,
+        "y": 328.2126727769831
+      },
+      "data": {
+        "label": "Infomation GT",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8,
+        "showAtStep": 4
+      },
+      "width": 120,
+      "height": 31,
+      "measured": {
+        "width": 120,
+        "height": 31
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
     },
     {
       "id": "node-10",
-      "type": "labeledBoxNode",
+      "type": "rectNode",
       "position": {
-        "x": 1443.6266621504997,
-        "y": 122.5676724202579
+        "x": 99.15945054335893,
+        "y": 433.7126727769831
       },
       "data": {
-        "label": "Object Computer01",
-        "bodyText": "\n",
+        "label": "credentials",
         "bgColor": "#ffffff",
-        "headerBgColor": "#3b82f6",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 13,
-        "bodyFontSize": 13,
+        "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "showAtStep": 13
+        "showAtStep": 6
       },
-      "width": 160,
-      "height": 164,
+      "width": 120,
+      "height": 31,
       "measured": {
-        "width": 160,
-        "height": 164
+        "width": 120,
+        "height": 31
       },
       "selected": false,
+      "dragging": true,
       "resizing": false
     },
     {
       "id": "node-11",
-      "type": "rectNode",
+      "type": "labeledBoxNode",
       "position": {
-        "x": 1472.6266621504997,
-        "y": 225.5676724202579
+        "x": 465.585766098139,
+        "y": 343.7126727769831
       },
       "data": {
-        "label": "Distinguished Name\n",
-        "bgColor": "#ede9fe",
+        "label": "Client202",
+        "bodyText": "Content goes here...",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#3bd8f7",
         "borderColor": "#000000",
         "textColor": "#1e293b",
         "fontSize": 13,
+        "bodyFontSize": 13,
         "borderWidth": 1.4,
         "borderStyle": "solid",
-        "borderRadius": 8,
-        "showAtStep": 14
+        "borderRadius": 8
       },
-      "width": 102,
-      "height": 38,
+      "width": 122,
+      "height": 121,
       "measured": {
-        "width": 102,
-        "height": 38
+        "width": 122,
+        "height": 121
       },
       "selected": false,
       "dragging": true,
@@ -260,53 +240,80 @@
       "id": "node-12",
       "type": "rectNode",
       "position": {
-        "x": 1472.6266621504997,
-        "y": 192.0676724202579
+        "x": -52.84054945664106,
+        "y": 433.7126727769831
       },
       "data": {
-        "label": "objectClass\n",
-        "bgColor": "#3d48e6",
+        "label": "admin session on Srv202",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
-        "textColor": "#ffffff",
-        "fontSize": 13,
+        "textColor": "#1e293b",
+        "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "showAtStep": 14
+        "showAtStep": 8
       },
-      "width": 102,
-      "height": 25,
+      "width": 120,
+      "height": 31,
       "measured": {
-        "width": 102,
-        "height": 25
+        "width": 120,
+        "height": 31
       },
       "selected": false,
-      "dragging": false,
+      "dragging": true,
       "resizing": false
     },
     {
       "id": "node-13",
       "type": "rectNode",
       "position": {
-        "x": 1472.6266621504997,
-        "y": 160.18071929210294
+        "x": 446.58576609813906,
+        "y": 212.9435794556345
       },
       "data": {
-        "label": "Attributes\n",
-        "bgColor": "#e85ff2",
+        "label": "admin AD",
+        "bgColor": "#ffffff",
         "borderColor": "#000000",
         "textColor": "#1e293b",
-        "fontSize": 13,
+        "fontSize": 14,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 0
+      },
+      "width": 80,
+      "height": 19,
+      "measured": {
+        "width": 80,
+        "height": 19
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-15",
+      "type": "rectNode",
+      "position": {
+        "x": 296.58576609813906,
+        "y": 495.58470822523805
+      },
+      "data": {
+        "label": "service user on srv202",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
         "borderWidth": 1.4,
         "borderStyle": "solid",
         "borderRadius": 8,
-        "showAtStep": 14
+        "showAtStep": 10
       },
-      "width": 102,
-      "height": 25,
+      "width": 120,
+      "height": 31,
       "measured": {
-        "width": 102,
-        "height": 25
+        "width": 120,
+        "height": 31
       },
       "selected": false,
       "dragging": true,
@@ -316,134 +323,7 @@
   "edges": [
     {
       "type": "customEdge",
-      "source": "node-1",
-      "sourceHandle": "right",
-      "target": "node-3",
-      "targetHandle": "left",
-      "data": {
-        "label": "join domain",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "onTop": true,
-        "showAtStep": 2
-      },
-      "id": "edge-1",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-3",
-      "sourceHandle": "right",
-      "target": "node-4",
-      "targetHandle": "left",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "showAtStep": 4
-      },
-      "id": "edge-2",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-4",
-      "sourceHandle": "bottom",
-      "target": "node-6",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "showAtStep": 6
-      },
-      "id": "edge-4",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-4",
-      "sourceHandle": "bottom",
-      "target": "node-7",
-      "targetHandle": "right",
-      "data": {
-        "label": "create",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": 3.4851678404973114,
-        "labelOffsetY": -43.907232650450936,
-        "onTop": true,
-        "showAtStep": 6
-      },
-      "id": "edge-5",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-6",
-      "sourceHandle": "left",
-      "target": "node-9",
-      "targetHandle": "right",
-      "data": {
-        "label": "",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "showAtStep": 8
-      },
-      "id": "edge-6",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-7",
-      "sourceHandle": "left",
-      "target": "node-9",
-      "targetHandle": "right",
-      "data": {
-        "label": "save",
-        "edgeType": "smoothstep",
-        "arrowType": "arrowclosed",
-        "color": "#64748b",
-        "lineStyle": "solid",
-        "strokeWidth": 1,
-        "bidirectional": false,
-        "animationEffect": "arrow",
-        "labelOffsetX": -13.728914328642574,
-        "labelOffsetY": -15.63178655885503,
-        "onTop": true,
-        "showAtStep": 8
-      },
-      "id": "edge-7",
-      "selected": false
-    },
-    {
-      "type": "customEdge",
-      "source": "node-7",
+      "source": "node-2",
       "sourceHandle": "bottom",
       "target": "node-8",
       "targetHandle": "top",
@@ -456,17 +336,38 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
-        "showAtStep": 10
+        "showAtStep": 3
       },
-      "id": "edge-8",
+      "id": "edge-1",
       "selected": false
     },
     {
       "type": "customEdge",
-      "source": "node-6",
-      "sourceHandle": "right",
+      "source": "node-8",
+      "sourceHandle": "bottom",
       "target": "node-10",
-      "targetHandle": "left",
+      "targetHandle": "top",
+      "data": {
+        "label": "find",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 5
+      },
+      "id": "edge-2",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-8",
+      "sourceHandle": "left",
+      "target": "node-12",
+      "targetHandle": "top",
       "data": {
         "label": "",
         "edgeType": "smoothstep",
@@ -476,9 +377,74 @@
         "strokeWidth": 1,
         "bidirectional": false,
         "animationEffect": "arrow",
+        "showAtStep": 7
+      },
+      "id": "edge-3",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-10",
+      "sourceHandle": "right",
+      "target": "node-15",
+      "targetHandle": "left",
+      "data": {
+        "label": "priv",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "showAtStep": 9
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-10",
+      "sourceHandle": "right",
+      "target": "node-3",
+      "targetHandle": "left",
+      "data": {
+        "label": "Lateral move",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "dot",
+        "onTop": true,
+        "labelOffsetX": 0.3158418002729635,
+        "labelOffsetY": 0,
+        "showAtStep": 11
+      },
+      "id": "edge-7",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-3",
+      "sourceHandle": "bottom",
+      "target": "node-4",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "Lateral move",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
         "showAtStep": 12
       },
-      "id": "edge-10",
+      "id": "edge-8",
       "selected": false
     }
   ]

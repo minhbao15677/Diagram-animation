@@ -12,12 +12,14 @@ import {
   type Connection,
   ConnectionLineType,
 } from '@xyflow/react';
-import { useDiagramStore } from '../../store/diagramStore';
+import { useDiagramStore, computeHiddenElements } from '../../store/diagramStore';
 import { RectNode } from './nodes/RectNode';
 import { LabeledBoxNode } from './nodes/LabeledBoxNode';
 import { ZoneNode } from './nodes/ZoneNode';
 import { TableNode } from './nodes/TableNode';
 import { TextBoxNode } from './nodes/TextBoxNode';
+import { TreeNode } from './nodes/TreeNode';
+import { BranchToggleNode } from './nodes/BranchToggleNode';
 import { CustomEdge } from './edges/CustomEdge';
 import { PresentationOverlay } from './PresentationOverlay';
 import { AlignmentGuides } from './AlignmentGuides';
@@ -31,6 +33,8 @@ const nodeTypes: NodeTypes = {
   zoneNode: ZoneNode,
   tableNode: TableNode,
   textBoxNode: TextBoxNode,
+  treeNode: TreeNode,
+  branchToggleNode: BranchToggleNode,
 };
 
 const edgeTypes: EdgeTypes = {
@@ -97,12 +101,42 @@ export function DiagramCanvas() {
     return effectiveTrigger !== undefined && effectiveTrigger <= currentTrigger;
   };
 
+  const hidden = useMemo(() => computeHiddenElements(nodes, edges), [nodes, edges]);
+
+  // Edges render at zIndex 1000, and their 20px-wide hit area would otherwise
+  // swallow clicks on the collapse controls of any node an arrow crosses.
+  const CLICKABLE_Z = 1001;
+  const isClickableNode = (type?: string) =>
+    type === 'branchToggleNode' || type === 'treeNode';
+
+  // Zones are backdrops: they must stay behind every other node even while
+  // selected. elevateNodesOnSelect adds SELECTED_NODE_Z (1000) to a selected
+  // node's zIndex, which would lift a zone from -1 to 999 and let its fill
+  // cover the nodes inside it. Pre-subtracting that offset keeps the sum
+  // negative, so a selected zone still renders (and hit-tests) underneath.
+  const SELECTED_NODE_Z = 1000;
+  const ZONE_Z = -1;
+  const zoneZ = (n: { selected?: boolean }) =>
+    n.selected ? ZONE_Z - SELECTED_NODE_Z : ZONE_Z;
+
   const presentationNodes = useMemo(() => {
     if (!presentationMode) {
       return nodes.map((n) => {
         const d = n.data as Record<string, unknown>;
         const onTop = d.onTop as boolean | undefined;
-        return onTop ? { ...n, style: { ...n.style, zIndex: 1000 } } : n;
+        const isHidden = hidden.hiddenNodes.has(n.id);
+        const z = isClickableNode(n.type)
+          ? CLICKABLE_Z
+          : n.type === 'zoneNode'
+          ? zoneZ(n)
+          : onTop
+          ? 1000
+          : undefined;
+        const base =
+          z !== undefined
+            ? { ...n, zIndex: z, style: { ...n.style, zIndex: z } }
+            : n;
+        return isHidden ? { ...base, hidden: true } : base;
       });
     }
     return nodes.map((n) => {
@@ -114,8 +148,22 @@ export function DiagramCanvas() {
       const isCurrent = currentGroupIds.has(n.id);
       const isHovered = hoveredElementId === n.id;
       const onTop = d.onTop as boolean | undefined;
+      const isZone = n.type === 'zoneNode';
+      const presentZ = isClickableNode(n.type)
+        ? CLICKABLE_Z
+        : isZone
+        ? ZONE_Z
+        : isHovered
+        ? 20
+        : isCurrent
+        ? 10
+        : onTop
+        ? 1000
+        : undefined;
       return {
         ...n,
+        ...(presentZ !== undefined ? { zIndex: presentZ } : {}),
+        hidden: hidden.hiddenNodes.has(n.id),
         style: {
           ...n.style,
           opacity: visible ? 1 : 0,
@@ -125,7 +173,7 @@ export function DiagramCanvas() {
             : isCurrent
             ? 'drop-shadow(0 0 14px rgba(59,130,246,0.4)) drop-shadow(0 0 6px rgba(37,99,235,0.55))'
             : undefined,
-          zIndex: isHovered ? 20 : isCurrent ? 10 : (onTop ? 1000 : undefined),
+          zIndex: presentZ,
         },
         data: { ...(n.data as Record<string, unknown>), __hovered: isHovered },
         draggable: false,
@@ -134,16 +182,16 @@ export function DiagramCanvas() {
       };
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [nodes, presentationMode, currentTrigger, currentGroupIds, hoveredElementId]);
+  }, [nodes, presentationMode, currentTrigger, currentGroupIds, hoveredElementId, hidden]);
 
   const presentationEdges = useMemo(() => {
     if (!presentationMode) {
-      return edges.map((e) => ({ ...e, zIndex: 1000 }));
+      return edges.map((e) => ({ ...e, zIndex: 1000, hidden: hidden.hiddenEdges.has(e.id) }));
     }
     return edges.map((e) => {
-      return { ...e, animated: false, selectable: false, zIndex: 1000 };
+      return { ...e, animated: false, selectable: false, zIndex: 1000, hidden: hidden.hiddenEdges.has(e.id) };
     });
-  }, [edges, presentationMode]);
+  }, [edges, presentationMode, hidden]);
 
   return (
     <div

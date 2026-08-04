@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node-1",
+      "type": "labeledBoxNode",
+      "position": {
+        "x": 343.0640481266437,
+        "y": 313.79668104995767
+      },
+      "data": {
+        "label": "Client75",
+        "bodyText": "\n",
+        "bgColor": "#ffffff",
+        "headerBgColor": "#bb3bf7",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 13,
+        "bodyFontSize": 13,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 126,
+      "height": 100,
+      "measured": {
+        "width": 126,
+        "height": 100
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-2",
+      "type": "rectNode",
+      "position": {
+        "x": 315.0640481266437,
+        "y": 363.79668104995767
+      },
+      "data": {
+        "label": "5985",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 56,
+      "height": 18,
+      "measured": {
+        "width": 56,
+        "height": 18
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-3",
+      "type": "rectNode",
+      "position": {
+        "x": 89.68086819409427,
+        "y": 361.29668104995767
+      },
+      "data": {
+        "label": "local alice",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 87,
+      "height": 23,
+      "measured": {
+        "width": 87,
+        "height": 23
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-4",
+      "type": "rectNode",
+      "position": {
+        "x": 89.68086819409427,
+        "y": 384.29668104995767
+      },
+      "data": {
+        "label": "corp\\alice",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 8
+      },
+      "width": 87,
+      "height": 23,
+      "measured": {
+        "width": 87,
+        "height": 23
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-5",
+      "type": "rectNode",
+      "position": {
+        "x": -57.33926473686185,
+        "y": 349.79668104995767
+      },
+      "data": {
+        "label": "password",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 87,
+      "height": 23,
+      "measured": {
+        "width": 87,
+        "height": 23
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-6",
+      "type": "rectNode",
+      "position": {
+        "x": -57.33926473686185,
+        "y": 372.79668104995767
+      },
+      "data": {
+        "label": "hash",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 87,
+      "height": 23,
+      "measured": {
+        "width": 87,
+        "height": 23
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-7",
+      "type": "rectNode",
+      "position": {
+        "x": -57.33926473686185,
+        "y": 395.79668104995767
+      },
+      "data": {
+        "label": "ticket",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 87,
+      "height": 23,
+      "measured": {
+        "width": 87,
+        "height": 23
+      },
+      "selected": false,
+      "resizing": false
+    },
+    {
+      "id": "node-8",
+      "type": "textBoxNode",
+      "position": {
+        "x": -238.33926473686185,
+        "y": 160.54193474915252
+      },
+      "data": {
+        "text": "$username = 'jen';\n$password = 'Nexus123!';\n$secureString = ConvertTo-SecureString $password -AsPlaintext -Force;\n$credential = New-Object System.Management.Automation.PSCredential $username, $secureString;\nNew-PSSession -ComputerName 192.168.50.73 -Credential $credential\n\n",
+        "bgColor": "transparent",
+        "borderColor": "#1e293b",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0
+        ]
+      },
+      "width": 449,
+      "height": 101,
+      "measured": {
+        "width": 449,
+        "height": 101
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-9",
+      "type": "textBoxNode",
+      "position": {
+        "x": -238.33926473686185,
+        "y": 483.01149434066457
+      },
+      "data": {
+        "text": "# Bằng password\nevil-winrm -i 10.0.0.5 -u duca -p 'Password123'\n\n# Bằng NTLM hash (pass-the-hash)\nevil-winrm -i 10.0.0.5 -u duca -H <NThash>\n\n# Bằng Kerberos (pass-the-ticket)\nexport KRB5CCNAME=/path/to/ticket.ccache\nevil-winrm -i client75.corp.local -r corp.local",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 10,
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 4,
+        "highlightedLines": [
+          0,
+          3,
+          6
+        ]
+      },
+      "width": 449,
+      "height": 143,
+      "measured": {
+        "width": 449,
+        "height": 143
+      },
+      "selected": false,
+      "dragging": true,
+      "resizing": false
+    },
+    {
+      "id": "node-11",
+      "type": "rectNode",
+      "position": {
+        "x": 315.0640481266437,
+        "y": 386.79668104995767
+      },
+      "data": {
+        "label": "5986",
+        "bgColor": "#ffffff",
+        "borderColor": "#000000",
+        "textColor": "#1e293b",
+        "fontSize": 14,
+        "borderWidth": 1.4,
+        "borderStyle": "solid",
+        "borderRadius": 1
+      },
+      "width": 56,
+      "height": 18,
+      "measured": {
+        "width": 56,
+        "height": 18
+      },
+      "selected": false,
+      "resizing": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "customEdge",
+      "source": "node-3",
+      "sourceHandle": "top",
+      "target": "node-1",
+      "targetHandle": "top",
+      "data": {
+        "label": "in Remote Manger Users Groups",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0
+      },
+      "id": "edge-1",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-6",
+      "sourceHandle": "right",
+      "target": "node-4",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-4",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-8",
+      "sourceHandle": "bottom",
+      "target": "node-5",
+      "targetHandle": "top",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-5",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-9",
+      "sourceHandle": "top",
+      "target": "node-7",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-6",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-14",
+      "sourceHandle": "bottom",
+      "target": "node-2",
+      "targetHandle": "bottom",
+      "data": {
+        "label": "",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow"
+      },
+      "id": "edge-7"
+    },
+    {
+      "type": "customEdge",
+      "source": "node-3",
+      "sourceHandle": "right",
+      "target": "node-2",
+      "targetHandle": "left",
+      "data": {
+        "label": "http",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "onTop": true,
+        "labelOffsetX": 0,
+        "labelOffsetY": 0
+      },
+      "id": "edge-8",
+      "selected": false
+    },
+    {
+      "type": "customEdge",
+      "source": "node-4",
+      "sourceHandle": "right",
+      "target": "node-11",
+      "targetHandle": "left",
+      "data": {
+        "label": "https",
+        "edgeType": "smoothstep",
+        "arrowType": "arrowclosed",
+        "color": "#64748b",
+        "lineStyle": "solid",
+        "strokeWidth": 1,
+        "bidirectional": false,
+        "animationEffect": "arrow",
+        "labelOffsetX": -0.29593431051615526,
+        "labelOffsetY": 0.1454592373723475,
+        "onTop": true
+      },
+      "id": "edge-9",
+      "selected": false
+    }
+  ]
+}

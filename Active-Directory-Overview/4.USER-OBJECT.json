@@ -352,7 +352,7 @@
         "width": 131,
         "height": 21
       },
-      "selected": false,
+      "selected": true,
       "resizing": false,
       "dragging": false
     },
@@ -411,7 +411,7 @@
         "width": 160,
         "height": 215
       },
-      "selected": true,
+      "selected": false,
       "resizing": false
     },
     {
@@ -608,7 +608,8 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 25
       },
       "id": "edge-7",
       "selected": false
@@ -627,9 +628,11 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 25
       },
-      "id": "edge-8"
+      "id": "edge-8",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -645,9 +648,11 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 25
       },
-      "id": "edge-9"
+      "id": "edge-9",
+      "selected": false
     },
     {
       "type": "customEdge",
@@ -663,7 +668,8 @@
         "lineStyle": "solid",
         "strokeWidth": 1,
         "bidirectional": false,
-        "animationEffect": "arrow"
+        "animationEffect": "arrow",
+        "showAtStep": 25
       },
       "id": "edge-10",
       "selected": false

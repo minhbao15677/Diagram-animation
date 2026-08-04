@@ -85,6 +85,47 @@ export type TextBoxNodeData = {
   hideAtStep?: number;
 };
 
+export type TreeNodeData = {
+  label: string;
+  items: string[];
+  collapsed: boolean;
+  expandedHeight?: number;
+  bgColor: string;
+  headerBgColor: string;
+  borderColor: string;
+  textColor: string;
+  fontSize: number;
+  itemFontSize: number;
+  borderWidth: number;
+  borderStyle: 'solid' | 'dashed' | 'dotted';
+  borderRadius: number;
+  onTop?: boolean;
+  showAtStep?: number;
+  hideAtStep?: number;
+};
+
+export const TREE_HEADER_HEIGHT = 32;
+export const TREE_ITEM_HEIGHT = 26;
+export const TREE_BODY_PADDING = 10;
+
+export const treeNaturalHeight = (itemCount: number) =>
+  TREE_HEADER_HEIGHT + itemCount * TREE_ITEM_HEIGHT + TREE_BODY_PADDING;
+
+export type BranchToggleNodeData = {
+  label: string;
+  collapsed: boolean;
+  bgColor: string;
+  collapsedBgColor: string;
+  textColor: string;
+  fontSize: number;
+  borderColor: string;
+  borderWidth: number;
+  borderRadius: number;
+  onTop?: boolean;
+  showAtStep?: number;
+  hideAtStep?: number;
+};
+
 export type EdgeData = {
   label?: string;
   edgeType: 'bezier' | 'smoothstep' | 'straight';
@@ -101,6 +142,140 @@ export type EdgeData = {
   labelOffsetY?: number;
   pathOffsetX?: number;
   pathOffsetY?: number;
+};
+
+const nodeBounds = (n: Node) => {
+  const w = n.width ?? n.measured?.width ?? 0;
+  const h = n.height ?? n.measured?.height ?? 0;
+  return { x: n.position.x, y: n.position.y, w, h };
+};
+
+/**
+ * Which nodes each zone visually contains.
+ *
+ * Zones have no parentId — a box is "inside" a zone purely by sitting on top of
+ * it — so containment is derived from geometry. Only zones can contain, and a
+ * node counts as contained when its box is fully within the zone's bounds.
+ * Nesting falls out of this naturally: a zone inside a zone is itself contained,
+ * so hiding the outer one reaches the inner one's contents through it.
+ */
+const buildZoneContents = (nodes: Node[]) => {
+  const zones = nodes.filter((n) => n.type === 'zoneNode');
+  const contents = new Map<string, string[]>();
+  if (zones.length === 0) return contents;
+
+  for (const zone of zones) {
+    const z = nodeBounds(zone);
+    if (z.w <= 0 || z.h <= 0) continue;
+    const inside: string[] = [];
+    for (const other of nodes) {
+      if (other.id === zone.id) continue;
+      const o = nodeBounds(other);
+      if (o.w <= 0 || o.h <= 0) continue;
+      const fits =
+        o.x >= z.x && o.y >= z.y &&
+        o.x + o.w <= z.x + z.w &&
+        o.y + o.h <= z.y + z.h;
+      if (fits) inside.push(other.id);
+    }
+    contents.set(zone.id, inside);
+  }
+  return contents;
+};
+
+/**
+ * Nodes/edges hidden by collapsed branch-toggle buttons.
+ *
+ * The branch is anchored by direction — only edges leaving the button are
+ * followed — so a button wired under a parent hides what hangs below it
+ * instead of flooding back up into the rest of the diagram. Past that first
+ * hop the walk ignores direction, so side-links inside the branch still get
+ * hidden. Nested toggles are hidden but not traversed through, keeping what
+ * they collapsed as their own business.
+ *
+ * Reaching a zone also pulls in everything sitting inside it, recursively, so
+ * a zone's boxes (and any zone nested within) disappear along with it even
+ * though nothing wires them to the button.
+ */
+export const computeHiddenElements = (nodes: Node[], edges: Edge[]) => {
+  const toggleIds = new Set(
+    nodes.filter((n) => n.type === 'branchToggleNode').map((n) => n.id)
+  );
+  const collapsedIds = nodes
+    .filter((n) => n.type === 'branchToggleNode' && (n.data as unknown as BranchToggleNodeData)?.collapsed)
+    .map((n) => n.id);
+
+  const hiddenNodes = new Set<string>();
+  const hiddenEdges = new Set<string>();
+  if (collapsedIds.length === 0) return { hiddenNodes, hiddenEdges };
+
+  const adjacency = new Map<string, { edgeId: string; other: string }[]>();
+  for (const e of edges) {
+    if (!adjacency.has(e.source)) adjacency.set(e.source, []);
+    if (!adjacency.has(e.target)) adjacency.set(e.target, []);
+    adjacency.get(e.source)!.push({ edgeId: e.id, other: e.target });
+    adjacency.get(e.target)!.push({ edgeId: e.id, other: e.source });
+  }
+
+  const zoneContents = buildZoneContents(nodes);
+
+  // Tracked per root so a button is only spared from its OWN branch — a nested
+  // button collapsed inside another's branch still disappears with its parent.
+  const ownBranch = new Map<string, Set<string>>();
+
+  for (const rootId of collapsedIds) {
+    const visited = new Set<string>([rootId]);
+    const reached = new Set<string>();
+    const queue: string[] = [];
+
+    const reach = (id: string) => {
+      if (visited.has(id)) return;
+      visited.add(id);
+      reached.add(id);
+      hiddenNodes.add(id);
+      // Nested toggles are hidden but not traversed through.
+      if (!toggleIds.has(id)) queue.push(id);
+    };
+
+    for (const e of edges) {
+      if (e.source !== rootId) continue;
+      hiddenEdges.add(e.id);
+      reach(e.target);
+    }
+
+    while (queue.length > 0) {
+      const current = queue.shift()!;
+      for (const { edgeId, other } of adjacency.get(current) ?? []) {
+        if (other === rootId) continue;
+        hiddenEdges.add(edgeId);
+        reach(other);
+      }
+      // Anything sitting inside this zone goes with it.
+      for (const child of zoneContents.get(current) ?? []) {
+        if (child === rootId) continue;
+        reach(child);
+      }
+    }
+
+    ownBranch.set(rootId, reached);
+  }
+
+  // Keep each collapsed button clickable — unless another button's branch owns
+  // it. Must settle before the edge sweep below, which reads final node state.
+  for (const id of collapsedIds) {
+    const hiddenByOther = collapsedIds.some(
+      (other) => other !== id && ownBranch.get(other)?.has(id)
+    );
+    if (!hiddenByOther) hiddenNodes.delete(id);
+  }
+
+  // An edge is only visible if both of its endpoints are — otherwise it would
+  // dangle from a hidden zone's contents into empty space.
+  for (const e of edges) {
+    if (hiddenNodes.has(e.source) || hiddenNodes.has(e.target)) hiddenEdges.add(e.id);
+  }
+
+  return { hiddenNodes, hiddenEdges };
 };
 
 type HistoryEntry = {
@@ -131,6 +306,11 @@ type DiagramState = {
   addZoneNode: (position?: { x: number; y: number }) => void;
   addTableNode: (position?: { x: number; y: number }) => void;
   addTextBoxNode: (position?: { x: number; y: number }) => void;
+  addTreeNode: (position?: { x: number; y: number }) => void;
+  toggleTreeCollapsed: (nodeId: string) => void;
+  setTreeItems: (nodeId: string, items: string[]) => void;
+  addBranchToggleNode: (position?: { x: number; y: number }) => void;
+  toggleBranchCollapsed: (nodeId: string) => void;
   updateNodeData: (nodeId: string, data: Partial<RectNodeData>) => void;
   updateEdgeData: (edgeId: string, data: Partial<EdgeData>) => void;
   clearAllSteps: () => void;
@@ -216,6 +396,33 @@ const defaultTextBoxNodeData: TextBoxNodeData = {
   borderWidth: 1,
   borderStyle: 'solid',
   borderRadius: 4,
+};
+
+const defaultTreeNodeData: TreeNodeData = {
+  label: 'Nhóm',
+  items: ['Nhánh 1', 'Nhánh 2', 'Nhánh 3'],
+  collapsed: false,
+  bgColor: '#ffffff',
+  headerBgColor: '#4f46e5',
+  borderColor: '#4f46e5',
+  textColor: '#1e293b',
+  fontSize: 13,
+  itemFontSize: 12,
+  borderWidth: 1.4,
+  borderStyle: 'solid',
+  borderRadius: 8,
+};
+
+const defaultBranchToggleNodeData: BranchToggleNodeData = {
+  label: 'Chi tiết',
+  collapsed: false,
+  bgColor: '#0f766e',
+  collapsedBgColor: '#64748b',
+  textColor: '#ffffff',
+  fontSize: 13,
+  borderColor: 'transparent',
+  borderWidth: 0,
+  borderRadius: 16,
 };
 
 const defaultEdgeData: EdgeData = {
@@ -388,6 +595,91 @@ export const useDiagramStore = create<DiagramState>((set, get) => ({
       height: 120,
     };
     set({ nodes: [...get().nodes, newNode] });
+  },
+
+  addTreeNode: (position = { x: 150 + Math.random() * 300, y: 150 + Math.random() * 200 }) => {
+    get().pushHistory();
+    const newNode: Node = {
+      id: `node-${++nodeIdCounter}`,
+      type: 'treeNode',
+      position,
+      data: { ...defaultTreeNodeData, items: [...defaultTreeNodeData.items] } as unknown as Record<string, unknown>,
+      width: 220,
+      height: treeNaturalHeight(defaultTreeNodeData.items.length),
+    };
+    set({ nodes: [...get().nodes, newNode] });
+  },
+
+  toggleTreeCollapsed: (nodeId) => {
+    set({
+      nodes: get().nodes.map((n) => {
+        if (n.id !== nodeId) return n;
+        const d = n.data as unknown as TreeNodeData;
+        const currentHeight = n.height ?? n.measured?.height ?? treeNaturalHeight(d.items?.length ?? 0);
+        if (d.collapsed) {
+          const restored = d.expandedHeight ?? treeNaturalHeight(d.items?.length ?? 0);
+          return {
+            ...n,
+            height: restored,
+            data: { ...n.data, collapsed: false, expandedHeight: undefined } as unknown as Record<string, unknown>,
+          };
+        }
+        return {
+          ...n,
+          height: TREE_HEADER_HEIGHT,
+          data: { ...n.data, collapsed: true, expandedHeight: currentHeight } as unknown as Record<string, unknown>,
+        };
+      }),
+    });
+  },
+
+  setTreeItems: (nodeId, items) => {
+    set({
+      nodes: get().nodes.map((n) => {
+        if (n.id !== nodeId) return n;
+        const d = n.data as unknown as TreeNodeData;
+        const needed = treeNaturalHeight(items.length);
+        const nextData = { ...n.data, items } as unknown as Record<string, unknown>;
+        if (d.collapsed) {
+          const stored = d.expandedHeight ?? needed;
+          return {
+            ...n,
+            data: { ...nextData, expandedHeight: Math.max(stored, needed) } as unknown as Record<string, unknown>,
+          };
+        }
+        const current = n.height ?? n.measured?.height ?? needed;
+        return { ...n, height: Math.max(current, needed), data: nextData };
+      }),
+    });
+  },
+
+  addBranchToggleNode: (position = { x: 150 + Math.random() * 300, y: 150 + Math.random() * 200 }) => {
+    get().pushHistory();
+    const newNode: Node = {
+      id: `node-${++nodeIdCounter}`,
+      type: 'branchToggleNode',
+      position,
+      data: { ...defaultBranchToggleNodeData } as unknown as Record<string, unknown>,
+      width: 150,
+      height: 34,
+    };
+    set({ nodes: [...get().nodes, newNode] });
+  },
+
+  toggleBranchCollapsed: (nodeId) => {
+    set({
+      nodes: get().nodes.map((n) =>
+        n.id === nodeId
+          ? {
+              ...n,
+              data: {
+                ...n.data,
+                collapsed: !(n.data as unknown as BranchToggleNodeData).collapsed,
+              } as unknown as Record<string, unknown>,
+            }
+          : n
+      ),
+    });
   },
 
   updateNodeData: (nodeId, data) => {
